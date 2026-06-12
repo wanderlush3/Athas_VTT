@@ -1,0 +1,169 @@
+// ─── Prisma Schema — Athas VTT ───────────────────────────────────
+// D&D 3.5e Dark Sun character data with Psionic Power Points
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// ─── Campaign ────────────────────────────────────────────────────
+model Campaign {
+  id          String   @id @default(uuid())
+  name        String
+  password    String
+  mapImageUrl String?
+  fogMask     String?  @default("")
+  defileZones String?  @default("[]")
+  tokenState  String?  @default("[]")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  users      User[]
+  characters Character[]
+  messages   ChatMessage[]
+
+  @@index([name])
+}
+
+// ─── User (session-scoped, no persistent accounts) ───────────────
+model User {
+  id           String    @id @default(uuid())
+  username     String
+  role         String    @default("PLAYER")
+  sessionToken String    @unique
+  expiresAt    DateTime?
+  campaignId   String
+  campaign     Campaign  @relation(fields: [campaignId], references: [id])
+
+  characters Character[]
+  messages   ChatMessage[]
+
+  createdAt DateTime @default(now())
+
+  @@unique([username, campaignId])
+}
+
+// ─── Character (3.5e + Dark Sun Psionics) ────────────────────────
+model Character {
+  id         String @id @default(uuid())
+  name       String
+  race       String
+  classLevel String
+  level      Int    @default(1)
+  alignment  String @default("N")
+
+  // Ability Scores
+  strength     Int @default(10)
+  dexterity    Int @default(10)
+  constitution Int @default(10)
+  intelligence Int @default(10)
+  wisdom       Int @default(10)
+  charisma     Int @default(10)
+
+  // Combat
+  hitPointsMax     Int @default(1)
+  hitPointsCurrent Int @default(1)
+  armorClass       Int @default(10)
+  baseAttackBonus  Int @default(0)
+  initiative       Int @default(0)
+  speed            Int @default(30)
+
+  // Saves
+  saveFort Int @default(0)
+  saveRef  Int @default(0)
+  saveWill Int @default(0)
+
+  // Psionics (Power Point system)
+  pspMax     Int @default(0)
+  pspCurrent Int @default(0)
+
+  // Complex Data (JSON strings)
+  skills    String @default("[]")
+  feats     String @default("[]")
+  powers    String @default("[]")
+  equipment String @default("[]")
+  spells    String @default("[]")
+  spellSlots String @default("[]")
+
+  // Currency (Athas ceramic-based economy)
+  currencyCp    Int @default(0)
+  currencySp    Int @default(0)
+  currencyGp    Int @default(0)
+  currencyBits  Int @default(0)
+
+  // Experience
+  experiencePoints Int @default(0)
+
+  // AC Components
+  acArmor      Int @default(0)
+  acShield     Int @default(0)
+  acNatural    Int @default(0)
+  acDeflection Int @default(0)
+  acMisc       Int @default(0)
+  acSizeMod    Int @default(0)
+
+  // Description
+  gender      String @default("")
+  age         String @default("")
+  height      String @default("")
+  weight      String @default("")
+  deity       String @default("")
+  appearance  String @default("")
+  personality String @default("")
+
+  // Conditions (JSON array of condition ID strings)
+  conditions  String @default("[]")
+
+  // Multiclass (JSON array of {className, level} pairs)
+  classLevels String @default("[]")
+
+  // Class features granted by level-ups (JSON array of ClassFeature[])
+  classFeatures String @default("[]")
+
+  // Level-up history for undo (JSON array of LevelUpRecord[])
+  levelHistory String @default("[]")
+
+  notes     String @default("")
+
+  // Survival (Dark Sun)
+  waterSupply        Float  @default(0)
+  dehydrationStage   Int    @default(0)
+  heatSicknessStage  Int    @default(0)
+  heatExposureHours  Float  @default(0)
+  marchHoursToday    Float  @default(0)
+  forcedMarchStage   Int    @default(0)
+
+  // Relations
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  campaignId String
+  campaign   Campaign @relation(fields: [campaignId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([campaignId])
+  @@index([userId])
+}
+
+// ─── Chat / Dice Log ─────────────────────────────────────────────
+model ChatMessage {
+  id       String @id @default(uuid())
+  type     String @default("CHAT")
+  userId   String
+  user     User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  username String
+  content  String
+  rollData String?
+
+  campaignId String
+  campaign   Campaign @relation(fields: [campaignId], references: [id])
+
+  createdAt DateTime @default(now())
+
+  @@index([campaignId])
+}

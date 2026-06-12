@@ -1,0 +1,1933 @@
+[
+    {
+        "id": "acrobatic",
+        "name": "Acrobatic",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Jump checks and Tumble checks.",
+        "description": "You have excellent body awareness and coordination.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "agile",
+        "name": "Agile",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Balance checks and Escape Artist checks.",
+        "description": "You are particularly flexible and poised.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "alertness",
+        "name": "Alertness",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Listen checks and Spot checks.",
+        "description": "You have finely tuned senses.",
+        "special": "The master of a familiar gains the benefit of the Alertness feat whenever the familiar is within arm's reach.",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "animal-affinity",
+        "name": "Animal Affinity",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Handle Animal checks and Ride checks.",
+        "description": "You are good with animals.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "armor-proficiency-heavy",
+        "name": "Armor Proficiency (Heavy)",
+        "type": "general",
+        "prerequisites": "Armor Proficiency (light), Armor Proficiency (medium)",
+        "structuredPrereqs": {
+            "feats": [
+                "Armor Proficiency (Light)",
+                "Armor Proficiency (Medium)"
+            ]
+        },
+        "benefit": "When you wear a type of armor with which you are proficient, the armor check penalty for that armor applies only to Balance, Climb, Escape Artist, Hide, Jump, Move Silently, Pick Pocket, and Tumble checks.",
+        "description": "You are proficient with heavy armor.",
+        "special": "Fighters, paladins, and clerics automatically have Armor Proficiency (heavy) as a bonus feat.",
+        "classes": [
+            "Fighter",
+            "Cleric"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "armor-proficiency-light",
+        "name": "Armor Proficiency (Light)",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "When you wear a type of armor with which you are proficient, the armor check penalty for that armor applies only to Balance, Climb, Escape Artist, Hide, Jump, Move Silently, Pick Pocket, and Tumble checks.",
+        "description": "You are proficient with light armor.",
+        "special": "All characters except wizards, sorcerers, and monks automatically have Armor Proficiency (light) as a bonus feat.",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "armor-proficiency-medium",
+        "name": "Armor Proficiency (Medium)",
+        "type": "general",
+        "prerequisites": "Armor Proficiency (light)",
+        "structuredPrereqs": {
+            "feats": [
+                "Armor Proficiency (Light)"
+            ]
+        },
+        "benefit": "When you wear a type of armor with which you are proficient, the armor check penalty for that armor applies only to Balance, Climb, Escape Artist, Hide, Jump, Move Silently, Pick Pocket, and Tumble checks.",
+        "description": "You are proficient with medium armor.",
+        "special": "Fighters, barbarians, paladins, clerics, druids, and bards automatically have Armor Proficiency (medium) as a bonus feat.",
+        "classes": [
+            "Fighter",
+            "Cleric",
+            "Druid",
+            "Bard"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "athletic",
+        "name": "Athletic",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Climb checks and Swim checks.",
+        "description": "You have a knack for athletic endeavors.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "augment-summoning",
+        "name": "Augment Summoning",
+        "type": "general",
+        "prerequisites": "Spell Focus (conjuration)",
+        "structuredPrereqs": {
+            "feats": [
+                "Spell Focus"
+            ],
+            "special": [
+                "Spell Focus must be in conjuration school"
+            ]
+        },
+        "benefit": "Each creature you conjure with any summon spell gains a +4 enhancement bonus to Strength and Constitution for the duration of the spell that summoned it.",
+        "description": "Your summoned creatures are more powerful than normal.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "blind-fight",
+        "name": "Blind-Fight",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "In melee, every time you miss because of concealment, you can reroll your miss chance percentile roll one time to see if you actually hit. An invisible attacker gets no advantages related to hitting you in melee. That is, you don't lose your Dexterity bonus to Armor Class, and the attacker doesn't get the usual +2 bonus for being invisible. The invisible attacker's bonuses do still apply for ranged attacks, however. You take only half the usual penalty to speed for being unable to see. Darkness and poor visibility in general reduces your speed to three-quarters normal, instead of one-half.",
+        "description": "You know how to fight in melee without being able to see your foes.",
+        "special": "A fighter may select Blind-Fight as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "brew-potion",
+        "name": "Brew Potion",
+        "type": "item creation",
+        "prerequisites": "Caster level 3rd",
+        "structuredPrereqs": {
+            "casterLevel": 3
+        },
+        "benefit": "You can create a potion of any 3rd-level or lower spell that you know and that targets one or more creatures. Brewing a potion takes one day. When you create a potion, you set the caster level, which must be sufficient to cast the spell in question and no higher than your own level. The base price of a potion is its spell level x its caster level x 50 gp. To brew a potion, you must spend 1/25 of this base price in XP and use up raw materials costing one half this base price.",
+        "description": "You can create potions, which carry spells within themselves.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "cleave",
+        "name": "Cleave",
+        "type": "general",
+        "prerequisites": "Str 13, Power Attack, BAB +1",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "strength",
+                    "minimum": 13
+                }
+            ],
+            "feats": [
+                "Power Attack"
+            ],
+            "bab": 1
+        },
+        "benefit": "If you deal a creature enough damage to make it drop (typically by dropping it to below 0 hit points or killing it), you get an immediate, extra melee attack against another creature within reach.",
+        "description": "You can follow through with powerful blows.",
+        "special": "You can use this ability once per round. A fighter may select Cleave as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": "Favored by gladiators in the arenas of Tyr, Urik, and Balic."
+    },
+    {
+        "id": "combat-casting",
+        "name": "Combat Casting",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +4 bonus on Concentration checks made to cast a spell or use a spell-like ability while on the defensive or while you are grappling or pinned.",
+        "description": "You are adept at casting spells in combat.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "combat-expertise",
+        "name": "Combat Expertise",
+        "type": "general",
+        "prerequisites": "Int 13",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "intelligence",
+                    "minimum": 13
+                }
+            ]
+        },
+        "benefit": "When you use the attack action or the full attack action in melee, you can take a penalty of as much as -5 on your attack roll and add the same number (+5 or less) as a dodge bonus to your Armor Class. This number may not exceed your base attack bonus. The changes to attack rolls and Armor Class last until your next action.",
+        "description": "You are trained at using your combat skill for defense as well as offense.",
+        "special": "A fighter may select Combat Expertise as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "combat-reflexes",
+        "name": "Combat Reflexes",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "When foes leave themselves open, you may make a number of additional attacks of opportunity equal to your Dexterity bonus. You can still make only one attack of opportunity per opportunity. With this feat, you may also make attacks of opportunity while flat-footed.",
+        "description": "You can respond quickly and repeatedly to opponents who let their defenses down.",
+        "special": "A fighter may select Combat Reflexes as one of his fighter bonus feats. A monk may select Combat Reflexes as a bonus feat at 2nd level.",
+        "classes": [
+            "Fighter",
+            "Monk"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "craft-magic-arms-and-armor",
+        "name": "Craft Magic Arms and Armor",
+        "type": "item creation",
+        "prerequisites": "Caster level 5th",
+        "structuredPrereqs": {
+            "casterLevel": 5
+        },
+        "benefit": "You can create any magic weapon, armor, or shield whose prerequisites you meet. Enhancing a weapon, suit of armor, or shield takes one day for each 1,000 gp in the price of its magical features. To enhance a weapon, suit of armor, or shield, you must spend 1/25 of its features' total price in XP and use up raw materials costing one-half of this total price.",
+        "description": "You can create magic weapons, armor, and shields.",
+        "special": "You can also mend a broken magic weapon, suit of armor, or shield if it is one that you could make.",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "craft-rod",
+        "name": "Craft Rod",
+        "type": "item creation",
+        "prerequisites": "Caster level 9th",
+        "structuredPrereqs": {
+            "casterLevel": 9
+        },
+        "benefit": "You can create any rod whose prerequisites you meet. Crafting a rod takes one day for each 1,000 gp in its base price. To craft a rod, you must spend 1/25 of its base price in XP and use up raw materials costing one-half of its base price.",
+        "description": "You can create magic rods, which have varied magical effects.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "craft-staff",
+        "name": "Craft Staff",
+        "type": "item creation",
+        "prerequisites": "Caster level 12th",
+        "structuredPrereqs": {
+            "casterLevel": 12
+        },
+        "benefit": "You can create any staff whose prerequisites you meet. Crafting a staff takes one day for each 1,000 gp in its base price. To craft a staff, you must spend 1/25 of its base price in XP and use up raw materials costing one-half of its base price. A newly created staff has 50 charges.",
+        "description": "You can create magic staffs, each of which has multiple magical effects.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "craft-wand",
+        "name": "Craft Wand",
+        "type": "item creation",
+        "prerequisites": "Caster level 5th",
+        "structuredPrereqs": {
+            "casterLevel": 5
+        },
+        "benefit": "You can create a wand of any 4th-level or lower spell that you know. Crafting a wand takes one day for each 1,000 gp in its base price. The base price of a wand is its caster level x the spell level x 750 gp. To craft a wand, you must spend 1/25 of this base price in XP and use up raw materials costing one-half of this base price. A newly created wand has 50 charges.",
+        "description": "You can create wands, which hold spells.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "craft-wondrous-item",
+        "name": "Craft Wondrous Item",
+        "type": "item creation",
+        "prerequisites": "Caster level 3rd",
+        "structuredPrereqs": {
+            "casterLevel": 3
+        },
+        "benefit": "You can create any wondrous item whose prerequisites you meet. Enchanting a wondrous item takes one day for each 1,000 gp in its price. To enchant a wondrous item, you must spend 1/25 of the item's price in XP and use up raw materials costing half of this price.",
+        "description": "You can create a wide variety of magic wondrous items.",
+        "special": "You can also mend a broken wondrous item if it is one that you could make.",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "deceitful",
+        "name": "Deceitful",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Disguise checks and Forgery checks.",
+        "description": "You have a knack for disguising the truth.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "deflect-arrows",
+        "name": "Deflect Arrows",
+        "type": "general",
+        "prerequisites": "Dex 13, Improved Unarmed Strike",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "dexterity",
+                    "minimum": 13
+                }
+            ],
+            "feats": [
+                "Improved Unarmed Strike"
+            ]
+        },
+        "benefit": "You must have at least one hand free (holding nothing) to use this feat. Once per round when you would normally be hit with a ranged weapon, you may deflect it so that you take no damage from it. You must be aware of the attack and not flat-footed. Attempting to deflect a ranged weapon doesn't count as an action. Unusually massive ranged weapons and ranged attacks generated by spell effects can't be deflected.",
+        "description": "You can deflect incoming arrows, crossbow bolts, spears, and other projectile or thrown weapons.",
+        "special": "A monk may select Deflect Arrows as a bonus feat at 2nd level. A fighter may select Deflect Arrows as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter",
+            "Monk"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "deft-hands",
+        "name": "Deft Hands",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Sleight of Hand checks and Use Rope checks.",
+        "description": "You have exceptional manual dexterity.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "diehard",
+        "name": "Diehard",
+        "type": "general",
+        "prerequisites": "Endurance",
+        "structuredPrereqs": {
+            "feats": [
+                "Endurance"
+            ]
+        },
+        "benefit": "When reduced to between -1 and -9 hit points, you automatically become stable. You don't have to roll d% to see if you lose 1 hit point each round. When reduced to negative hit points, you may choose to act as if you were disabled, rather than dying. You must make this decision as soon as you are reduced to negative hit points. When using this feat, you can take either a single move or standard action each turn, but not both, and you cannot take a full-round action. If you perform any standard action you take 1 point of damage after completing the act. If you reach -10 hit points, you immediately die.",
+        "description": "You can remain conscious after attacks that would fell others.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "diligent",
+        "name": "Diligent",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Appraise checks and Decipher Script checks.",
+        "description": "Your meticulousness allows you to analyze minute details that others miss.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "dodge",
+        "name": "Dodge",
+        "type": "general",
+        "prerequisites": "Dex 13",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "dexterity",
+                    "minimum": 13
+                }
+            ]
+        },
+        "benefit": "During your action, you designate an opponent and receive a +1 dodge bonus to Armor Class against attacks from that opponent. You can select a new opponent on any action. A condition that makes you lose your Dexterity bonus to Armor Class also makes you lose dodge bonuses. Dodge bonuses stack with each other, unlike most other types of bonuses.",
+        "description": "You are adept at dodging blows.",
+        "special": "A fighter may select Dodge as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "empower-spell",
+        "name": "Empower Spell",
+        "type": "metamagic",
+        "prerequisites": "None",
+        "benefit": "All variable, numeric effects of an empowered spell are increased by one-half. An empowered spell deals half again as much damage as normal, cures half again as many hit points, affects half again as many targets, and so forth, as appropriate. Saving throws and opposed rolls are not affected, nor are spells without random variables. An empowered spell uses up a spell slot two levels higher than the spell's actual level.",
+        "description": "You can cast spells to greater effect.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "endurance",
+        "name": "Endurance",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You gain a +4 bonus on the following checks and saves: Swim checks made to resist nonlethal damage, Constitution checks made to continue running, Constitution checks made to avoid nonlethal damage from a forced march, Constitution checks made to hold your breath, Constitution checks made to avoid nonlethal damage from starvation or thirst, Fortitude saves made to avoid nonlethal damage from hot or cold environments, and Fortitude saves made to resist damage from suffocation. Also, you may sleep in light or medium armor without becoming fatigued.",
+        "description": "You are capable of amazing feats of stamina.",
+        "special": "A ranger automatically gains Endurance as a bonus feat at 3rd level.",
+        "classes": [
+            "Ranger"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "enlarge-spell",
+        "name": "Enlarge Spell",
+        "type": "metamagic",
+        "prerequisites": "None",
+        "benefit": "You can alter a spell with a range of close, medium, or long to increase its range by 100%. An enlarged spell with a range of close now has a range of 50 ft. + 5 ft./level, while medium-range spells have a range of 200 ft. + 20 ft./level and long-range spells have a range of 800 ft. + 80 ft./level. An enlarged spell uses up a spell slot one level higher than the spell's actual level.",
+        "description": "You can cast spells farther than normal.",
+        "special": "Spells whose ranges are not defined by distance, as well as spells whose ranges are not close, medium, or long, do not have increased ranges.",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "eschew-materials",
+        "name": "Eschew Materials",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You can cast any spell that has a material component costing 1 gp or less without needing that component. The casting of the spell still provokes attacks of opportunity as normal. If the spell requires a material component that costs more than 1 gp, you must have the material component at hand to cast the spell, just as normal.",
+        "description": "You can cast spells without relying on material components.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "exotic-weapon-proficiency",
+        "name": "Exotic Weapon Proficiency",
+        "type": "general",
+        "prerequisites": "BAB +1 (plus Str 13 for bastard sword or dwarven waraxe)",
+        "structuredPrereqs": {
+            "bab": 1,
+            "special": [
+                "Str 13 for bastard sword or dwarven waraxe"
+            ]
+        },
+        "benefit": "You make attack rolls with the selected exotic weapon normally.",
+        "description": "Choose a type of exotic weapon. You understand how to use that type of exotic weapon in combat.",
+        "special": "You can gain Exotic Weapon Proficiency multiple times. Each time you take the feat, it applies to a new type of exotic weapon. A fighter may select Exotic Weapon Proficiency as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "extend-spell",
+        "name": "Extend Spell",
+        "type": "metamagic",
+        "prerequisites": "None",
+        "benefit": "An extended spell lasts twice as long as normal. A spell with a duration of concentration, instantaneous, or permanent is not affected by this feat. An extended spell uses up a spell slot one level higher than the spell's actual level.",
+        "description": "You can cast spells that last longer than normal.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "extra-turning",
+        "name": "Extra Turning",
+        "type": "general",
+        "prerequisites": "Ability to turn or rebuke creatures",
+        "structuredPrereqs": {
+            "special": [
+                "Ability to turn or rebuke creatures"
+            ]
+        },
+        "benefit": "Each time you take this feat, you can use your ability to turn or rebuke creatures four more times per day than normal.",
+        "description": "You can turn or rebuke creatures more often than normal.",
+        "special": "You can gain Extra Turning multiple times. Its effects stack. Each time you take the feat, you can use each of your turning or rebuking abilities four additional times per day.",
+        "classes": [
+            "Cleric"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "far-shot",
+        "name": "Far Shot",
+        "type": "general",
+        "prerequisites": "Point Blank Shot",
+        "structuredPrereqs": {
+            "feats": [
+                "Point Blank Shot"
+            ]
+        },
+        "benefit": "When you use a projectile weapon, such as a bow, its range increment increases by one-half (multiply by 1-1/2). When you use a thrown weapon, its range increment is doubled.",
+        "description": "You can get greater distance out of a ranged weapon.",
+        "special": "A fighter may select Far Shot as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "forge-ring",
+        "name": "Forge Ring",
+        "type": "item creation",
+        "prerequisites": "Caster level 12th",
+        "structuredPrereqs": {
+            "casterLevel": 12
+        },
+        "benefit": "You can create any ring whose prerequisites you meet. Crafting a ring takes one day for each 1,000 gp in its base price. To craft a ring, you must spend 1/25 of its base price in XP and use up raw materials costing one-half of its base price.",
+        "description": "You can create magic rings, which have varied magical effects.",
+        "special": "You can also mend a broken ring if it is one that you could make.",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "great-cleave",
+        "name": "Great Cleave",
+        "type": "general",
+        "prerequisites": "Str 13, Cleave, Power Attack, BAB +4",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "strength",
+                    "minimum": 13
+                }
+            ],
+            "feats": [
+                "Cleave",
+                "Power Attack"
+            ],
+            "bab": 4
+        },
+        "benefit": "This feat works like Cleave, except that there is no limit to the number of times you can use it per round.",
+        "description": "You can wield a melee weapon with such power that you can strike multiple times when you fell your foes.",
+        "special": "A fighter may select Great Cleave as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "great-fortitude",
+        "name": "Great Fortitude",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Fortitude saving throws.",
+        "description": "You are tougher than normal.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "greater-spell-focus",
+        "name": "Greater Spell Focus",
+        "type": "general",
+        "prerequisites": "Spell Focus",
+        "structuredPrereqs": {
+            "feats": [
+                "Spell Focus"
+            ]
+        },
+        "benefit": "Add +1 to the Difficulty Class for all saving throws against spells from the school of magic you select. This bonus stacks with the bonus from Spell Focus.",
+        "description": "Choose a school of magic to which you already have applied the Spell Focus feat. Your spells of that school are even more potent.",
+        "special": "You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new school of magic to which you already have applied the Spell Focus feat.",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "greater-spell-penetration",
+        "name": "Greater Spell Penetration",
+        "type": "general",
+        "prerequisites": "Spell Penetration",
+        "structuredPrereqs": {
+            "feats": [
+                "Spell Penetration"
+            ]
+        },
+        "benefit": "You get a +2 bonus on caster level checks (1d20 + caster level) made to overcome a creature's spell resistance. This bonus stacks with the one from Spell Penetration.",
+        "description": "Your spells are remarkably potent, breaking through spell resistance more readily than normal.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "greater-two-weapon-fighting",
+        "name": "Greater Two-Weapon Fighting",
+        "type": "general",
+        "prerequisites": "Dex 19, Improved Two-Weapon Fighting, Two-Weapon Fighting, BAB +11",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "dexterity",
+                    "minimum": 19
+                }
+            ],
+            "feats": [
+                "Improved Two-Weapon Fighting",
+                "Two-Weapon Fighting"
+            ],
+            "bab": 11
+        },
+        "benefit": "You get a third attack with your off-hand weapon, albeit at a -10 penalty.",
+        "description": "You are a master at fighting two-handed.",
+        "special": "A fighter may select Greater Two-Weapon Fighting as one of his fighter bonus feats. An 11th-level ranger who has chosen the two-weapon combat style is treated as having Greater Two-Weapon Fighting, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.",
+        "classes": [
+            "Fighter",
+            "Ranger"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "greater-weapon-focus",
+        "name": "Greater Weapon Focus",
+        "type": "general",
+        "prerequisites": "Proficiency with selected weapon, Weapon Focus with selected weapon, fighter level 8th",
+        "structuredPrereqs": {
+            "classLevels": [
+                {
+                    "className": "Fighter",
+                    "level": 8
+                }
+            ],
+            "special": [
+                "Proficiency with selected weapon",
+                "Weapon Focus with selected weapon"
+            ]
+        },
+        "benefit": "You gain a +1 bonus on all attack rolls you make using the selected weapon. This bonus stacks with other bonuses on attack rolls, including the one from Weapon Focus.",
+        "description": "Choose one type of weapon for which you have already selected Weapon Focus. You are especially good at using this weapon.",
+        "special": "You can gain Greater Weapon Focus multiple times. Its effects do not stack. Each time you take the feat, it applies to a new type of weapon. A fighter may select Greater Weapon Focus as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "greater-weapon-specialization",
+        "name": "Greater Weapon Specialization",
+        "type": "general",
+        "prerequisites": "Proficiency with selected weapon, Greater Weapon Focus with selected weapon, Weapon Focus with selected weapon, Weapon Specialization with selected weapon, fighter level 12th",
+        "structuredPrereqs": {
+            "classLevels": [
+                {
+                    "className": "Fighter",
+                    "level": 12
+                }
+            ],
+            "special": [
+                "Proficiency with selected weapon",
+                "Greater Weapon Focus with selected weapon",
+                "Weapon Focus with selected weapon",
+                "Weapon Specialization with selected weapon"
+            ]
+        },
+        "benefit": "You gain a +2 bonus on all damage rolls you make using the selected weapon. This bonus stacks with other bonuses on damage rolls, including the one from Weapon Specialization.",
+        "description": "Choose one type of weapon for which you have already selected Weapon Specialization. You deal extra damage when using this weapon.",
+        "special": "You can gain Greater Weapon Specialization multiple times. Its effects do not stack. Each time you take the feat, it applies to a new type of weapon. A fighter may select Greater Weapon Specialization as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "heighten-spell",
+        "name": "Heighten Spell",
+        "type": "metamagic",
+        "prerequisites": "None",
+        "benefit": "A heightened spell has a higher spell level than normal (up to a maximum of 9th level). Unlike other metamagic feats, Heighten Spell actually increases the effective level of the spell that it modifies. All effects dependent on spell level (such as saving throw DCs and ability to penetrate a lesser globe of invulnerability) are calculated according to the heightened level. The heightened spell is as difficult to prepare and cast as a spell of its effective level.",
+        "description": "You can cast a spell as if it were a higher-level spell than it actually is.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "improved-bull-rush",
+        "name": "Improved Bull Rush",
+        "type": "general",
+        "prerequisites": "Str 13, Power Attack",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "strength",
+                    "minimum": 13
+                }
+            ],
+            "feats": [
+                "Power Attack"
+            ]
+        },
+        "benefit": "When you perform a bull rush, you do not provoke an attack of opportunity from the defender. You also gain a +4 bonus on the opposed Strength check you make to push back the defender.",
+        "description": "You know how to push opponents back.",
+        "special": "A fighter may select Improved Bull Rush as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "improved-counterspell",
+        "name": "Improved Counterspell",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "When counterspelling, you may use a spell of the same school that is one or more spell levels higher than the target spell.",
+        "description": "You understand the nuances of magic to such an extent that you can counter your opponent's spells with great efficiency.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "improved-critical",
+        "name": "Improved Critical",
+        "type": "general",
+        "prerequisites": "Proficient with weapon, BAB +8",
+        "structuredPrereqs": {
+            "bab": 8,
+            "special": [
+                "Proficient with weapon"
+            ]
+        },
+        "benefit": "When using the weapon you selected, your threat range is doubled.",
+        "description": "Choose one type of weapon. With that weapon, you know how to hit where it hurts.",
+        "special": "You can gain Improved Critical multiple times. The effects do not stack. Each time you take the feat, it applies to a new type of weapon. This effect doesn't stack with any other effect that expands the threat range of a weapon. A fighter may select Improved Critical as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "improved-disarm",
+        "name": "Improved Disarm",
+        "type": "general",
+        "prerequisites": "Int 13, Combat Expertise",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "intelligence",
+                    "minimum": 13
+                }
+            ],
+            "feats": [
+                "Combat Expertise"
+            ]
+        },
+        "benefit": "You do not provoke an attack of opportunity when you attempt to disarm an opponent, nor does the opponent have a chance to disarm you. You also gain a +4 bonus on the opposed attack roll you make to disarm your opponent.",
+        "description": "You know how to disarm opponents in melee combat.",
+        "special": "A fighter may select Improved Disarm as one of his fighter bonus feats. A monk may select Improved Disarm as a bonus feat at 6th level, even if she does not meet the prerequisites.",
+        "classes": [
+            "Fighter",
+            "Monk"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "improved-feint",
+        "name": "Improved Feint",
+        "type": "general",
+        "prerequisites": "Int 13, Combat Expertise",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "intelligence",
+                    "minimum": 13
+                }
+            ],
+            "feats": [
+                "Combat Expertise"
+            ]
+        },
+        "benefit": "You can make a Bluff check to feint in combat as a move action.",
+        "description": "You are skilled at misdirecting your opponent's attention in combat.",
+        "special": "A fighter may select Improved Feint as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "improved-grapple",
+        "name": "Improved Grapple",
+        "type": "general",
+        "prerequisites": "Dex 13, Improved Unarmed Strike",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "dexterity",
+                    "minimum": 13
+                }
+            ],
+            "feats": [
+                "Improved Unarmed Strike"
+            ]
+        },
+        "benefit": "You do not provoke an attack of opportunity when you make a touch attack to start a grapple. You also gain a +4 bonus on all grapple checks, regardless of whether you started the grapple.",
+        "description": "You are skilled at grappling opponents.",
+        "special": "A fighter may select Improved Grapple as one of his fighter bonus feats. A monk may select Improved Grapple as a bonus feat at 1st level, even if she does not meet the prerequisites.",
+        "classes": [
+            "Fighter",
+            "Monk"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "improved-initiative",
+        "name": "Improved Initiative",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +4 bonus on initiative checks.",
+        "description": "You can react more quickly than normal in a fight.",
+        "special": "A fighter may select Improved Initiative as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "improved-overrun",
+        "name": "Improved Overrun",
+        "type": "general",
+        "prerequisites": "Str 13, Power Attack",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "strength",
+                    "minimum": 13
+                }
+            ],
+            "feats": [
+                "Power Attack"
+            ]
+        },
+        "benefit": "When you attempt to overrun an opponent, the target may not choose to avoid you. You also gain a +4 bonus on your Strength check to knock down your opponent.",
+        "description": "You are skilled at knocking down opponents.",
+        "special": "A fighter may select Improved Overrun as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "improved-precise-shot",
+        "name": "Improved Precise Shot",
+        "type": "general",
+        "prerequisites": "Dex 19, Point Blank Shot, Precise Shot, BAB +11",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "dexterity",
+                    "minimum": 19
+                }
+            ],
+            "feats": [
+                "Point Blank Shot",
+                "Precise Shot"
+            ],
+            "bab": 11
+        },
+        "benefit": "Your ranged attacks ignore the AC bonus granted to targets by anything less than total cover, and the miss chance granted to targets by anything less than total concealment. Total cover and total concealment provide their normal benefits against your ranged attacks. In addition, when you shoot or throw ranged weapons at a grappling opponent, you automatically strike at the opponent you have chosen.",
+        "description": "Your ranged attacks can ignore the effects of cover or concealment.",
+        "special": "A fighter may select Improved Precise Shot as one of his fighter bonus feats. An 11th-level ranger who has chosen the archery combat style is treated as having Improved Precise Shot, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.",
+        "classes": [
+            "Fighter",
+            "Ranger"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "improved-shield-bash",
+        "name": "Improved Shield Bash",
+        "type": "general",
+        "prerequisites": "Shield Proficiency",
+        "structuredPrereqs": {
+            "feats": [
+                "Shield Proficiency"
+            ]
+        },
+        "benefit": "When you perform a shield bash, you may still apply the shield's shield bonus to your AC.",
+        "description": "You can bash with a shield while retaining its shield bonus to your Armor Class.",
+        "special": "A fighter may select Improved Shield Bash as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "improved-sunder",
+        "name": "Improved Sunder",
+        "type": "general",
+        "prerequisites": "Str 13, Power Attack",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "strength",
+                    "minimum": 13
+                }
+            ],
+            "feats": [
+                "Power Attack"
+            ]
+        },
+        "benefit": "When you strike at an object held or carried by an opponent (such as a weapon or shield), you do not provoke an attack of opportunity. You also gain a +4 bonus on any attack roll made to attack an object held or carried by another character.",
+        "description": "You are skilled at attacking your opponents' weapons and shields, as well as other objects.",
+        "special": "A fighter may select Improved Sunder as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "improved-trip",
+        "name": "Improved Trip",
+        "type": "general",
+        "prerequisites": "Int 13, Combat Expertise",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "intelligence",
+                    "minimum": 13
+                }
+            ],
+            "feats": [
+                "Combat Expertise"
+            ]
+        },
+        "benefit": "You do not provoke an attack of opportunity when you attempt to trip an opponent while you are unarmed. You also gain a +4 bonus on your Strength check to trip your opponent. If you trip an opponent in melee combat, you immediately get a melee attack against that opponent as if you hadn't used your attack for the trip attempt.",
+        "description": "You are trained not only in tripping opponents safely but also in following through with an attack.",
+        "special": "At 6th level, a monk may select Improved Trip as a bonus feat, even if she does not have the prerequisites. A fighter may select Improved Trip as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter",
+            "Monk"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "improved-turning",
+        "name": "Improved Turning",
+        "type": "general",
+        "prerequisites": "Ability to turn or rebuke creatures",
+        "structuredPrereqs": {
+            "special": [
+                "Ability to turn or rebuke creatures"
+            ]
+        },
+        "benefit": "You turn or rebuke creatures as if you were one level higher than you are in the class that grants you the ability.",
+        "description": "Your turning or rebuking attempts are more powerful than normal.",
+        "special": "",
+        "classes": [
+            "Cleric"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "improved-two-weapon-fighting",
+        "name": "Improved Two-Weapon Fighting",
+        "type": "general",
+        "prerequisites": "Dex 17, Two-Weapon Fighting, BAB +6",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "dexterity",
+                    "minimum": 17
+                }
+            ],
+            "feats": [
+                "Two-Weapon Fighting"
+            ],
+            "bab": 6
+        },
+        "benefit": "In addition to the standard single extra attack you get with an off-hand weapon, you get a second attack with it, albeit at a -5 penalty.",
+        "description": "You are an expert in fighting two-handed.",
+        "special": "A fighter may select Improved Two-Weapon Fighting as one of his fighter bonus feats. A 6th-level ranger who has chosen the two-weapon combat style is treated as having Improved Two-Weapon Fighting, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.",
+        "classes": [
+            "Fighter",
+            "Ranger"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "improved-unarmed-strike",
+        "name": "Improved Unarmed Strike",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You are considered to be armed even when unarmed — that is, you do not provoke attacks of opportunity from armed opponents when you attack them while unarmed. However, you still get an attack of opportunity against any opponent who makes an unarmed attack on you. In addition, your unarmed strikes can deal lethal or nonlethal damage, at your option.",
+        "description": "You are skilled at fighting while unarmed.",
+        "special": "A monk automatically gains Improved Unarmed Strike as a bonus feat at 1st level. A fighter may select Improved Unarmed Strike as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter",
+            "Monk"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "investigator",
+        "name": "Investigator",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Gather Information checks and Search checks.",
+        "description": "You have a knack for finding information.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "iron-will",
+        "name": "Iron Will",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Will saving throws.",
+        "description": "You have a stronger will than normal.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "leadership",
+        "name": "Leadership",
+        "type": "general",
+        "prerequisites": "Character level 6th",
+        "structuredPrereqs": {
+            "characterLevel": 6
+        },
+        "benefit": "You can attract loyal companions and devoted followers, subordinates who assist you. Your DM has information on what sort of cohort and how many followers you can recruit.",
+        "description": "You are the sort of person others want to follow, and you have done some work attempting to recruit cohorts and followers.",
+        "special": "Check with your DM before selecting this feat, and work with your DM to determine an appropriate cohort and followers for your character.",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "lightning-reflexes",
+        "name": "Lightning Reflexes",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Reflex saving throws.",
+        "description": "You have faster than normal reflexes.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "magical-aptitude",
+        "name": "Magical Aptitude",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Spellcraft checks and Use Magic Device checks.",
+        "description": "You have a knack for magical endeavors.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "manyshot",
+        "name": "Manyshot",
+        "type": "general",
+        "prerequisites": "Dex 17, Point Blank Shot, Rapid Shot, BAB +6",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "dexterity",
+                    "minimum": 17
+                }
+            ],
+            "feats": [
+                "Point Blank Shot",
+                "Rapid Shot"
+            ],
+            "bab": 6
+        },
+        "benefit": "As a standard action, you may fire two arrows at a single opponent within 30 feet. Both arrows use the same attack roll (with a -4 penalty) to determine success and deal damage normally. For every five points of base attack bonus you have above +6, you may add one additional arrow to this attack, to a maximum of four arrows at a base attack bonus of +16. However, each arrow after the second adds a cumulative -2 penalty on the attack roll.",
+        "description": "You can fire multiple arrows simultaneously against a nearby target.",
+        "special": "Regardless of the number of arrows you fire, you apply precision-based damage only once. If you score a critical hit, only the first arrow fired deals critical damage. A fighter may select Manyshot as one of his fighter bonus feats. A 6th-level ranger who has chosen the archery combat style is treated as having Manyshot.",
+        "classes": [
+            "Fighter",
+            "Ranger"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "martial-weapon-proficiency",
+        "name": "Martial Weapon Proficiency",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You make attack rolls with the selected martial weapon normally.",
+        "description": "Choose a type of martial weapon. You understand how to use that type of martial weapon in combat.",
+        "special": "Barbarians, fighters, paladins, and rangers are proficient with all martial weapons. They need not select this feat. You can gain Martial Weapon Proficiency multiple times. Each time you take the feat, it applies to a new type of weapon.",
+        "classes": [
+            "Fighter",
+            "Ranger"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "maximize-spell",
+        "name": "Maximize Spell",
+        "type": "metamagic",
+        "prerequisites": "None",
+        "benefit": "All variable, numeric effects of a spell modified by this feat are maximized. A maximized spell deals maximum damage, cures the maximum number of hit points, affects the maximum number of targets, etc., as appropriate. Saving throws and opposed rolls are not affected, nor are spells without random variables. A maximized spell uses up a spell slot three levels higher than the spell's actual level.",
+        "description": "You can cast spells to maximum effect.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "mobility",
+        "name": "Mobility",
+        "type": "general",
+        "prerequisites": "Dex 13, Dodge",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "dexterity",
+                    "minimum": 13
+                }
+            ],
+            "feats": [
+                "Dodge"
+            ]
+        },
+        "benefit": "You get a +4 dodge bonus to Armor Class against attacks of opportunity caused when you move out of or within a threatened area. A condition that makes you lose your Dexterity bonus to Armor Class also makes you lose dodge bonuses. Dodge bonuses stack with each other, unlike most types of bonuses.",
+        "description": "You are skilled at dodging past opponents and avoiding blows.",
+        "special": "A fighter may select Mobility as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "mounted-archery",
+        "name": "Mounted Archery",
+        "type": "general",
+        "prerequisites": "Ride 1 rank, Mounted Combat",
+        "structuredPrereqs": {
+            "skillRanks": [
+                {
+                    "skill": "Ride",
+                    "ranks": 1
+                }
+            ],
+            "feats": [
+                "Mounted Combat"
+            ]
+        },
+        "benefit": "The penalty you take when using a ranged weapon while mounted is halved: -2 instead of -4 if your mount is taking a double move, and -4 instead of -8 if your mount is running.",
+        "description": "You are skilled at using ranged weapons while mounted.",
+        "special": "A fighter may select Mounted Archery as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "mounted-combat",
+        "name": "Mounted Combat",
+        "type": "general",
+        "prerequisites": "Ride 1 rank",
+        "structuredPrereqs": {
+            "skillRanks": [
+                {
+                    "skill": "Ride",
+                    "ranks": 1
+                }
+            ]
+        },
+        "benefit": "Once per round when your mount is hit in combat, you may attempt a Ride check (as a reaction) to negate the hit. The hit is negated if your Ride check result is greater than the opponent's attack roll.",
+        "description": "You are skilled in mounted combat.",
+        "special": "A fighter may select Mounted Combat as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "natural-spell",
+        "name": "Natural Spell",
+        "type": "general",
+        "prerequisites": "Wis 13, wild shape ability",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "wisdom",
+                    "minimum": 13
+                }
+            ],
+            "special": [
+                "wild shape ability"
+            ]
+        },
+        "benefit": "You can complete the verbal and somatic components of spells while in a wild shape. You can also use any material components or focuses you possess, even if such items are melded within your current form. This feat does not permit the use of magic items while you are in a form that could not ordinarily use them, and you do not gain the ability to speak while in a wild shape.",
+        "description": "You can cast spells while in a wild shape.",
+        "special": "",
+        "classes": [
+            "Druid"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "negotiator",
+        "name": "Negotiator",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Diplomacy checks and Sense Motive checks.",
+        "description": "You are good at gauging and swaying attitudes.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "nimble-fingers",
+        "name": "Nimble Fingers",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Disable Device checks and Open Lock checks.",
+        "description": "You are adept at manipulating small, delicate objects.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "persuasive",
+        "name": "Persuasive",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Bluff checks and Intimidate checks.",
+        "description": "You have a way with words and body language.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "point-blank-shot",
+        "name": "Point Blank Shot",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +1 bonus on attack and damage rolls with ranged weapons at ranges of up to 30 feet.",
+        "description": "You are skilled at making well-placed shots with ranged weapons at close range.",
+        "special": "A fighter may select Point Blank Shot as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "power-attack",
+        "name": "Power Attack",
+        "type": "general",
+        "prerequisites": "Str 13",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "strength",
+                    "minimum": 13
+                }
+            ]
+        },
+        "benefit": "On your action, before making attack rolls for a round, you may choose to subtract a number from all melee attack rolls and add the same number to all melee damage rolls. This number may not exceed your base attack bonus. The penalty on attacks and bonus on damage apply until your next turn.",
+        "description": "You can make exceptionally powerful melee attacks by trading accuracy for damage.",
+        "special": "If you attack with a two-handed weapon, or with a one-handed weapon wielded in two hands, instead add twice the number subtracted from your attack rolls. A fighter may select Power Attack as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "precise-shot",
+        "name": "Precise Shot",
+        "type": "general",
+        "prerequisites": "Point Blank Shot",
+        "structuredPrereqs": {
+            "feats": [
+                "Point Blank Shot"
+            ]
+        },
+        "benefit": "You can shoot or throw ranged weapons at an opponent engaged in melee without taking the standard -4 penalty on your attack roll.",
+        "description": "You are skilled at timing and aiming ranged attacks.",
+        "special": "A fighter may select Precise Shot as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "psionic-body",
+        "name": "Psionic Body",
+        "type": "psionic",
+        "prerequisites": "Any psionic feat",
+        "structuredPrereqs": {
+            "special": [
+                "Any psionic feat"
+            ]
+        },
+        "benefit": "When you take this feat, you gain 2 hit points for each psionic feat you have (including this one). Whenever you take a new psionic feat, you gain 2 more hit points.",
+        "description": "Your psionic energies strengthen your body.",
+        "special": "",
+        "classes": [
+            "Psionicist"
+        ],
+        "darkSunNotes": "On Athas, where all beings have a wild talent, this feat is more accessible than in other settings."
+    },
+    {
+        "id": "psionic-meditation",
+        "name": "Psionic Meditation",
+        "type": "psionic",
+        "prerequisites": "Wis 13, Concentration 7 ranks",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "wisdom",
+                    "minimum": 13
+                }
+            ],
+            "skillRanks": [
+                {
+                    "skill": "Concentration",
+                    "ranks": 7
+                }
+            ]
+        },
+        "benefit": "You can become psionically focused as a move action instead of a full-round action.",
+        "description": "You can focus your mind faster than normal.",
+        "special": "",
+        "classes": [
+            "Psionicist"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "quick-draw",
+        "name": "Quick Draw",
+        "type": "general",
+        "prerequisites": "BAB +1",
+        "structuredPrereqs": {
+            "bab": 1
+        },
+        "benefit": "You can draw a weapon as a free action instead of as a move action. You can draw a hidden weapon as a move action. A character who has selected this feat may throw weapons at his full normal rate of attacks.",
+        "description": "You can draw weapons with startling speed.",
+        "special": "A fighter may select Quick Draw as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "quicken-spell",
+        "name": "Quicken Spell",
+        "type": "metamagic",
+        "prerequisites": "None",
+        "benefit": "Casting a quickened spell is a free action. You can perform another action, even casting another spell, in the same round as you cast a quickened spell. You may cast only one quickened spell per round. A spell whose casting time is more than 1 full-round action cannot be quickened. A quickened spell uses up a spell slot four levels higher than the spell's actual level. Casting a quickened spell doesn't provoke an attack of opportunity.",
+        "description": "You can cast a spell with a moment's thought.",
+        "special": "This feat can't be applied to any spell cast spontaneously (including sorcerer spells, bard spells, and cleric or druid spells cast spontaneously), since applying a metamagic feat to a spontaneously cast spell automatically increases the casting time to a full-round action.",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "rapid-reload",
+        "name": "Rapid Reload",
+        "type": "general",
+        "prerequisites": "Weapon Proficiency (crossbow type chosen)",
+        "structuredPrereqs": {
+            "special": [
+                "Weapon Proficiency (crossbow type chosen)"
+            ]
+        },
+        "benefit": "The time required for you to reload your chosen type of crossbow is reduced to a free action (for a hand or light crossbow) or a move action (for a heavy crossbow). Reloading a crossbow still provokes an attack of opportunity. If you have selected this feat for hand crossbow or light crossbow, you may fire that weapon as many times in a full attack action as you could attack if you were using a bow.",
+        "description": "Choose a type of crossbow. You can reload a crossbow of that type more quickly than normal.",
+        "special": "You can gain Rapid Reload multiple times. Each time you take the feat, it applies to a new type of crossbow. A fighter may select Rapid Reload as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "rapid-shot",
+        "name": "Rapid Shot",
+        "type": "general",
+        "prerequisites": "Dex 13, Point Blank Shot",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "dexterity",
+                    "minimum": 13
+                }
+            ],
+            "feats": [
+                "Point Blank Shot"
+            ]
+        },
+        "benefit": "You can get one extra attack per round with a ranged weapon. The attack is at your highest base attack bonus, but each attack you make in that round (the extra one and the normal ones) takes a -2 penalty. You must use the full attack action to use this feat.",
+        "description": "You can use ranged weapons with exceptional speed.",
+        "special": "A fighter may select Rapid Shot as one of his fighter bonus feats. A 2nd-level ranger who has chosen the archery combat style is treated as having Rapid Shot, even if he does not have the prerequisites for it, but only when he is wearing light or no armor.",
+        "classes": [
+            "Fighter",
+            "Ranger"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "ride-by-attack",
+        "name": "Ride-By Attack",
+        "type": "general",
+        "prerequisites": "Ride 1 rank, Mounted Combat",
+        "structuredPrereqs": {
+            "skillRanks": [
+                {
+                    "skill": "Ride",
+                    "ranks": 1
+                }
+            ],
+            "feats": [
+                "Mounted Combat"
+            ]
+        },
+        "benefit": "When you are mounted and use the charge action, you may move and attack as if with a standard charge and then move again (continuing the straight line of the charge). Your total movement for the round can't exceed double your mounted speed. You and your mount do not provoke an attack of opportunity from the opponent that you attack.",
+        "description": "You are skilled at making fast attacks from your mount.",
+        "special": "A fighter may select Ride-By Attack as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "run",
+        "name": "Run",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "When running, you move five times your normal speed (if wearing medium, light, or no armor and carrying no more than a medium load) or four times normal speed (if wearing heavy armor or carrying a heavy load). If you make a jump after a running start, you gain a +4 bonus on your Jump check. While running, you retain your Dexterity bonus to AC.",
+        "description": "You are fleet of foot.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "scribe-scroll",
+        "name": "Scribe Scroll",
+        "type": "item creation",
+        "prerequisites": "Caster level 1st",
+        "structuredPrereqs": {
+            "casterLevel": 1
+        },
+        "benefit": "You can create a scroll of any spell that you know. Scribing a scroll takes one day for each 1,000 gp in its base price. The base price of a scroll is its spell level x its caster level x 25 gp. To scribe a scroll, you must spend 1/25 of this base price in XP and use up raw materials costing one-half of this base price.",
+        "description": "You can create scrolls, from which you or another spellcaster can cast the scribed spells.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "self-sufficient",
+        "name": "Self-Sufficient",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Heal checks and Survival checks.",
+        "description": "You can take care of yourself in harsh environments and situations.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "shield-proficiency",
+        "name": "Shield Proficiency",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You can use a shield and take only the standard penalties.",
+        "description": "You are proficient with bucklers, small shields, and large shields.",
+        "special": "Barbarians, bards, clerics, druids, fighters, paladins, and rangers automatically have Shield Proficiency as a bonus feat.",
+        "classes": [
+            "Fighter",
+            "Cleric",
+            "Druid",
+            "Ranger",
+            "Bard"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "shot-on-the-run",
+        "name": "Shot on the Run",
+        "type": "general",
+        "prerequisites": "Dex 13, Dodge, Mobility, Point Blank Shot, BAB +4",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "dexterity",
+                    "minimum": 13
+                }
+            ],
+            "feats": [
+                "Dodge",
+                "Mobility",
+                "Point Blank Shot"
+            ],
+            "bab": 4
+        },
+        "benefit": "When using the attack action with a ranged weapon, you can move both before and after the attack, provided that your total distance moved is not greater than your speed.",
+        "description": "You are highly trained in skirmish ranged weapon tactics.",
+        "special": "A fighter may select Shot on the Run as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "silent-spell",
+        "name": "Silent Spell",
+        "type": "metamagic",
+        "prerequisites": "None",
+        "benefit": "A silent spell can be cast with no verbal components. Spells without verbal components are not affected. A silent spell uses up a spell slot one level higher than the spell's actual level.",
+        "description": "You can cast spells silently.",
+        "special": "Bard spells cannot be enhanced by this metamagic feat.",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "simple-weapon-proficiency",
+        "name": "Simple Weapon Proficiency",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You make attack rolls with simple weapons normally.",
+        "description": "You understand how to use all types of simple weapons in combat.",
+        "special": "All characters except for druids, monks, rogues, and wizards are automatically proficient with all simple weapons.",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "skill-focus",
+        "name": "Skill Focus",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +3 bonus on all checks involving the chosen skill.",
+        "description": "Choose a skill. You have a special knack with that skill.",
+        "special": "You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new skill.",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "snatch-arrows",
+        "name": "Snatch Arrows",
+        "type": "general",
+        "prerequisites": "Dex 15, Deflect Arrows, Improved Unarmed Strike",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "dexterity",
+                    "minimum": 15
+                }
+            ],
+            "feats": [
+                "Deflect Arrows",
+                "Improved Unarmed Strike"
+            ]
+        },
+        "benefit": "When using the Deflect Arrows feat, you may catch the weapon instead of just deflecting it. Thrown weapons can immediately be thrown back at the original attacker (even though it isn't your turn) or kept for later use. You must have at least one hand free (holding nothing) to use this feat.",
+        "description": "You are adept at grabbing incoming arrows, crossbow bolts, spears, and other projectile or thrown weapons.",
+        "special": "A fighter may select Snatch Arrows as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "spell-focus",
+        "name": "Spell Focus",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "Add +1 to the Difficulty Class for all saving throws against spells from the school of magic you select.",
+        "description": "Choose a school of magic. Your spells of that school are more potent than normal.",
+        "special": "You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new school of magic.",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "spell-mastery",
+        "name": "Spell Mastery",
+        "type": "general",
+        "prerequisites": "Wizard level 1st",
+        "structuredPrereqs": {
+            "classLevels": [
+                {
+                    "className": "Wizard",
+                    "level": 1
+                }
+            ]
+        },
+        "benefit": "Each time you take this feat, choose a number of spells equal to your Intelligence modifier that you already know. From that point on, you can prepare these spells without referring to a spellbook.",
+        "description": "You are so intimately familiar with certain spells that you don't need a spellbook to prepare them anymore.",
+        "special": "You can gain this feat multiple times.",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "spell-penetration",
+        "name": "Spell Penetration",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on caster level checks (1d20 + caster level) made to overcome a creature's spell resistance.",
+        "description": "Your spells are especially potent, breaking through spell resistance more readily than normal.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "spirited-charge",
+        "name": "Spirited Charge",
+        "type": "general",
+        "prerequisites": "Ride 1 rank, Mounted Combat, Ride-By Attack",
+        "structuredPrereqs": {
+            "skillRanks": [
+                {
+                    "skill": "Ride",
+                    "ranks": 1
+                }
+            ],
+            "feats": [
+                "Mounted Combat",
+                "Ride-By Attack"
+            ]
+        },
+        "benefit": "When mounted and using the charge action, you deal double damage with a melee weapon (or triple damage with a lance).",
+        "description": "You are trained at making a devastating mounted charge.",
+        "special": "A fighter may select Spirited Charge as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "spring-attack",
+        "name": "Spring Attack",
+        "type": "general",
+        "prerequisites": "Dex 13, Dodge, Mobility, BAB +4",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "dexterity",
+                    "minimum": 13
+                }
+            ],
+            "feats": [
+                "Dodge",
+                "Mobility"
+            ],
+            "bab": 4
+        },
+        "benefit": "When using the attack action with a melee weapon, you can move both before and after the attack, provided that your total distance moved is not greater than your speed. Moving in this way does not provoke an attack of opportunity from the defender you attack, though it might provoke attacks of opportunity from other creatures, if appropriate. You can't use this feat if you are wearing heavy armor. You must move at least 5 feet both before and after you make your attack in order to utilize the benefits of Spring Attack.",
+        "description": "You are trained in fast melee attacks and fancy footwork.",
+        "special": "A fighter may select Spring Attack as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "stealthy",
+        "name": "Stealthy",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You get a +2 bonus on all Hide checks and Move Silently checks.",
+        "description": "You are particularly good at avoiding notice.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "still-spell",
+        "name": "Still Spell",
+        "type": "metamagic",
+        "prerequisites": "None",
+        "benefit": "A stilled spell can be cast with no somatic components. Spells without somatic components are not affected. A stilled spell uses up a spell slot one level higher than the spell's actual level.",
+        "description": "You can cast spells without gestures.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "stunning-fist",
+        "name": "Stunning Fist",
+        "type": "general",
+        "prerequisites": "Dex 13, Wis 13, Improved Unarmed Strike, BAB +8",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "dexterity",
+                    "minimum": 13
+                },
+                {
+                    "ability": "wisdom",
+                    "minimum": 13
+                }
+            ],
+            "feats": [
+                "Improved Unarmed Strike"
+            ],
+            "bab": 8
+        },
+        "benefit": "You must declare that you are using this feat before you make your attack roll (thus, a failed attack roll ruins the attempt). Stunning Fist forces a foe damaged by your unarmed attack to make a Fortitude saving throw (DC 10 + 1/2 your character level + your Wis modifier), in addition to dealing damage normally. A defender who fails this saving throw is stunned for 1 round. You may attempt a stunning attack once per day for every four levels you have attained, and no more than once per round. Constructs, oozes, plants, undead, incorporeal creatures, and creatures immune to critical hits cannot be stunned.",
+        "description": "You know how to strike opponents in vulnerable areas.",
+        "special": "A monk may select Stunning Fist as a bonus feat at 1st level, even if she does not meet the prerequisites. A monk who selects this feat may attempt a stunning attack a number of times per day equal to her monk level, plus one more time per day for every four levels she has in classes other than monk. A fighter may select Stunning Fist as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter",
+            "Monk"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "toughness",
+        "name": "Toughness",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "You gain +3 hit points.",
+        "description": "You are tougher than normal.",
+        "special": "A character may gain this feat multiple times. Its effects stack.",
+        "classes": [],
+        "darkSunNotes": "Highly recommended for survival in the wastelands of Athas."
+    },
+    {
+        "id": "tower-shield-proficiency",
+        "name": "Tower Shield Proficiency",
+        "type": "general",
+        "prerequisites": "Shield Proficiency",
+        "structuredPrereqs": {
+            "feats": [
+                "Shield Proficiency"
+            ]
+        },
+        "benefit": "You can use a tower shield and suffer only the standard penalties.",
+        "description": "You are proficient with tower shields.",
+        "special": "Fighters automatically have Tower Shield Proficiency as a bonus feat.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "track",
+        "name": "Track",
+        "type": "general",
+        "prerequisites": "None",
+        "benefit": "To find tracks or to follow them for 1 mile requires a successful Survival check. You must make another Survival check every time the tracks become difficult to follow. You move at half your normal speed (or at your normal speed with a -5 penalty on the check, or at up to twice your normal speed with a -20 penalty on the check). The DC depends on the surface and the prevailing conditions.",
+        "description": "You can follow the trails of creatures and characters across most types of terrain.",
+        "special": "A ranger automatically has Track as a bonus feat. He need not select it.",
+        "classes": [
+            "Ranger"
+        ],
+        "darkSunNotes": "Essential for desert survival. Tracking across sand and silt requires specialized knowledge of Athasian winds and terrain."
+    },
+    {
+        "id": "trample",
+        "name": "Trample",
+        "type": "general",
+        "prerequisites": "Ride 1 rank, Mounted Combat",
+        "structuredPrereqs": {
+            "skillRanks": [
+                {
+                    "skill": "Ride",
+                    "ranks": 1
+                }
+            ],
+            "feats": [
+                "Mounted Combat"
+            ]
+        },
+        "benefit": "When you attempt to overrun an opponent while mounted, your target may not choose to avoid you. Your mount may make one hoof attack against any target you knock down, gaining the standard +4 bonus on attack rolls against prone targets.",
+        "description": "You are trained in using your mount to knock down opponents.",
+        "special": "A fighter may select Trample as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "two-weapon-defense",
+        "name": "Two-Weapon Defense",
+        "type": "general",
+        "prerequisites": "Dex 15, Two-Weapon Fighting",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "dexterity",
+                    "minimum": 15
+                }
+            ],
+            "feats": [
+                "Two-Weapon Fighting"
+            ]
+        },
+        "benefit": "When wielding a double weapon or two weapons (not including natural weapons or unarmed strikes), you gain a +1 shield bonus to your AC. When you are fighting defensively or using the total defense action, this shield bonus increases to +2.",
+        "description": "Your two-weapon fighting style bolsters your defense as well as your offense.",
+        "special": "A fighter may select Two-Weapon Defense as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "two-weapon-fighting",
+        "name": "Two-Weapon Fighting",
+        "type": "general",
+        "prerequisites": "Dex 15",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "dexterity",
+                    "minimum": 15
+                }
+            ]
+        },
+        "benefit": "Your penalties on attack rolls for fighting with two weapons are reduced. The penalty for your primary hand lessens by 2 and the one for your off hand lessens by 6.",
+        "description": "You can fight with a weapon in each hand. You can make one extra attack each round with the second weapon.",
+        "special": "A 2nd-level ranger who has chosen the two-weapon combat style is treated as having Two-Weapon Fighting, even if he does not have the prerequisite for it, but only when he is wearing light or no armor. A fighter may select Two-Weapon Fighting as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter",
+            "Ranger"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "wastelander",
+        "name": "Wastelander",
+        "type": "regional",
+        "prerequisites": "Must be from a wilderness region of Athas",
+        "structuredPrereqs": {
+            "special": [
+                "Must be from a wilderness region of Athas"
+            ]
+        },
+        "benefit": "You gain a +2 bonus on Survival checks and a +1 bonus on Fortitude saves against heat and dehydration.",
+        "description": "You have spent much of your life in the wastelands of Athas and have adapted to the harsh conditions.",
+        "special": "This is a regional feat available only in Dark Sun campaigns.",
+        "classes": [],
+        "darkSunNotes": "A common feat among nomadic elves, desert raiders, and hermit druids."
+    },
+    {
+        "id": "weapon-finesse",
+        "name": "Weapon Finesse",
+        "type": "general",
+        "prerequisites": "BAB +1",
+        "structuredPrereqs": {
+            "bab": 1
+        },
+        "benefit": "With a light weapon, rapier, whip, or spiked chain made for a creature of your size category, you may use your Dexterity modifier instead of your Strength modifier on attack rolls. If you carry a shield, its armor check penalty applies to your attack rolls.",
+        "description": "You are especially skilled at using weapons that can benefit as much from Dexterity as from Strength.",
+        "special": "A fighter may select Weapon Finesse as one of his fighter bonus feats. Natural weapons are always considered light weapons.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "weapon-focus",
+        "name": "Weapon Focus",
+        "type": "general",
+        "prerequisites": "Proficiency with selected weapon, BAB +1",
+        "structuredPrereqs": {
+            "bab": 1,
+            "special": [
+                "Proficiency with selected weapon"
+            ]
+        },
+        "benefit": "You gain a +1 bonus on all attack rolls you make using the selected weapon.",
+        "description": "Choose one type of weapon. You are especially skilled with that weapon.",
+        "special": "You can gain this feat multiple times. Its effects do not stack. Each time, it applies to a new weapon. A fighter may select Weapon Focus as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "weapon-specialization",
+        "name": "Weapon Specialization",
+        "type": "general",
+        "prerequisites": "Proficiency with selected weapon, Weapon Focus with selected weapon, fighter level 4th",
+        "structuredPrereqs": {
+            "classLevels": [
+                {
+                    "className": "Fighter",
+                    "level": 4
+                }
+            ],
+            "special": [
+                "Proficiency with selected weapon",
+                "Weapon Focus with selected weapon"
+            ]
+        },
+        "benefit": "You gain a +2 bonus on all damage rolls you make using the selected weapon.",
+        "description": "Choose one type of weapon for which you have already selected the Weapon Focus feat. You deal extra damage when using this weapon.",
+        "special": "You can gain this feat multiple times. Its effects do not stack. Each time you take the feat, it applies to a new type of weapon. A fighter may select Weapon Specialization as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "whirlwind-attack",
+        "name": "Whirlwind Attack",
+        "type": "general",
+        "prerequisites": "Dex 13, Int 13, Combat Expertise, Dodge, Mobility, Spring Attack, BAB +4",
+        "structuredPrereqs": {
+            "abilityScores": [
+                {
+                    "ability": "dexterity",
+                    "minimum": 13
+                },
+                {
+                    "ability": "intelligence",
+                    "minimum": 13
+                }
+            ],
+            "feats": [
+                "Combat Expertise",
+                "Dodge",
+                "Mobility",
+                "Spring Attack"
+            ],
+            "bab": 4
+        },
+        "benefit": "When you use the full attack action, you can give up your regular attacks and instead make one melee attack at your full base attack bonus against each opponent within reach. When you use the Whirlwind Attack feat, you also forfeit any bonus or extra attacks granted by other feats, spells, or abilities.",
+        "description": "You can strike nearby opponents in an amazing, spinning attack.",
+        "special": "A fighter may select Whirlwind Attack as one of his fighter bonus feats.",
+        "classes": [
+            "Fighter"
+        ],
+        "darkSunNotes": ""
+    },
+    {
+        "id": "widen-spell",
+        "name": "Widen Spell",
+        "type": "metamagic",
+        "prerequisites": "None",
+        "benefit": "You can alter a burst, emanation, line, or spread shaped spell to increase its area. Any numeric measurements of the spell's area increase by 100%. A widened spell uses up a spell slot three levels higher than the spell's actual level. Spells that do not have an area of one of these four sorts are not affected by this feat.",
+        "description": "You can increase the area of your spells.",
+        "special": "",
+        "classes": [],
+        "darkSunNotes": ""
+    }
+]

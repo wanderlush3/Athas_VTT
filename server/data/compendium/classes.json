@@ -1,0 +1,2933 @@
+[
+  {
+    "id": "fighter",
+    "name": "Fighter",
+    "hitDie": 10,
+    "babProgression": "full",
+    "goodSaves": [
+      "fort"
+    ],
+    "skillPointsPerLevel": 2,
+    "classSkills": [
+      "Climb",
+      "Craft",
+      "Handle Animal",
+      "Intimidate",
+      "Jump",
+      "Ride",
+      "Swim"
+    ],
+    "darkSunNotes": "Fighters are the backbone of every city-state's army and every caravan's guard detail. On Athas, even the simplest farmer must know how to fight — those who bear the title have mastered the art of survival through steel.",
+    "classFeatures": [],
+    "bonusFeatLevels": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "bonusFeatType": "combat",
+    "proficiencies": {
+      "weapons": [
+        "all simple",
+        "all martial"
+      ],
+      "armor": [
+        "light",
+        "medium",
+        "heavy"
+      ],
+      "shields": [
+        "buckler",
+        "light shield",
+        "heavy shield",
+        "tower shield"
+      ]
+    }
+  },
+  {
+    "id": "gladiator",
+    "name": "Gladiator",
+    "hitDie": 12,
+    "babProgression": "full",
+    "goodSaves": [
+      "fort"
+    ],
+    "skillPointsPerLevel": 4,
+    "classSkills": [
+      "Balance",
+      "Bluff",
+      "Climb",
+      "Craft",
+      "Intimidate",
+      "Jump",
+      "Perform",
+      "Sense Motive",
+      "Spot",
+      "Tumble"
+    ],
+    "darkSunNotes": "Gladiators are the celebrated warriors of Athas's arenas, trained to fight with exotic weapons and flashy combat techniques. Whether slave or free, they live and die by the roar of the crowd.",
+    "classFeatures": [
+      {
+        "name": "Gladiatorial Performance",
+        "level": 1,
+        "description": "A gladiator can make a Perform (gladiatorial performance) check to produce effects similar to bardic music. At 1st level, the gladiator gains Martial Display: as a standard action, make a Perform check to demoralize all enemies within 30 feet. Each enemy must succeed on a Will save (DC equal to the Perform check result) or become shaken for 1 round per gladiator level. This is a mind-affecting fear effect."
+      },
+      {
+        "name": "Exotic Weapon Proficiency",
+        "level": 1,
+        "description": "At 1st level, the gladiator gains proficiency with one exotic weapon of her choice. She gains proficiency with an additional exotic weapon at the indicated levels.",
+        "scaling": [
+          {
+            "level": 1,
+            "value": "1 exotic weapon"
+          },
+          {
+            "level": 5,
+            "value": "2 exotic weapons"
+          },
+          {
+            "level": 7,
+            "value": "3 exotic weapons"
+          },
+          {
+            "level": 10,
+            "value": "4 exotic weapons"
+          },
+          {
+            "level": 12,
+            "value": "5 exotic weapons"
+          },
+          {
+            "level": 15,
+            "value": "6 exotic weapons"
+          },
+          {
+            "level": 17,
+            "value": "7 exotic weapons"
+          },
+          {
+            "level": 20,
+            "value": "8 exotic weapons"
+          }
+        ]
+      },
+      {
+        "name": "Unarmed Strike",
+        "level": 2,
+        "description": "At 2nd level, a gladiator gains Improved Unarmed Strike as a bonus feat. Her unarmed strikes deal lethal or nonlethal damage (her choice) and do not provoke attacks of opportunity. Her unarmed damage increases with level as shown.",
+        "scaling": [
+          {
+            "level": 2,
+            "value": "1d4"
+          },
+          {
+            "level": 5,
+            "value": "1d6"
+          },
+          {
+            "level": 10,
+            "value": "1d8"
+          },
+          {
+            "level": 15,
+            "value": "1d10"
+          },
+          {
+            "level": 20,
+            "value": "2d6"
+          }
+        ]
+      },
+      {
+        "name": "Arena Guile",
+        "level": 2,
+        "description": "Starting at 2nd level, the gladiator adds one-half her class level (minimum +1) as a competence bonus on Bluff checks made during combat. This represents her training in misdirection and feints honed in the arena."
+      },
+      {
+        "name": "Improved Feint",
+        "level": 3,
+        "description": "At 3rd level, a gladiator can make a Bluff check to feint in combat as a move action instead of a standard action. She need not have the normal prerequisites for this feat."
+      },
+      {
+        "name": "Uncanny Dodge",
+        "level": 4,
+        "description": "Starting at 4th level, a gladiator retains her Dexterity bonus to AC (if any) even when caught flat-footed or struck by an invisible attacker. She still loses her Dexterity bonus to AC if immobilized. A gladiator with this ability can still lose her Dexterity bonus to AC if an opponent successfully uses the feint action against her."
+      },
+      {
+        "name": "Armor Optimization",
+        "level": 5,
+        "description": "Through intense training, a gladiator learns to make the most of whatever armor she wears. At 5th level she gains a +1 bonus to AC when wearing armor. This bonus increases at the indicated levels.",
+        "scaling": [
+          {
+            "level": 5,
+            "value": "+1 AC"
+          },
+          {
+            "level": 10,
+            "value": "+2 AC"
+          },
+          {
+            "level": 15,
+            "value": "+3 AC"
+          },
+          {
+            "level": 20,
+            "value": "+4 AC"
+          }
+        ]
+      },
+      {
+        "name": "No Mercy",
+        "level": 6,
+        "description": "Beginning at 6th level, a gladiator can deal lethal damage with nonlethal weapons without taking the usual -4 penalty on attack rolls. She can also deal nonlethal damage with lethal weapons without the -4 penalty."
+      },
+      {
+        "name": "Improved Uncanny Dodge",
+        "level": 8,
+        "description": "At 8th level, a gladiator can no longer be flanked. This defense denies rogues the ability to sneak attack the gladiator by flanking her, unless the attacker has at least four more rogue levels than the target has gladiator levels. If a character already has uncanny dodge from another class, the levels from the classes that grant uncanny dodge stack to determine the minimum rogue level required to flank the character."
+      },
+      {
+        "name": "Team Strike",
+        "level": 9,
+        "description": "At 9th level, whenever a gladiator is flanking an enemy, she grants an additional +2 flanking bonus on attack rolls to all allies who are also flanking that enemy. This bonus stacks with the normal +2 flanking bonus, for a total of +4 for the gladiator's flanking allies."
+      },
+      {
+        "name": "Insightful Strike",
+        "level": 11,
+        "description": "Beginning at 11th level, a gladiator adds her Intelligence modifier (if positive) as a bonus on damage rolls with melee weapons. This represents her ability to read an opponent's defenses and strike at vulnerable points. This bonus damage applies only to melee attacks and is not multiplied on a critical hit."
+      },
+      {
+        "name": "Parry",
+        "level": 13,
+        "description": "At 13th level, once per round as an immediate action, a gladiator can attempt to deflect a melee attack directed at her. She makes an attack roll using her highest base attack bonus; if her result equals or exceeds the attacker's attack roll, the attack is deflected and deals no damage. The gladiator must be aware of the attack and not flat-footed to use this ability."
+      },
+      {
+        "name": "Superior Feint",
+        "level": 14,
+        "description": "At 14th level, a gladiator can feint in combat as a free action instead of a move action (as granted by Improved Feint). She may use this ability only once per round."
+      },
+      {
+        "name": "Improved Parry",
+        "level": 16,
+        "description": "At 16th level, the gladiator's Parry ability improves. She can now attempt to deflect up to two melee attacks per round instead of one. Each parry attempt still costs an immediate action equivalent, but both may be used in the same round."
+      },
+      {
+        "name": "Dragon's Fury",
+        "level": 19,
+        "description": "At 19th level, once per day, a gladiator can enter a devastating fighting stance called Dragon's Fury as a free action. This stance lasts for a number of rounds equal to 5 + her Constitution modifier. During Dragon's Fury, the gladiator gains a +4 bonus to Strength and Constitution, a +2 morale bonus on all attack rolls, and can make one additional attack per round at her highest base attack bonus. When Dragon's Fury ends, the gladiator is fatigued for the duration of the encounter."
+      }
+    ],
+    "proficiencies": {
+      "weapons": [
+        "all simple",
+        "all martial"
+      ],
+      "armor": [
+        "light",
+        "medium"
+      ],
+      "shields": [
+        "buckler",
+        "light shield",
+        "heavy shield"
+      ]
+    }
+  },
+  {
+    "id": "ranger",
+    "name": "Ranger",
+    "hitDie": 8,
+    "babProgression": "full",
+    "goodSaves": [
+      "fort",
+      "ref"
+    ],
+    "skillPointsPerLevel": 6,
+    "classSkills": [
+      "Climb",
+      "Concentration",
+      "Craft",
+      "Handle Animal",
+      "Heal",
+      "Hide",
+      "Jump",
+      "Knowledge (Nature)",
+      "Listen",
+      "Move Silently",
+      "Ride",
+      "Search",
+      "Spot",
+      "Survival",
+      "Swim",
+      "Use Rope"
+    ],
+    "darkSunNotes": "Rangers are the peerless scouts and trackers of the Athasian wastes, navigating deadly terrain that would kill lesser travelers. They form deep bonds with the harsh land and its dangerous creatures.",
+    "classFeatures": [
+      {
+        "name": "1st Favored Enemy",
+        "level": 1,
+        "description": "At 1st level, a ranger selects a type of creature from the favored enemy list (aberration, animal, construct, dragon, elemental, fey, giant, humanoid [with subtype], magical beast, monstrous humanoid, ooze, outsider [with subtype], plant, undead, or vermin). The ranger gains a +2 bonus on Bluff, Listen, Sense Motive, Spot, and Survival checks when using these skills against creatures of this type. Likewise, he gets a +2 bonus on weapon damage rolls against such creatures. At each subsequent favored enemy level, the ranger chooses a new favored enemy type and increases one existing favored enemy bonus by +2.",
+        "scaling": [
+          {
+            "level": 1,
+            "value": "1 enemy at +2"
+          },
+          {
+            "level": 5,
+            "value": "2 enemies; one at +4, one at +2"
+          },
+          {
+            "level": 10,
+            "value": "3 enemies; one at +6, one at +4, one at +2"
+          },
+          {
+            "level": 15,
+            "value": "4 enemies; one at +8, one at +6, one at +4, one at +2"
+          },
+          {
+            "level": 20,
+            "value": "5 enemies; one at +10, one at +8, one at +6, one at +4, one at +2"
+          }
+        ]
+      },
+      {
+        "name": "Track",
+        "level": 1,
+        "description": "A ranger gains Track as a bonus feat at 1st level. This allows the ranger to find and follow tracks and trails. The ranger makes a Survival check to find or follow tracks, with the DC varying based on the surface and conditions."
+      },
+      {
+        "name": "Wild Empathy",
+        "level": 1,
+        "description": "A ranger can improve the attitude of an animal. This ability functions just like a Diplomacy check made to improve the attitude of a person. The ranger rolls 1d20 + ranger level + Charisma modifier to determine the result. The typical domestic animal has a starting attitude of indifferent, while wild animals are usually unfriendly. This ability can also be used to influence a magical beast with an Intelligence score of 1 or 2, but with a -4 penalty on the check."
+      },
+      {
+        "name": "Combat Style",
+        "level": 2,
+        "description": "At 2nd level, a ranger must select one of two combat styles: Archery or Two-Weapon Combat. If the ranger selects Archery, he is treated as having the Rapid Shot feat, even if he does not have the normal prerequisites. If the ranger selects Two-Weapon Combat, he is treated as having the Two-Weapon Fighting feat, even if he does not have the normal prerequisites. The benefits of the ranger's chosen style apply only when he wears light or no armor. He loses all benefits of his combat style when wearing medium or heavy armor."
+      },
+      {
+        "name": "Endurance",
+        "level": 3,
+        "description": "A ranger gains Endurance as a bonus feat at 3rd level. He gains a +4 bonus on the following checks and saves: Swim checks made to resist nonlethal damage, Constitution checks made to continue running, Constitution checks made to avoid nonlethal damage from a forced march, Constitution checks made to hold breath, Constitution checks made to avoid nonlethal damage from starvation or thirst, Fortitude saves made to avoid nonlethal damage from hot or cold environments, and Fortitude saves made to resist damage from suffocation. Also, the ranger may sleep in light or medium armor without becoming fatigued."
+      },
+      {
+        "name": "Animal Companion",
+        "level": 4,
+        "description": "At 4th level, a ranger gains an animal companion selected from the following list: badger, camel, dire rat, dog, riding dog, eagle, hawk, horse (light or heavy), owl, pony, snake (Small or Medium viper), or wolf. This animal is a loyal companion that accompanies the ranger on his adventures. The ranger's effective druid level for determining the companion's abilities is equal to his ranger level minus 3. A ranger may select from alternative animal companions at higher effective druid levels."
+      },
+      {
+        "name": "Improved Combat Style",
+        "level": 6,
+        "description": "At 6th level, a ranger's combat style improves. If he selected Archery at 2nd level, he is treated as having the Manyshot feat, even if he does not have the normal prerequisites. If the ranger selected Two-Weapon Combat, he is treated as having the Improved Two-Weapon Fighting feat, even if he does not have the normal prerequisites. The benefits apply only when wearing light or no armor."
+      },
+      {
+        "name": "Woodland Stride",
+        "level": 7,
+        "description": "Starting at 7th level, a ranger may move through any sort of undergrowth (such as natural thorns, briars, overgrown areas, and similar terrain) at his normal speed and without taking damage or suffering any other impairment. However, thorns, briars, and overgrown areas that have been magically manipulated to impede motion still affect the ranger."
+      },
+      {
+        "name": "Swift Tracker",
+        "level": 8,
+        "description": "Beginning at 8th level, a ranger can move at his normal speed while following tracks without taking the normal -5 penalty. He takes only a -10 penalty (instead of the normal -20) when moving at up to twice normal speed while tracking."
+      },
+      {
+        "name": "Evasion",
+        "level": 9,
+        "description": "At 9th level, a ranger can avoid even magical and unusual attacks with great agility. If he makes a successful Reflex saving throw against an attack that normally deals half damage on a successful save, he instead takes no damage. Evasion can be used only if the ranger is wearing light armor or no armor. A helpless ranger does not gain the benefit of evasion."
+      },
+      {
+        "name": "Combat Style Mastery",
+        "level": 11,
+        "description": "At 11th level, a ranger's combat style mastery reaches its peak. If he selected Archery, he is treated as having the Improved Precise Shot feat, even if he does not have the normal prerequisites. If the ranger selected Two-Weapon Combat, he is treated as having the Greater Two-Weapon Fighting feat, even if he does not have the normal prerequisites. The benefits apply only when wearing light or no armor."
+      },
+      {
+        "name": "Camouflage",
+        "level": 13,
+        "description": "A ranger of 13th level or higher can use the Hide skill in any sort of natural terrain, even if the terrain doesn't grant cover or concealment."
+      },
+      {
+        "name": "Hide in Plain Sight",
+        "level": 17,
+        "description": "While in any sort of natural terrain, a ranger of 17th level or higher can use the Hide skill even while being observed. The ranger must be within 10 feet of some sort of natural shadow to use this ability. The ranger cannot hide in his own shadow."
+      }
+    ],
+    "spellProgression": {
+      "spellsPerDay": [
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          0,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          0,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          1,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          1,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          1,
+          0,
+          null,
+          null
+        ],
+        [
+          null,
+          1,
+          0,
+          null,
+          null
+        ],
+        [
+          null,
+          1,
+          1,
+          null,
+          null
+        ],
+        [
+          null,
+          1,
+          1,
+          0,
+          null
+        ],
+        [
+          null,
+          1,
+          1,
+          1,
+          null
+        ],
+        [
+          null,
+          1,
+          1,
+          1,
+          null
+        ],
+        [
+          null,
+          2,
+          1,
+          1,
+          0
+        ],
+        [
+          null,
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          null,
+          2,
+          2,
+          1,
+          1
+        ],
+        [
+          null,
+          2,
+          2,
+          1,
+          1
+        ],
+        [
+          null,
+          2,
+          2,
+          2,
+          1
+        ],
+        [
+          null,
+          3,
+          2,
+          2,
+          1
+        ],
+        [
+          null,
+          3,
+          2,
+          2,
+          2
+        ]
+      ],
+      "castingAbility": "wisdom",
+      "castingType": "prepared",
+      "maxSpellLevel": 4
+    },
+    "proficiencies": {
+      "weapons": [
+        "all simple",
+        "all martial"
+      ],
+      "armor": [
+        "light"
+      ],
+      "shields": [
+        "buckler",
+        "light shield",
+        "heavy shield"
+      ]
+    }
+  },
+  {
+    "id": "rogue",
+    "name": "Rogue",
+    "hitDie": 6,
+    "babProgression": "three_quarter",
+    "goodSaves": [
+      "ref"
+    ],
+    "skillPointsPerLevel": 8,
+    "classSkills": [
+      "Appraise",
+      "Balance",
+      "Bluff",
+      "Climb",
+      "Craft",
+      "Decipher Script",
+      "Diplomacy",
+      "Disable Device",
+      "Disguise",
+      "Escape Artist",
+      "Forgery",
+      "Gather Information",
+      "Hide",
+      "Intimidate",
+      "Jump",
+      "Listen",
+      "Move Silently",
+      "Open Lock",
+      "Perform",
+      "Profession",
+      "Search",
+      "Sense Motive",
+      "Sleight of Hand",
+      "Spot",
+      "Swim",
+      "Tumble",
+      "Use Magic Device",
+      "Use Rope"
+    ],
+    "darkSunNotes": "Rogues operate in the shadows of Athas's city-states, running the gamut from noble house spies to street-level cutpurses. In a world without locks worth picking, an Athasian rogue's greatest tools are deception and a poisoned blade.",
+    "classFeatures": [
+      {
+        "name": "Sneak Attack",
+        "level": 1,
+        "description": "If a rogue can catch an opponent when it is unable to defend itself effectively from her attack, she can strike a vital spot for extra damage. The rogue's attack deals extra damage any time her target would be denied a Dexterity bonus to AC (whether the target actually has a Dexterity bonus or not), or when the rogue flanks her target. Should the rogue score a critical hit with a sneak attack, this extra damage is not multiplied. Ranged attacks can count as sneak attacks only if the target is within 30 feet. With a sap or an unarmed strike, a rogue can make a sneak attack that deals nonlethal damage instead of lethal damage. She cannot use a weapon that deals lethal damage to deal nonlethal damage in a sneak attack, not even with the usual –4 penalty. A rogue cannot sneak attack while striking a creature with concealment or striking the limbs of a creature whose vitals are beyond reach. Creatures immune to critical hits are immune to sneak attacks.",
+        "scaling": [
+          {
+            "level": 1,
+            "value": "+1d6"
+          },
+          {
+            "level": 3,
+            "value": "+2d6"
+          },
+          {
+            "level": 5,
+            "value": "+3d6"
+          },
+          {
+            "level": 7,
+            "value": "+4d6"
+          },
+          {
+            "level": 9,
+            "value": "+5d6"
+          },
+          {
+            "level": 11,
+            "value": "+6d6"
+          },
+          {
+            "level": 13,
+            "value": "+7d6"
+          },
+          {
+            "level": 15,
+            "value": "+8d6"
+          },
+          {
+            "level": 17,
+            "value": "+9d6"
+          },
+          {
+            "level": 19,
+            "value": "+10d6"
+          }
+        ]
+      },
+      {
+        "name": "Trapfinding",
+        "level": 1,
+        "description": "Rogues can use the Search skill to locate traps when the task has a Difficulty Class higher than 20. Finding a nonmagical trap has a DC of at least 20, or higher if it is well hidden. Finding a magic trap has a DC of 25 + the level of the spell used to create it. Rogues can use the Disable Device skill to disarm magic traps. A magic trap generally has a DC of 25 + the level of the spell used to create it. A rogue who beats a trap's DC by 10 or more with a Disable Device check can study a trap, figure out how it works, and bypass it (with her party) without disarming it. Only a character with the trapfinding class feature can find traps with Search DCs of 21 or higher."
+      },
+      {
+        "name": "Evasion",
+        "level": 2,
+        "description": "At 2nd level and higher, a rogue can avoid even magical and unusual attacks with great agility. If she makes a successful Reflex saving throw against an attack that normally deals half damage on a successful save, she instead takes no damage. Evasion can be used only if the rogue is wearing light armor or no armor. A helpless rogue does not gain the benefit of evasion."
+      },
+      {
+        "name": "Trap Sense",
+        "level": 3,
+        "description": "At 3rd level, a rogue gains an intuitive sense that alerts her to danger from traps, giving her a bonus on Reflex saves made to avoid traps and a dodge bonus to AC against attacks made by traps. These bonuses increase by +1 every three rogue levels thereafter (6th, 9th, 12th, 15th, and 18th level).",
+        "scaling": [
+          {
+            "level": 3,
+            "value": "+1"
+          },
+          {
+            "level": 6,
+            "value": "+2"
+          },
+          {
+            "level": 9,
+            "value": "+3"
+          },
+          {
+            "level": 12,
+            "value": "+4"
+          },
+          {
+            "level": 15,
+            "value": "+5"
+          },
+          {
+            "level": 18,
+            "value": "+6"
+          }
+        ]
+      },
+      {
+        "name": "Uncanny Dodge",
+        "level": 4,
+        "description": "Starting at 4th level, a rogue can react to danger before her senses would normally allow her to do so. She retains her Dexterity bonus to AC (if any) even if she is caught flat-footed or struck by an invisible attacker. However, she still loses her Dexterity bonus to AC if immobilized. A rogue with this ability can still lose her Dexterity bonus to AC if an opponent successfully uses the feint action against her."
+      },
+      {
+        "name": "Improved Uncanny Dodge",
+        "level": 8,
+        "description": "A rogue of 8th level or higher can no longer be flanked. This defense denies another rogue the ability to sneak attack the character by flanking her, unless the attacker has at least four more rogue levels than the target does. If a character already has uncanny dodge from a second class, the character automatically gains improved uncanny dodge instead, and the levels from the classes that grant uncanny dodge stack to determine the minimum rogue level required to flank the character."
+      },
+      {
+        "name": "Special Ability",
+        "level": 10,
+        "description": "On attaining 10th level, and at every three levels thereafter (13th, 16th, and 19th level), a rogue selects one of the following special abilities: Crippling Strike — a rogue with this ability can sneak attack opponents with such precision that her blows weaken and hamper them; an opponent damaged by one of her sneak attacks also takes 2 points of Strength damage. Defensive Roll — once per day when she would be reduced to 0 or fewer hit points by damage in combat (from a weapon or other blow, not a spell or special ability), the rogue can attempt a Reflex saving throw (DC equal to damage dealt) to take only half damage from the blow. She must be aware of the attack and able to react to it. Improved Evasion — this works like evasion, except that while the rogue still takes no damage on a successful Reflex saving throw, she takes only half damage on a failed save. Opportunist — once per round, the rogue can make an attack of opportunity against an opponent who has just been struck for damage in melee by another character; this attack counts as the rogue's attack of opportunity for that round. Skill Mastery — the rogue selects a number of skills equal to 3 + her Intelligence modifier; when making a skill check with one of these skills, she may take 10 even if stress and distractions would normally prevent her from doing so. Slippery Mind — if a rogue with slippery mind is affected by an enchantment spell or effect and fails her saving throw, she can attempt it again 1 round later at the same DC; she gets only this one extra chance to succeed on her saving throw. Feat — a rogue may gain a bonus feat in place of a special ability.",
+        "scaling": [
+          {
+            "level": 10,
+            "value": "1st special ability"
+          },
+          {
+            "level": 13,
+            "value": "2nd special ability"
+          },
+          {
+            "level": 16,
+            "value": "3rd special ability"
+          },
+          {
+            "level": 19,
+            "value": "4th special ability"
+          }
+        ]
+      }
+    ],
+    "proficiencies": {
+      "weapons": [
+        "All simple weapons",
+        "Hand crossbow",
+        "Rapier",
+        "Sap",
+        "Shortbow",
+        "Short sword"
+      ],
+      "armor": [
+        "Light armor"
+      ],
+      "shields": []
+    }
+  },
+  {
+    "id": "bard",
+    "name": "Bard",
+    "hitDie": 6,
+    "babProgression": "three_quarter",
+    "goodSaves": [
+      "ref",
+      "will"
+    ],
+    "skillPointsPerLevel": 6,
+    "classSkills": [
+      "Appraise",
+      "Balance",
+      "Bluff",
+      "Climb",
+      "Craft",
+      "Decipher Script",
+      "Diplomacy",
+      "Disguise",
+      "Escape Artist",
+      "Forgery",
+      "Gather Information",
+      "Hide",
+      "Intimidate",
+      "Jump",
+      "Listen",
+      "Move Silently",
+      "Perform",
+      "Profession",
+      "Sense Motive",
+      "Sleight of Hand",
+      "Tumble",
+      "Use Magic Device"
+    ],
+    "darkSunNotes": "Athasian bards are nothing like the minstrels of other worlds — they are poisoners, assassins, and spies who trade in secrets and death. A bard's performance is a cover for far darker talents.",
+    "classFeatures": [
+      {
+        "name": "Bardic Music",
+        "level": 1,
+        "description": "An Athasian bard can use song, poetic recitation, or storytelling to produce magical effects on those around him. The bard can use this ability a number of times per day equal to his bard level. Starting a bardic music effect is a standard action unless otherwise noted. Countersong (Su): the bard can counter sonic or language-dependent magical effects by making a Perform check; any creature within 30 feet may use the bard's Perform check result in place of its saving throw if, after the saving throw is rolled, the Perform check result proves to be higher. Countersong lasts for 10 rounds. Fascinate (Sp): the bard can cause one or more creatures to become fascinated with him; each creature to be fascinated must be within 90 feet, able to see and hear the bard, and able to pay attention. The bard must also be able to see the creature. The distraction of a nearby combat or other dangers prevents the ability from working. Each creature within range receives a Will save (DC 10 + 1/2 bard level + Cha modifier) to negate the effect; on failure the creature sits quietly and listens, taking a –4 penalty on skill checks made as reactions. Any obvious threat breaks the fascination. At 1st level a bard can fascinate one creature; this increases by one additional creature for every three bard levels thereafter. Inspire Courage (Su): the bard can inspire courage in his allies (including himself), bolstering them against fear and improving their combat abilities. Affected allies receive a morale bonus on saving throws against charm and fear effects and a morale bonus on attack and weapon damage rolls.",
+        "scaling": [
+          {
+            "level": 1,
+            "value": "Inspire Courage +1"
+          },
+          {
+            "level": 8,
+            "value": "Inspire Courage +2"
+          },
+          {
+            "level": 14,
+            "value": "Inspire Courage +3"
+          },
+          {
+            "level": 20,
+            "value": "Inspire Courage +4"
+          }
+        ]
+      },
+      {
+        "name": "Bardic Knowledge",
+        "level": 1,
+        "description": "An Athasian bard picks up a lot of stray knowledge while plying their trade in marketplaces, noble courts, and back-alley dens. The bard may make a special bardic knowledge check with a bonus equal to his bard level + Intelligence modifier to see whether he knows some relevant information about local notable people, legendary items, or noteworthy places. A successful check will not reveal the powers of a magic item but may give a hint as to its general function. The bard may not take 10 or take 20 on this check; this sort of knowledge is essentially random. DC 10: Common, known by at least a substantial minority of the local population. DC 20: Uncommon but available, known by only a few people in the area. DC 25: Obscure, known by few, possibly a secret. DC 30: Extremely obscure, known by very few, possibly forgotten by most."
+      },
+      {
+        "name": "Smuggler",
+        "level": 1,
+        "description": "Athasian bards are masters of smuggling contraband — poisons, stolen goods, and forbidden items — past templars and guards. The bard gains an insight bonus on Bluff checks made to pass off hidden items and on Sleight of Hand checks. This bonus increases as the bard gains experience.",
+        "scaling": [
+          {
+            "level": 1,
+            "value": "+1"
+          },
+          {
+            "level": 4,
+            "value": "+2"
+          },
+          {
+            "level": 7,
+            "value": "+3"
+          },
+          {
+            "level": 10,
+            "value": "+4"
+          },
+          {
+            "level": 13,
+            "value": "+5"
+          },
+          {
+            "level": 19,
+            "value": "+6"
+          }
+        ]
+      },
+      {
+        "name": "Poison Use",
+        "level": 2,
+        "description": "At 2nd level, the bard is trained in the use of poison and never risks accidentally poisoning himself when applying poison to a blade or other weapon. This applies to contact, ingested, inhaled, and injury poisons alike."
+      },
+      {
+        "name": "Streetsmart",
+        "level": 2,
+        "description": "At 2nd level, the bard gains a +3 competence bonus on Gather Information and Diplomacy checks made in urban settlements. The bard knows how to navigate the social hierarchies of Athas's city-states, from the elven market to the templar quarter."
+      },
+      {
+        "name": "Quick Draw",
+        "level": 3,
+        "description": "At 3rd level, the bard gains Quick Draw as a bonus feat. The bard can draw a weapon as a free action instead of a move action. This applies to hidden weapons as well, allowing a bard to produce a concealed blade in the blink of an eye."
+      },
+      {
+        "name": "Trade Secret",
+        "level": 4,
+        "description": "At 4th level and every four levels thereafter (8th, 12th, 16th, and 20th), the bard selects a trade secret from the following list. Each trade secret can only be selected once unless otherwise stated. Alchemy Dealer: the bard can craft poisons at half the normal cost in raw materials. Accurate: the bard gains a +1 competence bonus on attack rolls. Agile: the bard gains a +1 dodge bonus to AC. Coolheaded: the bard gains a +2 competence bonus on saving throws against mind-affecting effects. Poison Dealer: the bard can purchase poisons at 75% of the listed price through underworld contacts. Poisonbane: the bard gains a +4 competence bonus on saving throws against poison. Scorpion's Touch: the save DC for any poison the bard applies increases by 1. Smokestick Application: the bard can deploy a smokestick as a move action instead of a standard action. Skilled: the bard gains a +2 competence bonus on any two skills of his choice.",
+        "scaling": [
+          {
+            "level": 4,
+            "value": "1st trade secret"
+          },
+          {
+            "level": 8,
+            "value": "2nd trade secret"
+          },
+          {
+            "level": 12,
+            "value": "3rd trade secret"
+          },
+          {
+            "level": 16,
+            "value": "4th trade secret"
+          },
+          {
+            "level": 20,
+            "value": "5th trade secret"
+          }
+        ]
+      },
+      {
+        "name": "Mental Resistance",
+        "level": 5,
+        "description": "At 5th level, the bard gains a +2 bonus on saving throws against enchantment spells and effects. Years of dealing in lies, manipulation, and intrigue have hardened the bard's mind against magical compulsion."
+      },
+      {
+        "name": "Quick Thinking",
+        "level": 6,
+        "description": "Starting at 6th level, the bard gains an insight bonus on Initiative checks. A bard's survival depends on acting before an enemy can strike, and experienced bards develop razor-sharp reflexes.",
+        "scaling": [
+          {
+            "level": 6,
+            "value": "+2"
+          },
+          {
+            "level": 11,
+            "value": "+4"
+          },
+          {
+            "level": 16,
+            "value": "+6"
+          }
+        ]
+      },
+      {
+        "name": "Improved Poison Use",
+        "level": 6,
+        "description": "At 6th level, the bard can apply poison to a weapon as a move action instead of a standard action. This allows the bard to poison a weapon and still attack in the same round, or to apply poison and move."
+      },
+      {
+        "name": "Chance",
+        "level": 7,
+        "description": "Starting at 7th level, fortune favors the bard. Once per day, the bard can re-roll any single d20 roll he has just made. He must accept the result of the second roll even if it is worse than the original.",
+        "scaling": [
+          {
+            "level": 7,
+            "value": "1/day"
+          },
+          {
+            "level": 14,
+            "value": "2/day"
+          }
+        ]
+      },
+      {
+        "name": "Speed Reactions",
+        "level": 9,
+        "description": "At 9th level, the bard gains a +2 bonus on Reflex saving throws. The bard's finely honed instincts allow him to dodge blows, avoid traps, and evade area effects with exceptional quickness."
+      },
+      {
+        "name": "Slippery Mind",
+        "level": 10,
+        "description": "At 10th level, if the bard fails a saving throw against an enchantment spell or effect, he can attempt the save again 1 round later at the same DC. The bard gets only this one extra chance to succeed on the saving throw."
+      },
+      {
+        "name": "Defensive Roll",
+        "level": 15,
+        "description": "Starting at 15th level, once per day when the bard would be reduced to 0 or fewer hit points by damage in combat (from a weapon or other blow, not a spell or special ability), the bard can attempt to roll with the damage. He makes a Reflex saving throw (DC = damage dealt) and, if successful, takes only half damage from the blow. He must be aware of the attack and able to react to it in order to execute the defensive roll. If the bard is denied his Dexterity bonus to AC, he cannot use this ability."
+      },
+      {
+        "name": "Awareness",
+        "level": 17,
+        "description": "At 17th level, the bard is always alert and cannot be surprised or caught flat-footed. He always acts in the surprise round, if any. The bard's constant vigilance — honed through years of watching for assassins, templar ambushes, and poisoned cups — has become second nature."
+      },
+      {
+        "name": "Mind Blank",
+        "level": 18,
+        "description": "At 18th level, the bard becomes immune to all mind-affecting spells and effects. This includes charms, compulsions, phantasms, patterns, and morale effects. The bard's mind has become an impenetrable fortress, forged by decades of resisting mental domination in Athas's most dangerous courts and back rooms."
+      }
+    ],
+    "proficiencies": {
+      "weapons": [
+        "All simple weapons",
+        "Garrote",
+        "Blowgun",
+        "Hand crossbow",
+        "Whip"
+      ],
+      "armor": [
+        "Light armor"
+      ],
+      "shields": []
+    }
+  },
+  {
+    "id": "cleric",
+    "name": "Cleric",
+    "hitDie": 8,
+    "babProgression": "three_quarter",
+    "goodSaves": [
+      "fort",
+      "will"
+    ],
+    "skillPointsPerLevel": 2,
+    "classSkills": [
+      "Concentration",
+      "Craft",
+      "Diplomacy",
+      "Heal",
+      "Knowledge (Arcana)",
+      "Knowledge (Religion)",
+      "Knowledge (The Planes)",
+      "Profession",
+      "Spellcraft"
+    ],
+    "darkSunNotes": "Clerics on Athas do not worship gods — there are none. Instead, they forge pacts with the raw elemental forces of Earth, Air, Fire, and Water, channeling primal power in exchange for service to their patron element.",
+    "classFeatures": [
+      {
+        "name": "Turn or Rebuke Undead",
+        "level": 1,
+        "description": "Can turn (if good-aligned) or rebuke (if evil-aligned) undead creatures. Uses per day equal to 3 + Charisma modifier. Make a turning check (1d20 + CHA modifier) to determine the most powerful undead affected. Turning damage equals 2d6 + cleric level + CHA modifier, representing total Hit Dice of undead turned. Turned undead flee for 10 rounds; rebuked undead cower. If turning damage exceeds twice the creature's HD, it is destroyed (turned) or commanded (rebuked). On Athas, clerics of elemental patrons turn or rebuke based on patron alignment."
+      },
+      {
+        "name": "Domain Spells",
+        "level": 1,
+        "description": "Choose two domains from your elemental patron (Earth, Air, Fire, or Water). Gain one extra spell slot per spell level that can only be used for a domain spell. Gain the granted power of each domain at 1st level. Domain spells cannot be used for spontaneous casting."
+      },
+      {
+        "name": "Spontaneous Casting",
+        "level": 1,
+        "description": "Can lose any prepared spell (except a domain spell) to cast a cure spell of the same spell level if good-aligned, or an inflict spell of the same level if evil-aligned. Neutral clerics choose at 1st level whether to convert to cure or inflict spells; this choice is permanent."
+      }
+    ],
+    "proficiencies": {
+      "weapons": [
+        "all simple weapons"
+      ],
+      "armor": [
+        "light",
+        "medium",
+        "heavy"
+      ],
+      "shields": [
+        "all except tower shield"
+      ]
+    },
+    "spellProgression": {
+      "spellsPerDay": [
+        [
+          3,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          5,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          5,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          5,
+          3,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          4,
+          3,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          4,
+          4,
+          3,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          5,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          5,
+          4,
+          4,
+          3,
+          3,
+          2,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          5,
+          5,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null
+        ],
+        [
+          6,
+          5,
+          5,
+          4,
+          4,
+          3,
+          3,
+          2,
+          null,
+          null
+        ],
+        [
+          6,
+          5,
+          5,
+          5,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null
+        ],
+        [
+          6,
+          5,
+          5,
+          5,
+          4,
+          4,
+          3,
+          3,
+          2,
+          null
+        ],
+        [
+          6,
+          6,
+          5,
+          5,
+          5,
+          4,
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          6,
+          6,
+          5,
+          5,
+          5,
+          4,
+          4,
+          3,
+          3,
+          2
+        ],
+        [
+          6,
+          6,
+          6,
+          5,
+          5,
+          5,
+          4,
+          4,
+          3,
+          3
+        ],
+        [
+          6,
+          6,
+          6,
+          5,
+          5,
+          5,
+          4,
+          4,
+          4,
+          4
+        ]
+      ],
+      "castingAbility": "wisdom",
+      "castingType": "prepared",
+      "maxSpellLevel": 9
+    }
+  },
+  {
+    "id": "druid",
+    "name": "Druid",
+    "hitDie": 8,
+    "babProgression": "three_quarter",
+    "goodSaves": [
+      "fort",
+      "will"
+    ],
+    "skillPointsPerLevel": 4,
+    "classSkills": [
+      "Concentration",
+      "Craft",
+      "Diplomacy",
+      "Handle Animal",
+      "Heal",
+      "Knowledge (Nature)",
+      "Listen",
+      "Profession",
+      "Ride",
+      "Spellcraft",
+      "Spot",
+      "Survival",
+      "Swim"
+    ],
+    "darkSunNotes": "Athasian druids are fierce guardians who claim and protect a specific terrain feature — an oasis, a stretch of scrubland, or a rocky outcropping. They draw power from the dying land itself and will kill without hesitation to defend it.",
+    "classFeatures": [
+      {
+        "name": "Animal Companion",
+        "level": 1,
+        "description": "Gain an animal companion selected from the following list: badger, camel, dire rat, dog, riding dog, eagle, hawk, inix (small), jhakar, owl, snake (Small or Medium viper), or wolf. The companion gains bonus HD, natural armor adjustment, STR/DEX adjustment, and bonus tricks as the druid advances in level. If the companion is dismissed or dies, a new one can be gained after 24 hours of prayer in an appropriate environment."
+      },
+      {
+        "name": "Nature Sense",
+        "level": 1,
+        "description": "Gain a +2 bonus on Knowledge (Nature) and Survival checks. This represents an instinctive understanding of the natural world."
+      },
+      {
+        "name": "Wild Empathy",
+        "level": 1,
+        "description": "Can improve the attitude of an animal, functioning as a Diplomacy check for animals. Roll 1d20 + druid level + Charisma modifier against a DC determined by the animal's current attitude. Must be within 30 feet of the animal under normal conditions. Influence a magical beast with an Intelligence of 1 or 2 at a -4 penalty."
+      },
+      {
+        "name": "Woodland Stride",
+        "level": 2,
+        "description": "Move through any sort of natural undergrowth (such as thorns, briars, overgrown areas, and similar terrain) at normal speed and without taking damage or suffering any other impairment. Thorns, briars, and overgrown areas that have been magically manipulated to impede motion still affect the druid."
+      },
+      {
+        "name": "Trackless Step",
+        "level": 3,
+        "description": "Leave no trail in natural surroundings and cannot be tracked. May choose to leave a trail if so desired."
+      },
+      {
+        "name": "Resist Nature's Lure",
+        "level": 4,
+        "description": "Gain a +4 bonus on saving throws against the spell-like and supernatural abilities of fey creatures. This includes spells and effects that utilize or target plants."
+      },
+      {
+        "name": "Wild Shape",
+        "level": 5,
+        "description": "Can turn into any Small or Medium animal and back again once per day. This ability functions like the polymorph spell, except as noted. The druid can stay in animal form for 1 hour per druid level, or until choosing to change back. Changing form is a standard action that does not provoke attacks of opportunity. Equipment melds into the new form and becomes nonfunctional.",
+        "scaling": [
+          {
+            "level": 5,
+            "value": "1/day, Small or Medium animal"
+          },
+          {
+            "level": 6,
+            "value": "2/day"
+          },
+          {
+            "level": 7,
+            "value": "3/day"
+          },
+          {
+            "level": 8,
+            "value": "Large animal"
+          },
+          {
+            "level": 10,
+            "value": "4/day"
+          },
+          {
+            "level": 11,
+            "value": "Tiny animal"
+          },
+          {
+            "level": 12,
+            "value": "Plant creature"
+          },
+          {
+            "level": 14,
+            "value": "5/day"
+          },
+          {
+            "level": 15,
+            "value": "Huge animal"
+          },
+          {
+            "level": 16,
+            "value": "Large elemental 1/day"
+          },
+          {
+            "level": 18,
+            "value": "Large elemental 2/day, Huge elemental"
+          },
+          {
+            "level": 20,
+            "value": "Huge elemental 6/day"
+          }
+        ]
+      },
+      {
+        "name": "Venom Immunity",
+        "level": 9,
+        "description": "Immune to all poisons, including natural venoms, magical poisons, and contact poisons. This immunity extends to all delivery methods."
+      },
+      {
+        "name": "A Thousand Faces",
+        "level": 13,
+        "description": "Can change appearance at will, as if using the alter self spell. This affects the druid's body but not equipment. Does not change creature type. The change lasts until the druid dismisses it or uses this ability again."
+      },
+      {
+        "name": "Timeless Body",
+        "level": 15,
+        "description": "No longer takes ability score penalties for aging and cannot be magically aged. Any penalties already taken remain in place. Age bonuses still accrue, and the druid still dies of old age when the time comes."
+      }
+    ],
+    "proficiencies": {
+      "weapons": [
+        "club",
+        "dagger",
+        "dart",
+        "quarterstaff",
+        "scimitar",
+        "sickle",
+        "shortspear",
+        "sling",
+        "spear"
+      ],
+      "armor": [
+        "light (nonmetal)",
+        "medium (nonmetal)"
+      ],
+      "shields": [
+        "all except tower shield (nonmetal)"
+      ]
+    },
+    "spellProgression": {
+      "spellsPerDay": [
+        [
+          3,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          5,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          5,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          5,
+          3,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          4,
+          3,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          4,
+          4,
+          3,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          5,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          5,
+          4,
+          4,
+          3,
+          3,
+          2,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          5,
+          5,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null
+        ],
+        [
+          6,
+          5,
+          5,
+          4,
+          4,
+          3,
+          3,
+          2,
+          null,
+          null
+        ],
+        [
+          6,
+          5,
+          5,
+          5,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null
+        ],
+        [
+          6,
+          5,
+          5,
+          5,
+          4,
+          4,
+          3,
+          3,
+          2,
+          null
+        ],
+        [
+          6,
+          5,
+          5,
+          5,
+          5,
+          4,
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          6,
+          5,
+          5,
+          5,
+          5,
+          4,
+          4,
+          3,
+          3,
+          2
+        ],
+        [
+          6,
+          5,
+          5,
+          5,
+          5,
+          5,
+          4,
+          4,
+          3,
+          3
+        ],
+        [
+          6,
+          5,
+          5,
+          5,
+          5,
+          5,
+          4,
+          4,
+          4,
+          4
+        ]
+      ],
+      "castingAbility": "wisdom",
+      "castingType": "prepared",
+      "maxSpellLevel": 9
+    }
+  },
+  {
+    "id": "templar",
+    "name": "Templar",
+    "hitDie": 8,
+    "babProgression": "three_quarter",
+    "goodSaves": [
+      "fort",
+      "will"
+    ],
+    "skillPointsPerLevel": 4,
+    "classSkills": [
+      "Concentration",
+      "Craft",
+      "Diplomacy",
+      "Heal",
+      "Intimidate",
+      "Knowledge (Arcana)",
+      "Knowledge (Religion)",
+      "Profession",
+      "Spellcraft"
+    ],
+    "darkSunNotes": "Templars are the bureaucrat-priests of the Sorcerer-Kings, wielding divine magic granted directly by their immortal patron. They enforce the law, collect taxes, and crush dissent — equal parts administrator, inquisitor, and tyrant.",
+    "classFeatures": [
+      {
+        "name": "Secular Authority",
+        "level": 1,
+        "description": "As a representative of a Sorcerer-King, can requisition supplies, command slaves, arrest and judge citizens, enter restricted areas, and demand obedience from common folk within the city-state. Make a Diplomacy check to exercise secular authority, with limited uses per day equal to 1 + Charisma modifier (minimum 1). DC depends on the request: simple orders (move aside, answer questions) DC 10, moderate requests (requisition common supplies, enter a guarded area) DC 15, significant demands (commandeer a building, arrest a citizen) DC 20, extreme actions (seize noble property, override another templar's orders) DC 25. Authority only functions within the Sorcerer-King's domain."
+      },
+      {
+        "name": "Sigil",
+        "level": 1,
+        "description": "Receive a divine sigil from the patron Sorcerer-King that serves as a divine focus for spellcasting. The sigil also grants the following spell-like abilities, each usable a number of times per day equal to Charisma modifier (minimum 1): arcane mark (inscribe the Sorcerer-King's sigil on objects or creatures), purify food and drink (as the spell), and slave scent (detect the nearest slave within 60 feet, identifying their direction and approximate distance)."
+      },
+      {
+        "name": "Domain Access",
+        "level": 1,
+        "description": "Choose 2 domains from the patron Sorcerer-King's portfolio. Gain the granted power of each domain at 1st level. Gain one extra spell slot per spell level that can only be used for domain spells, as a cleric. Available domains vary by Sorcerer-King."
+      },
+      {
+        "name": "Turn or Rebuke Undead",
+        "level": 2,
+        "description": "Gain the ability to turn or rebuke undead as a cleric, but with an effective turning level equal to templar level minus 2. Uses per day equal to 3 + Charisma modifier. A 2nd-level templar turns as a 0th-level cleric (can only turn undead with 1 HD or fewer)."
+      }
+    ],
+    "proficiencies": {
+      "weapons": [
+        "all simple weapons",
+        "flail",
+        "heavy mace",
+        "light mace",
+        "heavy pick",
+        "light pick"
+      ],
+      "armor": [
+        "light",
+        "medium"
+      ],
+      "shields": [
+        "all except tower shield"
+      ]
+    },
+    "spellProgression": {
+      "spellsPerDay": [
+        [
+          5,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          4,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          5,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          6,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          6,
+          4,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          7,
+          5,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          7,
+          6,
+          4,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          7,
+          7,
+          5,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          7,
+          7,
+          6,
+          4,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          7,
+          7,
+          7,
+          5,
+          3,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          8,
+          7,
+          7,
+          6,
+          4,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          8,
+          8,
+          7,
+          7,
+          5,
+          3,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          8,
+          8,
+          8,
+          7,
+          6,
+          4,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          9,
+          8,
+          8,
+          8,
+          7,
+          5,
+          3,
+          null,
+          null
+        ],
+        [
+          6,
+          9,
+          9,
+          8,
+          8,
+          7,
+          6,
+          4,
+          null,
+          null
+        ],
+        [
+          6,
+          9,
+          9,
+          9,
+          8,
+          8,
+          7,
+          5,
+          3,
+          null
+        ],
+        [
+          6,
+          9,
+          9,
+          9,
+          9,
+          8,
+          7,
+          6,
+          4,
+          null
+        ],
+        [
+          6,
+          9,
+          9,
+          9,
+          9,
+          9,
+          8,
+          7,
+          5,
+          3
+        ],
+        [
+          6,
+          9,
+          9,
+          9,
+          9,
+          9,
+          8,
+          7,
+          6,
+          4
+        ],
+        [
+          6,
+          9,
+          9,
+          9,
+          9,
+          9,
+          8,
+          7,
+          7,
+          5
+        ]
+      ],
+      "spellsKnown": [
+        [
+          4,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          5,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          5,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          3,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          4,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          7,
+          4,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          7,
+          5,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          8,
+          5,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          8,
+          5,
+          4,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          9,
+          5,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          9,
+          5,
+          5,
+          4,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          9,
+          5,
+          5,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null
+        ],
+        [
+          9,
+          5,
+          5,
+          4,
+          4,
+          3,
+          2,
+          null,
+          null,
+          null
+        ],
+        [
+          9,
+          5,
+          5,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null
+        ],
+        [
+          9,
+          5,
+          5,
+          4,
+          4,
+          4,
+          3,
+          2,
+          null,
+          null
+        ],
+        [
+          9,
+          5,
+          5,
+          4,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null
+        ],
+        [
+          9,
+          5,
+          5,
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          null
+        ],
+        [
+          9,
+          5,
+          5,
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          1
+        ],
+        [
+          9,
+          5,
+          5,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2
+        ],
+        [
+          9,
+          5,
+          5,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3
+        ]
+      ],
+      "castingAbility": "charisma",
+      "castingType": "spontaneous",
+      "maxSpellLevel": 9
+    }
+  },
+  {
+    "id": "defiler",
+    "name": "Defiler",
+    "hitDie": 4,
+    "babProgression": "half",
+    "goodSaves": [
+      "will"
+    ],
+    "skillPointsPerLevel": 2,
+    "classSkills": [
+      "Concentration",
+      "Craft",
+      "Decipher Script",
+      "Knowledge (Arcana)",
+      "Knowledge (The Planes)",
+      "Profession",
+      "Spellcraft"
+    ],
+    "darkSunNotes": "Defilers are arcane casters who rip life energy from the soil and plants around them to fuel their spells, leaving ash and desolation in their wake. They are the reason Athas is a dying world, and they are hated and hunted wherever they are discovered.",
+    "classFeatures": [
+      {
+        "name": "Summon Familiar",
+        "level": 1,
+        "description": "Can obtain a familiar, a magical beast that resembles a small animal and is unusually tough and intelligent. The familiar grants special abilities to its master based on the familiar type chosen (bat: +3 Listen, cat: +3 Move Silently, hawk: +3 Spot in bright light, lizard: +3 Climb, owl: +3 Spot in shadows, rat: +2 Fortitude saves, raven: +3 Appraise, snake: +3 Bluff, toad: +3 HP). The familiar uses its master's base attack bonus, base saves, skills, or its own, whichever is better. If a familiar is dismissed or dies, the master must wait one year and one day before summoning another, and takes permanent XP loss."
+      },
+      {
+        "name": "Scribe Scroll",
+        "level": 1,
+        "description": "Gain Scribe Scroll as a bonus feat. Can create a scroll of any spell known. Crafting a scroll costs spell level × caster level × 12.5 gp in materials, plus 1/25th of the base cost in XP. Crafting takes one day per 1,000 gp of the base price."
+      },
+      {
+        "name": "Defiling",
+        "level": 1,
+        "description": "When casting arcane spells, draw life energy destructively from plants and soil in a radius around the caster. Defiling radius equals 5 feet per level of the spell being cast (cantrips affect a 5-foot radius). All plant life within the radius is reduced to ash, and the terrain becomes barren and infertile. Creatures within the defiling radius (except the defiler) feel a sickening pain and take a -1 penalty on attack rolls for 1 round. Casting in abundant vegetation grants a +1 bonus to caster level for the spell. Casting in already-barren terrain imposes a -1 penalty to caster level. The visible destruction of defiling makes it extremely difficult to hide spellcasting."
+      },
+      {
+        "name": "School Specialization",
+        "level": 1,
+        "description": "May optionally choose to specialize in one school of magic at 1st level. A specialist gains one additional spell slot per spell level, which must be filled with a spell from the chosen school. In exchange, the specialist must give up two other schools of magic (prohibited schools) and can never learn, prepare, or cast spells from those schools. Divination cannot be chosen as a prohibited school. This choice is made at 1st level and cannot be changed."
+      }
+    ],
+    "bonusFeatLevels": [
+      5,
+      10,
+      15,
+      20
+    ],
+    "bonusFeatType": "metamagic_or_item_creation",
+    "proficiencies": {
+      "weapons": [
+        "club",
+        "dagger",
+        "heavy crossbow",
+        "light crossbow",
+        "quarterstaff"
+      ],
+      "armor": [],
+      "shields": []
+    },
+    "spellProgression": {
+      "spellsPerDay": [
+        [
+          3,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          3,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          3,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          2
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      ],
+      "castingAbility": "intelligence",
+      "castingType": "prepared",
+      "maxSpellLevel": 9
+    }
+  },
+  {
+    "id": "preserver",
+    "name": "Preserver",
+    "hitDie": 4,
+    "babProgression": "half",
+    "goodSaves": [
+      "will"
+    ],
+    "skillPointsPerLevel": 2,
+    "classSkills": [
+      "Concentration",
+      "Craft",
+      "Decipher Script",
+      "Knowledge (Arcana)",
+      "Knowledge (The Planes)",
+      "Profession",
+      "Spellcraft"
+    ],
+    "darkSunNotes": "Preservers draw arcane energy carefully, taking only what the land can sustain and leaving no trace of destruction. They operate in secrecy, for the populace makes no distinction between preserver and defiler — all arcane magic is feared and reviled.",
+    "classFeatures": [
+      {
+        "name": "Summon Familiar",
+        "level": 1,
+        "description": "Can obtain a familiar, a magical beast that resembles a small animal and is unusually tough and intelligent. The familiar grants special abilities to its master based on the familiar type chosen (bat: +3 Listen, cat: +3 Move Silently, hawk: +3 Spot in bright light, lizard: +3 Climb, owl: +3 Spot in shadows, rat: +2 Fortitude saves, raven: +3 Appraise, snake: +3 Bluff, toad: +3 HP). The familiar uses its master's base attack bonus, base saves, skills, or its own, whichever is better. If a familiar is dismissed or dies, the master must wait one year and one day before summoning another, and takes permanent XP loss."
+      },
+      {
+        "name": "Scribe Scroll",
+        "level": 1,
+        "description": "Gain Scribe Scroll as a bonus feat. Can create a scroll of any spell known. Crafting a scroll costs spell level × caster level × 12.5 gp in materials, plus 1/25th of the base cost in XP. Crafting takes one day per 1,000 gp of the base price."
+      },
+      {
+        "name": "Preserving",
+        "level": 1,
+        "description": "When casting arcane spells, draw energy carefully from the surrounding environment without destroying plant life or terrain. No defiling radius or terrain damage occurs. No bonuses or penalties from terrain abundance or barrenness. A preserver who chooses to defile becomes a 'lapsed preserver' and permanently loses access to any Preserver-specific or Path Dexter feats until an atonement is performed. Once a preserver defiles, they cannot return to preserving without significant effort and sacrifice."
+      },
+      {
+        "name": "School Specialization",
+        "level": 1,
+        "description": "May optionally choose to specialize in one school of magic at 1st level. A specialist gains one additional spell slot per spell level, which must be filled with a spell from the chosen school. In exchange, the specialist must give up two other schools of magic (prohibited schools) and can never learn, prepare, or cast spells from those schools. Divination cannot be chosen as a prohibited school. This choice is made at 1st level and cannot be changed."
+      }
+    ],
+    "bonusFeatLevels": [
+      5,
+      10,
+      15,
+      20
+    ],
+    "bonusFeatType": "metamagic_or_item_creation",
+    "proficiencies": {
+      "weapons": [
+        "club",
+        "dagger",
+        "heavy crossbow",
+        "light crossbow",
+        "quarterstaff"
+      ],
+      "armor": [],
+      "shields": []
+    },
+    "spellProgression": {
+      "spellsPerDay": [
+        [
+          3,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          3,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          3,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          null,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          null,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          1,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          null
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          1
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          2
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3
+        ],
+        [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      ],
+      "castingAbility": "intelligence",
+      "castingType": "prepared",
+      "maxSpellLevel": 9
+    }
+  },
+  {
+    "id": "psionicist",
+    "name": "Psionicist",
+    "hitDie": 4,
+    "babProgression": "half",
+    "goodSaves": [
+      "will"
+    ],
+    "skillPointsPerLevel": 2,
+    "classSkills": [
+      "Concentration",
+      "Craft",
+      "Knowledge (Psionics)",
+      "Profession"
+    ],
+    "darkSunNotes": "Psionicists are the most respected wielders of power on Athas, where the Way of the Mind is studied in every city-state's academies. Unlike arcane magic, psionics draws no suspicion — it is considered a natural and noble discipline.",
+    "classFeatures": [
+      {
+        "name": "Discipline",
+        "level": 1,
+        "description": "Choose one of six psionic disciplines that represents the psionicist's primary focus and training: Clairsentience (Seer — powers of perception, precognition, and remote sensing), Psychokinesis (Kineticist — powers that manipulate energy and force), Psychometabolism (Egoist — powers that alter the body and its processes), Psychoportation (Nomad — powers of movement and teleportation), Telepathy (Telepath — powers of mental contact and mind control), or Metapsionics (powers that enhance and modify other psionic effects). The chosen discipline determines the list of discipline powers available for learning. Gain one bonus discipline power from the chosen discipline's list at 1st level, in addition to powers normally known."
+      },
+      {
+        "name": "Bonus Psionic Feat",
+        "level": 1,
+        "description": "Gain a bonus psionic feat selected from the following list: Aligned Attack, Antipathy, Burrowing Power, Chain Power, Craft Cognizance Crystal, Craft Dorje, Craft Psicrown, Craft Psionic Arms and Armor, Craft Universal Item, Empower Power, Enlarge Power, Extend Power, Maximize Power, Metaconcert, Opportunity Power, Overchannel, Psionic Meditation, Quicken Power, Split Psionic Ray, Twin Power, or Widen Power. Must meet the prerequisites for the chosen feat.",
+        "scaling": [
+          {
+            "level": 1,
+            "value": "1st bonus psionic feat"
+          },
+          {
+            "level": 3,
+            "value": "2nd bonus psionic feat"
+          },
+          {
+            "level": 6,
+            "value": "3rd bonus psionic feat"
+          },
+          {
+            "level": 9,
+            "value": "4th bonus psionic feat"
+          },
+          {
+            "level": 12,
+            "value": "5th bonus psionic feat"
+          },
+          {
+            "level": 15,
+            "value": "6th bonus psionic feat"
+          },
+          {
+            "level": 18,
+            "value": "7th bonus psionic feat"
+          }
+        ]
+      }
+    ],
+    "bonusFeatLevels": [
+      1,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18
+    ],
+    "bonusFeatType": "psionic",
+    "proficiencies": {
+      "weapons": [
+        "club",
+        "dagger",
+        "heavy crossbow",
+        "light crossbow",
+        "quarterstaff",
+        "shortspear"
+      ],
+      "armor": [],
+      "shields": []
+    },
+    "psionicProgression": {
+      "powerPointsPerDay": [
+        2,
+        6,
+        11,
+        17,
+        25,
+        35,
+        46,
+        58,
+        72,
+        88,
+        106,
+        126,
+        147,
+        170,
+        195,
+        221,
+        250,
+        280,
+        311,
+        343
+      ],
+      "powersKnown": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        22,
+        24,
+        25,
+        27,
+        28,
+        30,
+        31,
+        33,
+        34,
+        36
+      ],
+      "maxPowerLevel": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        7,
+        7,
+        8,
+        8,
+        9,
+        9,
+        9,
+        9
+      ],
+      "keyAbility": "intelligence"
+    }
+  }
+]

@@ -1,0 +1,2857 @@
+[
+    {
+        "id": "black-cairn",
+        "name": "Black Cairn",
+        "level": 1,
+        "school": "Necromancy",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S, M",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "One stone or object touched",
+        "duration": "Permanent until discharged",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You mark a location with necromantic energy, creating a black cairn that radiates faint death magic. Any creature that disturbs or touches the cairn triggers a burst of negative energy dealing 1d6 damage per caster level (max 5d6). The cairn is visible as a faintly glowing dark mark to those who can detect magic.",
+        "defilingRadius": 5,
+        "darkSunNotes": "Used by defilers to mark caches and hidden sites across the wastes. The Veiled Alliance considers placing black cairns near settlements to be an act of reckless endangerment."
+    },
+    {
+        "id": "clear-water",
+        "name": "Clear Water",
+        "level": 1,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "Up to 1 gallon of water per level",
+        "duration": "Instantaneous",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You purify water, removing sediment, salt, and non-magical contaminants. The spell renders the water safe to drink but does not remove magical poisons or curses. It can also be used to clarify muddy or silted water sources.",
+        "defilingRadius": 5,
+        "darkSunNotes": "Perhaps the single most valued arcane spell on Athas. Preservers who can cast this spell are welcomed even in communities hostile to magic. Water is life on Athas, and the ability to purify it is worth more than gold."
+    },
+    {
+        "id": "cooling-canopy",
+        "name": "Cooling Canopy",
+        "level": 1,
+        "school": "Conjuration",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S, M",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "10-ft.-radius emanation centered on you",
+        "duration": "1 hour/level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You conjure a shimmering canopy of magical shade that moves with you, reducing the temperature beneath it by up to 30 degrees Fahrenheit. Creatures beneath the canopy gain a +2 bonus on Fortitude saves against heat dangers and need only half the normal water intake to avoid dehydration.",
+        "defilingRadius": 5,
+        "darkSunNotes": "An essential survival spell for desert travel. Preservers in merchant caravans often earn their keep by maintaining cooling canopies during long treks across the Tablelands."
+    },
+    {
+        "id": "defiler-scent",
+        "name": "Defiler Scent",
+        "level": 1,
+        "school": "Divination",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "60 ft.",
+        "target": "Cone-shaped emanation",
+        "duration": "Concentration, up to 1 min./level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You can detect the lingering taint of defiling magic. In the first round, you detect the presence or absence of defiling residue. In the second round, you determine the number of sources and the strength of the strongest. In the third round, you pinpoint the location of each source and determine its age (up to 1 day per caster level).",
+        "defilingRadius": 5,
+        "darkSunNotes": "A critical tool of the Veiled Alliance for hunting rogue defilers. Templars have been known to employ preservers specifically for this purpose, though such arrangements are always fraught with danger."
+    },
+    {
+        "id": "sand-spray-arcane",
+        "name": "Sand Spray",
+        "level": 1,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "15 ft.",
+        "target": "Cone-shaped burst",
+        "duration": "Instantaneous",
+        "savingThrow": "Reflex half",
+        "spellResistance": "Yes",
+        "description": "You blast a cone of abrasive sand from your outstretched hand, dealing 1d4 points of slashing damage per caster level (maximum 5d4). Creatures that fail their save are also blinded for 1 round.",
+        "defilingRadius": 5,
+        "darkSunNotes": "A favored combat spell of Athasian wizards due to the abundance of sand. The spell is virtually impossible to cast in areas devoid of loose earth or sand."
+    },
+    {
+        "id": "surface-tension",
+        "name": "Surface Tension",
+        "level": 1,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "Creature touched",
+        "duration": "10 min./level",
+        "savingThrow": "Will negates (harmless)",
+        "spellResistance": "Yes (harmless)",
+        "description": "The subject can walk on the surface of any liquid as if it were solid ground. The creature's feet do not get wet. If the spell is cast on a creature submerged in liquid, the creature rises to the surface at 60 feet per round.",
+        "defilingRadius": 5,
+        "darkSunNotes": "Invaluable for crossing the Sea of Silt, though the spell's limited duration makes long crossings perilous. Some traders pay handsomely for scrolls of this spell before silt sea voyages."
+    },
+    {
+        "id": "sweet-water",
+        "name": "Sweet Water",
+        "level": 1,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "Up to 1 gallon of water per level",
+        "duration": "Instantaneous",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You transform bitter, brackish, or even mildly poisoned water into clean, sweet drinking water. The spell neutralizes non-magical toxins and removes foul tastes. It cannot purify water contaminated by magical poisons.",
+        "defilingRadius": 5,
+        "darkSunNotes": "Similar to Clear Water but specifically designed for the alkaline and sulfurous water sources common near the Sea of Silt and volcanic regions. Traders crossing the Estuary of the Forked Tongue rely on this spell."
+    },
+    {
+        "id": "watch-fire",
+        "name": "Watch Fire",
+        "level": 1,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S, M",
+        "castingTime": "1 minute",
+        "range": "Touch",
+        "target": "One campfire or torch",
+        "duration": "8 hours",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You enchant a fire to serve as a guardian. The watch fire burns without consuming fuel for its duration and flares brightly (shedding light in a 60-ft. radius) when any creature of Small size or larger approaches within 20 feet, waking any sleepers nearby. The caster is mentally alerted even from sleep.",
+        "defilingRadius": 5,
+        "darkSunNotes": "Essential for desert survival. Night on Athas brings predators—both natural and supernatural. A watch fire can mean the difference between waking to dawn and never waking at all."
+    },
+    {
+        "id": "zombie-berry",
+        "name": "Zombie Berry",
+        "level": 1,
+        "school": "Necromancy",
+        "subschool": null,
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S, M",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "One berry or small fruit",
+        "duration": "Permanent until consumed",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You infuse a berry or small fruit with necromantic energy. When placed in the mouth of a corpse dead no longer than 1 day per caster level, the corpse animates as a zombie under your control for 1 hour per caster level before collapsing into dust.",
+        "defilingRadius": 5,
+        "darkSunNotes": "A vile spell favored by defilers operating in the wastes. The animated dead require no water or food, making them ideal pack bearers. This spell is one of the reasons defilers are so feared and hated across Athas."
+    },
+    {
+        "id": "veiled-speech",
+        "name": "Veiled Speech",
+        "level": 1,
+        "school": "Enchantment",
+        "subschool": "Compulsion",
+        "classes": [
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "You and one creature per 3 levels",
+        "duration": "10 min./level",
+        "savingThrow": "Will negates (harmless)",
+        "spellResistance": "Yes (harmless)",
+        "description": "You and the designated targets can communicate freely through normal speech that sounds like innocuous small talk to anyone not included in the spell. Listeners hear only mundane conversation about weather, trade goods, or other banal topics while the true meaning is transmitted clearly to included participants.",
+        "defilingRadius": 5,
+        "darkSunNotes": "Developed by the Veiled Alliance for covert communication in city-states where templar spies lurk in every crowd. The spell has saved countless Alliance cells from discovery."
+    },
+    {
+        "id": "detect-magic-preserver",
+        "name": "Detect Magic (Preserver Variant)",
+        "level": 1,
+        "school": "Divination",
+        "subschool": null,
+        "classes": [
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "60 ft.",
+        "target": "Cone-shaped emanation",
+        "duration": "Concentration, up to 1 min./level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "Functions as standard detect magic, but additionally reveals whether detected magic was cast through defiling or preserving. Defiling magic appears as a sickly dark aura with withered edges, while preserving magic shows as a clean, vibrant glow. The caster can also estimate how recently defiling occurred in the area.",
+        "defilingRadius": 5,
+        "darkSunNotes": "The Veiled Alliance's enhanced version of detect magic. This variant is closely guarded and shared only with trusted preservers. It is one of the Alliance's most important tools for identifying defilers who have infiltrated their cells."
+    },
+    {
+        "id": "backlash",
+        "name": "Backlash",
+        "level": 2,
+        "school": "Abjuration",
+        "subschool": null,
+        "classes": [
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "30-ft.-radius emanation centered on you",
+        "duration": "1 round/level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You create a ward that punishes defiling magic. Any creature that draws defiling energy within the area takes 1d6 points of damage per spell level of the defiling spell they cast. This damage cannot be reduced or resisted. The defiler is aware of the backlash effect only after they begin casting.",
+        "defilingRadius": 5,
+        "darkSunNotes": "A signature preserver spell designed to counter defilers. Used extensively by the Veiled Alliance in their ongoing war against those who would drain the last life from Athas."
+    },
+    {
+        "id": "dust-devil-arcane",
+        "name": "Dust Devil",
+        "level": 2,
+        "school": "Conjuration",
+        "subschool": "Summoning",
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "One 5-ft. whirlwind",
+        "duration": "1 round/level",
+        "savingThrow": "Reflex negates",
+        "spellResistance": "No",
+        "description": "You conjure a small whirlwind of dust and sand that moves at your direction. The dust devil is 5 feet wide and 10 feet tall. Creatures caught in it take 1d6 bludgeoning damage per round and must make a Reflex save or be blinded for 1 round. The dust devil can move up to 30 feet per round.",
+        "defilingRadius": 5,
+        "darkSunNotes": "A common sight in the Athasian wastes, magical dust devils are nearly indistinguishable from natural ones—a useful property for wizards who wish to remain hidden."
+    },
+    {
+        "id": "nurturing-seeds",
+        "name": "Nurturing Seeds",
+        "level": 2,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Preserver"
+        ],
+        "components": "V, S, M",
+        "castingTime": "1 minute",
+        "range": "Touch",
+        "target": "Up to 1 seed per level",
+        "duration": "Instantaneous",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You infuse seeds with life energy, causing them to sprout and grow rapidly. Within one hour, each seed grows into a healthy seedling equivalent to one year of natural growth. The plants are normal and non-magical once grown, requiring normal water and care to survive.",
+        "defilingRadius": 5,
+        "darkSunNotes": "One of the most sacred spells to preservers and druids alike. In a world ravaged by defiling magic, every new plant is a victory. The Veiled Alliance has standing bounties for anyone who can provide seeds of rare Athasian species."
+    },
+    {
+        "id": "oil-spray",
+        "name": "Oil Spray",
+        "level": 2,
+        "school": "Conjuration",
+        "subschool": "Creation",
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "15 ft.",
+        "target": "Cone-shaped burst",
+        "duration": "3 rounds",
+        "savingThrow": "Reflex partial",
+        "spellResistance": "No",
+        "description": "You spray a cone of slippery, flammable oil. Creatures in the area must make a Reflex save or fall prone. The oil-coated area counts as difficult terrain for the duration. If any fire source contacts the oil, it ignites, dealing 1d6 fire damage per round for the remaining duration to all creatures in the area.",
+        "defilingRadius": 5,
+        "darkSunNotes": "Oil is scarce and precious on Athas, making this conjured oil a valuable commodity in addition to its combat applications. Some resourceful wizards use it to lubricate wagon axles or barter with nomads."
+    },
+    {
+        "id": "shining-sands",
+        "name": "Shining Sands",
+        "level": 2,
+        "school": "Illusion",
+        "subschool": "Pattern",
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "20-ft.-radius spread",
+        "duration": "1 round/level",
+        "savingThrow": "Will negates",
+        "spellResistance": "Yes",
+        "description": "You cause sand or loose earth in the area to reflect light with blinding intensity, creating a dazzling pattern. Creatures in the area that fail their save are blinded for 1d4 rounds. Even those who save are dazzled (-1 on attack rolls) for the spell's duration.",
+        "defilingRadius": 5,
+        "darkSunNotes": "Most effective during the brutal midday sun of Athas. Under the dark sun, the reflected light is so intense that even creatures resistant to blinding effects can be affected."
+    },
+    {
+        "id": "sting-of-the-scorpion",
+        "name": "Sting of the Scorpion",
+        "level": 2,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "Creature touched",
+        "duration": "1 round/level",
+        "savingThrow": "Fortitude negates",
+        "spellResistance": "Yes",
+        "description": "Your touch delivers a magical poison. On a successful melee touch attack, the target must make a Fortitude save or take 1d4 Strength damage immediately and another 1d4 Strength damage one minute later. A successful save negates the secondary damage.",
+        "defilingRadius": 5,
+        "darkSunNotes": "Named for the giant scorpions that plague the sandy wastes, this spell mimics their venom. Some defilers enhance the spell using actual scorpion venom as a material component."
+    },
+    {
+        "id": "touch-of-idleness",
+        "name": "Touch of Idleness",
+        "level": 2,
+        "school": "Enchantment",
+        "subschool": "Compulsion",
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "Creature touched",
+        "duration": "1 round/level",
+        "savingThrow": "Will negates",
+        "spellResistance": "Yes",
+        "description": "Your touch fills the target with overwhelming lethargy. The creature is slowed (as the slow spell) and takes a -4 penalty on initiative checks and Reflex saves. The creature remains aware of its surroundings but lacks the motivation to act with urgency.",
+        "defilingRadius": 5,
+        "darkSunNotes": "Templars sometimes commission scrolls of this spell to pacify unruly slaves. In the gladiatorial arenas, its use is considered dishonorable but not technically against the rules."
+    },
+    {
+        "id": "water-trap",
+        "name": "Water Trap",
+        "level": 2,
+        "school": "Abjuration",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S, M",
+        "castingTime": "1 minute",
+        "range": "Touch",
+        "target": "One container of water up to 50 gallons",
+        "duration": "Permanent until discharged",
+        "savingThrow": "Fortitude partial",
+        "spellResistance": "Yes",
+        "description": "You ward a water supply against theft. Any creature that attempts to take water from the trapped container without speaking the command word takes 2d6 points of damage and must make a Fortitude save or be nauseated for 1d4 rounds. The trap resets after each triggering.",
+        "defilingRadius": 5,
+        "darkSunNotes": "Water theft is punishable by death in most Athasian city-states, but magical protection offers more certainty. Merchant houses frequently employ wizards to set water traps on their cisterns during long trade expeditions."
+    },
+    {
+        "id": "masking-aura",
+        "name": "Masking Aura",
+        "level": 2,
+        "school": "Illusion",
+        "subschool": "Glamer",
+        "classes": [
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "You",
+        "duration": "1 hour/level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You mask your magical aura, making yourself and your carried items appear non-magical to detect magic and similar divination spells. Alternatively, you can make your aura appear to be that of a non-spellcaster or change the apparent school of magic of items you carry.",
+        "defilingRadius": 5,
+        "darkSunNotes": "Survival for any wizard in the city-states depends on concealment. Masking Aura is often the first spell a Veiled Alliance member learns after initiation, as templar patrols regularly sweep markets and taverns with detect magic."
+    },
+    {
+        "id": "boneclaw-cut",
+        "name": "Boneclaw's Cut",
+        "level": 3,
+        "school": "Necromancy",
+        "subschool": null,
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S, M",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "One creature touched",
+        "duration": "Instantaneous",
+        "savingThrow": "Fortitude partial",
+        "spellResistance": "Yes",
+        "description": "Your hand becomes a skeletal claw that rakes the target, dealing 3d8 points of slashing damage plus 1d6 negative energy damage. On a failed Fortitude save, the wound festers and cannot be healed naturally—only magical healing can restore the lost hit points. The festering wound deals 1 point of damage per hour until healed.",
+        "defilingRadius": 10,
+        "darkSunNotes": "Named after the dreaded boneclaw beasts of the Athasian wastes. Wounds from this spell resemble the ragged tears left by those creatures, making forensic identification of the true cause difficult."
+    },
+    {
+        "id": "dedication",
+        "name": "Dedication",
+        "level": 3,
+        "school": "Enchantment",
+        "subschool": "Compulsion",
+        "classes": [
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "Willing creature touched",
+        "duration": "Permanent",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You reinforce a willing creature's dedication to a specific cause, organization, or belief. The target gains a +4 morale bonus on saves against enchantment spells and effects that would cause them to act against their dedicated cause. They also gain a +2 morale bonus on skill checks directly related to furthering that cause.",
+        "defilingRadius": 10,
+        "darkSunNotes": "A spell central to Veiled Alliance operations. New members often undergo the Dedication ritual to steel their resolve against templar interrogation. The spell cannot compel loyalty—it can only reinforce what already exists."
+    },
+    {
+        "id": "defile",
+        "name": "Defile",
+        "level": 3,
+        "school": "Necromancy",
+        "subschool": null,
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "60 ft.",
+        "target": "60-ft.-radius burst centered on you",
+        "duration": "Instantaneous",
+        "savingThrow": "Fortitude half",
+        "spellResistance": "No",
+        "description": "You draw an enormous amount of life energy from the surrounding area. All plant life within the area is utterly destroyed, turning to ash. Living creatures (other than you) in the area take 1d6 damage per two caster levels (maximum 5d6) as the spell drains their vitality. The blighted terrain cannot support plant growth for 1 year per caster level.",
+        "defilingRadius": 60,
+        "darkSunNotes": "The archetypal defiling spell, and the reason arcane magic is feared across Athas. A single casting can destroy a farmer's fields for a generation. High-level defilers have used this spell to create permanent dead zones visible from miles away."
+    },
+    {
+        "id": "ghost-writing",
+        "name": "Ghost Writing",
+        "level": 3,
+        "school": "Illusion",
+        "subschool": "Figment",
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 minute",
+        "range": "Touch",
+        "target": "One page of text",
+        "duration": "Permanent until read",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You write an invisible message on a surface that can only be read by a specified creature or type of creature. When the intended reader views the surface, the message becomes visible only to them. After being fully read, the message fades permanently. You can include a secondary visible message to disguise the surface as mundane text.",
+        "defilingRadius": 10,
+        "darkSunNotes": "The Veiled Alliance's preferred method of covert communication. Messages are hidden in plain sight—on market signs, tavern walls, and even templar proclamations. A skilled Alliance operative can read a city's hidden messages like a newspaper."
+    },
+    {
+        "id": "sand-pit",
+        "name": "Sand Pit",
+        "level": 3,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "20-ft.-radius area of sand or loose earth",
+        "duration": "1 round/level",
+        "savingThrow": "Reflex negates",
+        "spellResistance": "No",
+        "description": "You transform an area of sand or loose earth into a sinkhole. Creatures in the area must make a Reflex save or sink waist-deep, becoming entangled. Creatures that fail by 5 or more sink to their necks, becoming helpless. Affected creatures can attempt to escape with a DC 15 Strength check or Escape Artist check as a full-round action.",
+        "defilingRadius": 10,
+        "darkSunNotes": "Athas is covered in sand, making this spell universally useful. Gladiatorial arena wizards use it to create dramatic hazards for combat spectacles. In the wild, it is an effective tool against charging beasts."
+    },
+    {
+        "id": "sand-shadow",
+        "name": "Sand Shadow",
+        "level": 3,
+        "school": "Illusion",
+        "subschool": "Shadow",
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "You",
+        "duration": "1 round/level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You create a quasi-real duplicate of yourself formed from shadow and sand. The sand shadow moves as you direct, mimicking your movements. It has AC 10 + your Dex modifier and 1 hit point per caster level. It can deliver touch spells for you. Enemies must make a Will save to determine which is real; failure means they target the shadow instead.",
+        "defilingRadius": 10,
+        "darkSunNotes": "In the harsh glare of the dark sun, shadows are deep and sharp—making this spell particularly convincing during the bright Athasian day. Wizards who fight in arenas often rely on this spell for misdirection."
+    },
+    {
+        "id": "silt-spray",
+        "name": "Silt Spray",
+        "level": 3,
+        "school": "Conjuration",
+        "subschool": "Creation",
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "30 ft.",
+        "target": "Cone-shaped burst",
+        "duration": "Instantaneous; blindness 1d4 rounds",
+        "savingThrow": "Reflex partial",
+        "spellResistance": "No",
+        "description": "You conjure a blast of choking silt from the Sea of Silt. Creatures in the area take 3d6 bludgeoning damage and must make a Reflex save or be blinded for 1d4 rounds and begin choking (treat as drowning) for 1 round. Even on a successful save, creatures are dazzled for 1 round.",
+        "defilingRadius": 10,
+        "darkSunNotes": "The Sea of Silt's fine dust is suffocating and corrosive. This spell harnesses that danger as a weapon. Silt runners and other creatures native to the Silt Sea are immune to the choking effect."
+    },
+    {
+        "id": "worm-of-teeth",
+        "name": "Worm of Teeth",
+        "level": 3,
+        "school": "Necromancy",
+        "subschool": null,
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S, M",
+        "castingTime": "1 round",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "One creature",
+        "duration": "1 round/level",
+        "savingThrow": "Fortitude negates",
+        "spellResistance": "Yes",
+        "description": "You conjure a worm made of gnashing teeth that burrows into the target's flesh. Each round, the worm deals 1d8 points of damage and the target is sickened from the pain. Removing the worm requires a DC 20 Heal check (which deals an additional 1d6 damage) or any healing spell of 3rd level or higher.",
+        "defilingRadius": 10,
+        "darkSunNotes": "A horrifying spell that exemplifies the depths of defiler cruelty. The worm is semi-real, formed from necromantic energy and given shape by the dark sun's power."
+    },
+    {
+        "id": "conservation",
+        "name": "Conservation",
+        "level": 3,
+        "school": "Abjuration",
+        "subschool": null,
+        "classes": [
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "You",
+        "duration": "1 hour/level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You optimize your connection to the land's life force, reducing the environmental impact of your spellcasting. While this spell is active, the defiling radius of your spells is halved (minimum 5 feet) and plants within the affected area are damaged but not destroyed. Additionally, any terrain you defile recovers in days rather than years.",
+        "defilingRadius": 10,
+        "darkSunNotes": "The cornerstone of preserver philosophy made manifest. This spell represents the fundamental difference between preservers and defilers—the choice to take only what is needed and leave the land capable of recovery."
+    },
+    {
+        "id": "sirocco",
+        "name": "Sirocco",
+        "level": 4,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Long (400 ft. + 40 ft./level)",
+        "target": "Cylinder (20-ft. radius, 40 ft. high)",
+        "duration": "1 round/level",
+        "savingThrow": "Fortitude partial",
+        "spellResistance": "Yes",
+        "description": "You summon a blast of superheated desert wind. Creatures in the area take 4d6 fire damage each round and must make a Fortitude save or become fatigued (or exhausted if already fatigued). The sirocco creates difficult terrain and imposes a -4 penalty on ranged attack rolls through the area.",
+        "defilingRadius": 10,
+        "darkSunNotes": "Named after the deadly hot winds that sweep across the Tablelands, this spell replicates their devastating force in a concentrated area. Experienced desert travelers know to seek shelter when they feel this spell's telltale heat."
+    },
+    {
+        "id": "sandstone-wall",
+        "name": "Sandstone Wall",
+        "level": 4,
+        "school": "Conjuration",
+        "subschool": "Creation",
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S, M",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "Sandstone wall up to 5 ft./level long, 5 ft. high/level, 1 ft. thick/4 levels",
+        "duration": "Instantaneous",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You conjure a wall of solid sandstone. The wall has hardness 8 and 15 hit points per inch of thickness. It merges with existing stone or earth surfaces. Unlike a wall of stone, this wall is naturally camouflaged in desert terrain, blending with surrounding rock formations.",
+        "defilingRadius": 10,
+        "darkSunNotes": "Sandstone is the predominant building material across Athas, making walls created by this spell nearly indistinguishable from natural or constructed features. Entire fortifications have been conjured overnight by skilled wizards."
+    },
+    {
+        "id": "pact-of-darkness",
+        "name": "Pact of Darkness",
+        "level": 4,
+        "school": "Necromancy",
+        "subschool": null,
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S, M",
+        "castingTime": "10 minutes",
+        "range": "Touch",
+        "target": "Two willing creatures who touch hands",
+        "duration": "Permanent until broken",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You forge a dark pact between two willing creatures. Each gains the ability to sense the other's general direction and emotional state. If one breaks the terms of the pact (defined at casting), they suffer 1d6 Constitution damage per day until they fulfill their obligation or die. The pact can only be broken by wish, miracle, or the death of both parties.",
+        "defilingRadius": 10,
+        "darkSunNotes": "Used by defiler cabals to enforce loyalty and by unscrupulous merchants to seal agreements in blood. The Sorcerer-Kings are said to have used a more powerful version of this spell to bind their original templars."
+    },
+    {
+        "id": "infestation",
+        "name": "Infestation",
+        "level": 4,
+        "school": "Conjuration",
+        "subschool": "Summoning",
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S, M",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "One 10-ft. cube/level",
+        "duration": "1 round/level",
+        "savingThrow": "Fortitude partial",
+        "spellResistance": "No",
+        "description": "You summon a swarm of Athasian vermin—stinging insects, biting beetles, or venomous spiders—that fills the target area. Creatures in the area take 2d6 damage per round and must make a Fortitude save each round or be nauseated. The swarm provides concealment to all creatures within it.",
+        "defilingRadius": 10,
+        "darkSunNotes": "The variety of vermin summoned depends on the terrain. In the sandy wastes, scorpions and beetles predominate. Near the Forest Ridge, biting flies and spiders appear. The swarm is real, not illusory, and persists briefly after the spell ends."
+    },
+    {
+        "id": "sands-of-time",
+        "name": "Sands of Time",
+        "level": 4,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "Creature or object touched",
+        "duration": "Instantaneous",
+        "savingThrow": "Fortitude negates",
+        "spellResistance": "Yes",
+        "description": "You age a creature or erode an object by channeling the withering power of time. A living creature takes 1 point of ability damage to Strength, Dexterity, and Constitution as they age years in seconds. Objects lose hardness and hit points as they rust, rot, or crumble—taking the equivalent of 10 years of wear per caster level.",
+        "defilingRadius": 10,
+        "darkSunNotes": "The defiling arts accelerated to their logical extreme. This spell is feared by all who know of it, as it can reduce a warrior in their prime to a frail elder in an instant. Some defilers use it to bypass locked doors by aging them to dust."
+    },
+    {
+        "id": "elemental-strike",
+        "name": "Elemental Strike",
+        "level": 4,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "One creature",
+        "duration": "Instantaneous",
+        "savingThrow": "Reflex half",
+        "spellResistance": "Yes",
+        "description": "You hurl a bolt of raw elemental energy at a single target. Choose fire, earth, air, or water when casting. Fire deals 1d6 damage per level (max 10d6). Earth deals 1d4 per level but ignores hardness. Air deals 1d6 per level and pushes the target 5 feet per 5 damage dealt. Water deals 1d6 per level and extinguishes non-magical fires.",
+        "defilingRadius": 10,
+        "darkSunNotes": "Unlike most arcane magic, this spell draws upon elemental forces rather than pure life energy. The elemental planes still touch Athas, though their influence grows weaker with each passing age."
+    },
+    {
+        "id": "gray-rift",
+        "name": "Gray Rift",
+        "level": 5,
+        "school": "Necromancy",
+        "subschool": null,
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "5-ft.-wide, 20-ft.-long rift",
+        "duration": "1 round/level",
+        "savingThrow": "Will partial",
+        "spellResistance": "Yes",
+        "description": "You tear a rift to the Gray, the Athasian plane of the dead. The rift appears as a swirling vortex of ash-colored mist. Creatures within 10 feet of the rift must make a Will save each round or take 2d6 negative energy damage and 1 point of Wisdom drain as the Gray's desolation seeps into their minds. Undead within range are healed 2d6 hit points per round.",
+        "defilingRadius": 15,
+        "darkSunNotes": "The Gray is unique to Athas—a plane of ash and entropy where the spirits of the dead linger in mindless agony. Opening a rift to it is considered one of the most dangerous acts a defiler can perform, as powerful undead may be drawn to the opening."
+    },
+    {
+        "id": "summon-tyr-storm",
+        "name": "Summon Tyr-Storm",
+        "level": 5,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 round",
+        "range": "Long (400 ft. + 40 ft./level)",
+        "target": "Cylinder (40-ft. radius, 80 ft. high)",
+        "duration": "1 round/level",
+        "savingThrow": "Reflex half",
+        "spellResistance": "No",
+        "description": "You summon a miniature version of the deadly Tyr-storms that ravage Athas. The storm combines lightning, sand, and psychic static. Each round, creatures in the area take 3d6 electricity damage and 2d6 bludgeoning damage from wind-driven sand. Psionic powers used within the storm have a 20% failure chance due to psychic interference.",
+        "defilingRadius": 15,
+        "darkSunNotes": "The Tyr-storms are unique to Athas—magical tempests that combine physical destruction with psionic disruption. This spell captures a fraction of their devastating power. Some scholars believe Tyr-storms are echoes of the Cleansing Wars' most destructive battles."
+    },
+    {
+        "id": "cerulean-shock",
+        "name": "Cerulean Shock",
+        "level": 5,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "One creature",
+        "duration": "Instantaneous",
+        "savingThrow": "Fortitude partial",
+        "spellResistance": "Yes",
+        "description": "You channel raw arcane energy in its purest cerulean form, striking a target with a bolt of brilliant blue energy. The target takes 1d6 damage per caster level (maximum 15d6). On a failed Fortitude save, the target is also stunned for 1 round. The bolt is especially effective against creatures with psionic abilities, dealing +2 damage per die against them.",
+        "defilingRadius": 15,
+        "darkSunNotes": "Cerulean energy is the raw stuff of arcane magic on Athas—the remnant power of the dying world itself. This spell taps directly into that energy, producing a distinctive blue bolt visible for miles across the flat desert terrain."
+    },
+    {
+        "id": "sand-form",
+        "name": "Sand Form",
+        "level": 5,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "You",
+        "duration": "1 min./level (D)",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You transform your body into animate sand. In this form, you gain DR 10/magic, immunity to critical hits and sneak attacks, and can move through spaces as small as a grain of sand. You can form a sandstorm around yourself dealing 2d6 damage to adjacent creatures. You cannot cast spells in this form but can dismiss the effect as a standard action.",
+        "defilingRadius": 15,
+        "darkSunNotes": "Wizards who master this spell become nearly impossible to capture in the open desert. Some preservers have used it to infiltrate templar strongholds by flowing through cracks in walls and under doors."
+    },
+    {
+        "id": "regenerate-land",
+        "name": "Regenerate Land",
+        "level": 5,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Preserver"
+        ],
+        "components": "V, S, M",
+        "castingTime": "1 hour",
+        "range": "Touch",
+        "target": "1 acre per level of barren or defiled land",
+        "duration": "Instantaneous",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You channel life energy back into the earth, reversing the damage caused by defiling magic or natural desolation. Defiled terrain is restored to its pre-defiled state over the course of one week. Barren but non-defiled land gains enough vitality to support sparse vegetation within one month. The spell cannot restore land to a more fertile state than it was before it was defiled.",
+        "defilingRadius": 15,
+        "darkSunNotes": "The most important spell in the preserver arsenal—and the reason the Veiled Alliance fights on despite impossible odds. Each casting is a small victory in the war to save Athas from becoming a lifeless ball of dust."
+    },
+    {
+        "id": "mind-shatter",
+        "name": "Mind Shatter",
+        "level": 5,
+        "school": "Enchantment",
+        "subschool": "Compulsion",
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "One creature",
+        "duration": "Instantaneous",
+        "savingThrow": "Will negates",
+        "spellResistance": "Yes",
+        "description": "You assault the target's mind with a burst of entropic energy drawn from the Gray. On a failed save, the target takes 1d4 points of Intelligence, Wisdom, and Charisma damage. If any of these scores is reduced to 0, the creature is rendered permanently catatonic until restored by greater restoration or more powerful magic.",
+        "defilingRadius": 15,
+        "darkSunNotes": "The ultimate interrogation tool of defilers. Even the threat of this spell can break a prisoner's resolve. The Veiled Alliance considers its use to be proof that a wizard has crossed an irredeemable line."
+    },
+    {
+        "id": "silt-storm",
+        "name": "Silt Storm",
+        "level": 6,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Long (400 ft. + 40 ft./level)",
+        "target": "Cylinder (30-ft. radius, 60 ft. high)",
+        "duration": "1 round/level",
+        "savingThrow": "Fortitude partial",
+        "spellResistance": "No",
+        "description": "You conjure a devastating storm of choking silt. Creatures in the area take 4d6 bludgeoning damage per round and must make a Fortitude save each round or begin suffocating as fine silt fills their lungs. Visibility in the area is reduced to zero. The storm extinguishes non-magical fires and disperses gases.",
+        "defilingRadius": 15,
+        "darkSunNotes": "Silt storms are among the deadliest natural phenomena on Athas. This spell replicates their fury in a controlled area. Creatures native to the Sea of Silt, such as silt horrors, are unaffected by the suffocation effect."
+    },
+    {
+        "id": "obsidian-shards",
+        "name": "Obsidian Shards",
+        "level": 6,
+        "school": "Conjuration",
+        "subschool": "Creation",
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "30-ft.-radius burst",
+        "duration": "Instantaneous",
+        "savingThrow": "Reflex half",
+        "spellResistance": "No",
+        "description": "You conjure a burst of razor-sharp obsidian shards that shred everything in the area. Creatures take 1d6 slashing damage per caster level (maximum 15d6). The shards litter the area, which becomes difficult terrain. Creatures moving through the area take 2d6 damage per round from the sharp debris. The obsidian fragments are real and permanent.",
+        "defilingRadius": 15,
+        "darkSunNotes": "Obsidian replaces steel for most purposes on metal-poor Athas. The shards created by this spell are of exceptional quality and are often collected after battle for crafting into weapons and tools—a grim economy built on magical violence."
+    },
+    {
+        "id": "gray-binding",
+        "name": "Gray Binding",
+        "level": 6,
+        "school": "Necromancy",
+        "subschool": null,
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S, M",
+        "castingTime": "1 minute",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "One undead creature or spirit from the Gray",
+        "duration": "1 day/level",
+        "savingThrow": "Will negates",
+        "spellResistance": "Yes",
+        "description": "You bind a spirit from the Gray or an existing undead to your service. The bound creature must obey your commands for the spell's duration, though intelligent undead may attempt to twist the wording of ambiguous orders. The bound creature cannot harm you directly. You can bind one creature with HD equal to or less than your caster level.",
+        "defilingRadius": 15,
+        "darkSunNotes": "The Gray makes necromancy both easier and more dangerous on Athas. Spirits bound from the Gray often carry fragments of ancient memories from the Green Age or even the Cleansing Wars, making them valuable—if treacherous—sources of lore."
+    },
+    {
+        "id": "flesh-to-ash",
+        "name": "Flesh to Ash",
+        "level": 6,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "One creature",
+        "duration": "Instantaneous",
+        "savingThrow": "Fortitude negates",
+        "spellResistance": "Yes",
+        "description": "You channel withering defiling energy at a single target, attempting to reduce their body to ash. On a failed save, the target's flesh begins to crumble and dry, dealing 10d6 damage and reducing their movement speed by half. If this damage kills the creature, their body crumbles to gray ash. A successful save deals 5d6 damage with no speed reduction.",
+        "defilingRadius": 15,
+        "darkSunNotes": "The spell's effect mirrors the devastation defiling magic wreaks on the land—living matter drained of all vitality and moisture until only ash remains. Victims of this spell are sometimes mistaken for defiling aftermath."
+    },
+    {
+        "id": "forge-of-the-sun",
+        "name": "Forge of the Sun",
+        "level": 6,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "One creature or object",
+        "duration": "Instantaneous",
+        "savingThrow": "Reflex half",
+        "spellResistance": "Yes",
+        "description": "You focus the dark sun's intense heat into a searing beam. The target takes 1d8 fire damage per caster level (maximum 15d8). Flammable objects struck are ignited. Metal objects struck become red-hot, dealing an additional 1d6 fire damage per round for 1d4 rounds to creatures holding them. This spell is particularly effective against creatures vulnerable to sunlight.",
+        "defilingRadius": 15,
+        "darkSunNotes": "The dark sun of Athas burns hotter than any normal star. This spell channels that terrible energy. It is said that the Champions of Rajaat used a more potent version during the Cleansing Wars to melt fortress walls."
+    },
+    {
+        "id": "lens-of-the-cerulean",
+        "name": "Lens of the Cerulean",
+        "level": 6,
+        "school": "Divination",
+        "subschool": null,
+        "classes": [
+            "Preserver"
+        ],
+        "components": "V, S, M",
+        "castingTime": "10 minutes",
+        "range": "Personal",
+        "target": "You",
+        "duration": "1 min./level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You attune your vision to see the cerulean threads of magic that connect all living things on Athas. You can see magical auras with perfect clarity, identify any spell being cast within line of sight, and trace defiling damage back to its source. You also gain true seeing against illusions of 4th level or lower.",
+        "defilingRadius": 15,
+        "darkSunNotes": "The cerulean web is the underlying magical field of Athas—the same force that defilers drain and preservers nurture. Seeing it clearly reveals the full extent of the world's magical devastation, which some preservers find deeply distressing."
+    },
+    {
+        "id": "drown-on-dry-land",
+        "name": "Drown on Dry Land",
+        "level": 7,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "One creature",
+        "duration": "1 round/level",
+        "savingThrow": "Fortitude negates",
+        "spellResistance": "Yes",
+        "description": "You fill the target's lungs with conjured water, causing them to drown on dry land. Each round, the target must make a Constitution check (DC 10 + 1 per previous check) or fall unconscious. An unconscious target drops to 0 hit points on the following round and dies the round after that. A successful save ends the drowning but leaves the creature nauseated for 1d4 rounds.",
+        "defilingRadius": 20,
+        "darkSunNotes": "A cruelly ironic spell on a world where water is the most precious resource. Templars of Nibenay have been known to use this spell as a public execution method, the condemned drowning in the desert sun before horrified crowds."
+    },
+    {
+        "id": "ashen-rebirth",
+        "name": "Ashen Rebirth",
+        "level": 7,
+        "school": "Necromancy",
+        "subschool": null,
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S, M",
+        "castingTime": "1 minute",
+        "range": "Personal",
+        "target": "You",
+        "duration": "24 hours; see text",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You prepare a contingency that triggers upon your death. If killed while this spell is active, your body crumbles to ash but reforms 24 hours later at the location of death with full hit points but no spell slots. The reformation drains all plant life within a 100-foot radius, killing it permanently. The spell can only be active once at a time.",
+        "defilingRadius": 20,
+        "darkSunNotes": "The ultimate expression of a defiler's disregard for the natural world—cheating death at the cost of annihilating the surrounding ecosystem. Each use scars the land permanently, creating barren circles visible for decades."
+    },
+    {
+        "id": "tempest-of-sand-and-flame",
+        "name": "Tempest of Sand and Flame",
+        "level": 7,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Long (400 ft. + 40 ft./level)",
+        "target": "Cylinder (40-ft. radius, 60 ft. high)",
+        "duration": "1 round/level",
+        "savingThrow": "Reflex half",
+        "spellResistance": "No",
+        "description": "You conjure a raging storm of superheated sand that scours and burns everything in the area. Creatures take 6d6 fire damage and 4d6 slashing damage each round. The area is treated as heavily obscured. Creatures killed by the spell are reduced to glass-smooth skeletons coated in fused sand.",
+        "defilingRadius": 20,
+        "darkSunNotes": "At the intersection of fire and earth, sand becomes glass. This spell accelerates that process violently. The glassed remains of victims serve as grim warnings—some defilers arrange them as territorial markers in the wastes."
+    },
+    {
+        "id": "psionic-dampening-field",
+        "name": "Psionic Dampening Field",
+        "level": 7,
+        "school": "Abjuration",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "30-ft.-radius emanation centered on you",
+        "duration": "1 round/level",
+        "savingThrow": "Will negates",
+        "spellResistance": "No",
+        "description": "You create a field that disrupts psionic activity. Psionic creatures within the area must make a Will save or have their power point costs doubled. Psionic focus is lost on a failed save. Psi-like abilities have a 50% chance of failure. This field does not affect arcane or divine magic.",
+        "defilingRadius": 20,
+        "darkSunNotes": "On a world where nearly every creature has some psionic talent, this spell is immensely powerful. The Sorcerer-Kings are said to have developed the first version to counter psionicists who opposed their rule during the Cleansing Wars."
+    },
+    {
+        "id": "cerulean-storm",
+        "name": "Cerulean Storm",
+        "level": 8,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Defiler",
+            "Preserver"
+        ],
+        "components": "V, S",
+        "castingTime": "1 round",
+        "range": "Long (400 ft. + 40 ft./level)",
+        "target": "Cylinder (60-ft. radius, 100 ft. high)",
+        "duration": "1 round/level",
+        "savingThrow": "Reflex half",
+        "spellResistance": "No",
+        "description": "You summon a storm of raw cerulean energy—the fundamental force of arcane magic on Athas. Creatures in the area take 8d6 damage per round (half arcane force, half electricity). Spellcasters and psionic creatures take an additional 4d6 damage. All magical and psionic effects of 3rd level or lower in the area are automatically dispelled.",
+        "defilingRadius": 20,
+        "darkSunNotes": "Named after the legendary Cerulean Storm that marked Rajaat's attempted return, this spell channels a fraction of that cataclysmic power. Its use invariably draws attention from the Sorcerer-Kings and their agents."
+    },
+    {
+        "id": "obsidian-tomb",
+        "name": "Obsidian Tomb",
+        "level": 8,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S, M",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "One creature",
+        "duration": "Permanent",
+        "savingThrow": "Fortitude negates",
+        "spellResistance": "Yes",
+        "description": "You encase a creature in a tomb of solid obsidian. The target is placed in a state of suspended animation, conscious but unable to move, speak, or cast spells. The obsidian shell has hardness 12 and 100 hit points. If broken open, the creature is freed but is stunned for 1d4 rounds. The tomb can only be opened from outside or by disintegrate, wish, or similar magic.",
+        "defilingRadius": 20,
+        "darkSunNotes": "The Sorcerer-Kings have used this spell to imprison enemies for centuries. Obsidian tombs containing still-living prisoners from the Green Age have been found in ruins across Athas. The imprisoned creature does not age but remains fully aware—a torment beyond imagining."
+    },
+    {
+        "id": "gray-death",
+        "name": "Gray Death",
+        "level": 8,
+        "school": "Necromancy",
+        "subschool": null,
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "One creature",
+        "duration": "Instantaneous",
+        "savingThrow": "Fortitude partial",
+        "spellResistance": "Yes",
+        "description": "You channel the entropy of the Gray directly into a living creature. On a failed save, the target takes 150 hit points of damage. On a successful save, the target takes 3d6+15 damage. Creatures killed by this spell cannot be raised or resurrected—their spirits are drawn directly into the Gray, bypassing the normal death process.",
+        "defilingRadius": 20,
+        "darkSunNotes": "The Gray's pull is stronger on Athas than on any other world—resurrection is already difficult, and this spell makes it impossible. Only the most powerful magic (wish or miracle) can retrieve a spirit claimed by Gray Death."
+    },
+    {
+        "id": "defiling-aura",
+        "name": "Defiling Aura",
+        "level": 8,
+        "school": "Necromancy",
+        "subschool": null,
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "60-ft.-radius emanation centered on you",
+        "duration": "1 round/level",
+        "savingThrow": "Fortitude partial",
+        "spellResistance": "No",
+        "description": "You radiate a constant field of defiling energy. Each round, all creatures within the area (except you) take 3d6 negative energy damage (Fortitude half). All plant life in the area is destroyed instantly. Additionally, all your arcane spells cast while this aura is active have their caster level increased by 2, but their defiling radius is doubled.",
+        "defilingRadius": 60,
+        "darkSunNotes": "The signature spell of advanced defilers. A defiler wreathed in this aura leaves a trail of dead terrain visible from the air. It is said that the Champions of Rajaat maintained permanent versions of this effect during the Cleansing Wars."
+    },
+    {
+        "id": "black-sun",
+        "name": "Black Sun",
+        "level": 9,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S",
+        "castingTime": "1 round",
+        "range": "Long (400 ft. + 40 ft./level)",
+        "target": "80-ft.-radius burst",
+        "duration": "Instantaneous",
+        "savingThrow": "Reflex half",
+        "spellResistance": "No",
+        "description": "You channel the dark sun's malevolent energy into a sphere of annihilating darkness. Creatures in the area take 1d8 damage per caster level (maximum 25d8). This damage is half fire, half negative energy. All plant life in the area is permanently destroyed. The terrain becomes barren wasteland that cannot support life for 100 years per caster level.",
+        "defilingRadius": 80,
+        "darkSunNotes": "The most powerful destructive spell in the defiler's arsenal. Its use creates permanent dead zones indistinguishable from the worst wastelands of Athas. It is believed that the Sea of Silt was created by a spell of similar power wielded during the Cleansing Wars."
+    },
+    {
+        "id": "rajaats-vengeance",
+        "name": "Rajaat's Vengeance",
+        "level": 9,
+        "school": "Necromancy",
+        "subschool": null,
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S",
+        "castingTime": "1 round",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "One creature",
+        "duration": "Instantaneous",
+        "savingThrow": "Fortitude partial",
+        "spellResistance": "Yes",
+        "description": "You channel the fury of Rajaat, the first sorcerer, directly at a single target. The target takes 200 damage (Fortitude for half). If reduced to 0 or fewer hit points, the target is obliterated—body, spirit, and all possessions are consumed. Nothing short of divine intervention can restore a creature destroyed this way. Even on a successful save, the target ages 10 years.",
+        "defilingRadius": 25,
+        "darkSunNotes": "Named after the War-Bringer himself, this spell draws upon the same well of hatred that drove the Cleansing Wars. Its very existence is proof that Rajaat's shadow still falls across Athas, and his knowledge persists in forbidden texts hidden across the Tablelands."
+    },
+    {
+        "id": "life-leech-field",
+        "name": "Life Leech Field",
+        "level": 9,
+        "school": "Necromancy",
+        "subschool": null,
+        "classes": [
+            "Defiler"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "100-ft.-radius emanation centered on you",
+        "duration": "1 round/level",
+        "savingThrow": "Fortitude half",
+        "spellResistance": "No",
+        "description": "You create a massive field of life-draining energy. Every living creature within the area takes 5d6 negative energy damage each round (Fortitude half). You are healed for half of all damage dealt. All plant life in the area is utterly annihilated. The terrain within the field's area is permanently barren.",
+        "defilingRadius": 100,
+        "darkSunNotes": "The ultimate defiling spell—a walking apocalypse. A defiler maintaining this field destroys an area equivalent to a small farm every round. It is the embodiment of everything preservers fight against and everything that has brought Athas to the brink of death."
+    },
+    {
+        "id": "green-age-restoration",
+        "name": "Green Age Restoration",
+        "level": 9,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Preserver"
+        ],
+        "components": "V, S, M",
+        "castingTime": "1 hour",
+        "range": "Touch",
+        "target": "10 acres per level of defiled or barren land",
+        "duration": "Instantaneous",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You channel an enormous amount of carefully preserved life energy into the earth, restoring it to Green Age fertility. The affected area transforms over one month into lush, verdant terrain capable of supporting a full ecosystem. Underground water sources are replenished. The spell can even restore land destroyed by Black Sun or similar effects.",
+        "defilingRadius": 25,
+        "darkSunNotes": "The preserver's dream made real—and the rarest spell on Athas. Only a handful of preservers in recorded history have achieved the power to cast it. Each casting is a beacon of hope and a direct challenge to the Sorcerer-Kings' dominion. The Sorcerer-Kings have standing orders to eliminate anyone capable of casting this spell."
+    },
+    {
+        "id": "cerulean-apotheosis",
+        "name": "Cerulean Apotheosis",
+        "level": 9,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Preserver"
+        ],
+        "components": "V, S, M",
+        "castingTime": "10 minutes",
+        "range": "Personal",
+        "target": "You",
+        "duration": "1 min./level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You infuse yourself with raw cerulean energy, temporarily achieving a state of magical transcendence. You gain immunity to all spells of 5th level or lower, SR 35, and your spells deal maximum damage. You can cast spells without material components and your defiling radius is reduced to 0. However, when the spell ends, you are exhausted and cannot cast spells for 24 hours.",
+        "defilingRadius": 25,
+        "darkSunNotes": "The pinnacle of preserver magic. It is whispered that this spell is a fragment of the process by which the Champions of Rajaat were transformed, but refined by preservers to be temporary and non-corrupting. The Sorcerer-Kings would kill to possess—or suppress—this knowledge."
+    },
+    {
+        "id": "earthen-fist",
+        "name": "Earthen Fist",
+        "level": 1,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "One creature",
+        "duration": "Instantaneous",
+        "savingThrow": "Reflex half",
+        "spellResistance": "Yes",
+        "description": "A fist of packed earth and stone erupts from the ground beneath the target, dealing 1d6 bludgeoning damage per two caster levels (maximum 5d6). If the target fails its save, it is also knocked prone.",
+        "defilingRadius": null,
+        "domains": [
+            "Earth"
+        ],
+        "darkSunNotes": "Earth clerics draw power from the elemental plane of Earth through the barren soil of Athas. Even dead, rocky terrain responds to their call, making this spell reliable across the Tablelands."
+    },
+    {
+        "id": "stone-tell",
+        "name": "Stone Tell",
+        "level": 1,
+        "school": "Divination",
+        "subschool": null,
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "Stone or earth touched",
+        "duration": "1 min./level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You can communicate with natural stone and earth. The stone can describe who or what has touched it, what events have occurred near it, and what lies within or behind it. Stone's perceptions are limited—it can distinguish between creature types but not specific individuals.",
+        "defilingRadius": null,
+        "domains": [
+            "Earth"
+        ],
+        "darkSunNotes": "On Athas, where written records are scarce and often destroyed, the stones themselves become witnesses. Earth clerics sometimes serve as investigators, asking ruins and ancient roads what they have seen."
+    },
+    {
+        "id": "flesh-of-stone",
+        "name": "Flesh of Stone",
+        "level": 2,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "Creature touched",
+        "duration": "1 min./level",
+        "savingThrow": "Will negates (harmless)",
+        "spellResistance": "Yes (harmless)",
+        "description": "The target's skin takes on the hardness of stone, granting DR 5/adamantine and a +2 natural armor bonus. However, the target's movement speed is reduced by 10 feet and they take a -2 penalty on Dexterity-based skill checks.",
+        "defilingRadius": null,
+        "domains": [
+            "Earth"
+        ],
+        "darkSunNotes": "Earth clerics value endurance over agility. This spell embodies their elemental patron's philosophy—to stand firm against all adversity like the mountains of the Ringing Mountains."
+    },
+    {
+        "id": "tremor",
+        "name": "Tremor",
+        "level": 2,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "20-ft.-radius spread",
+        "duration": "1 round",
+        "savingThrow": "Reflex negates",
+        "spellResistance": "No",
+        "description": "You cause the ground to shake violently. Creatures in the area must make a Reflex save or fall prone. Structures take 2d6 points of damage. Concentration checks for spellcasting in the area have their DC increased by 5.",
+        "defilingRadius": null,
+        "domains": [
+            "Earth"
+        ],
+        "darkSunNotes": "The earthquakes of Athas are frequent near the Ringing Mountains and the Great Rift. Earth clerics view them as messages from their element—this spell delivers such a message with directed intent."
+    },
+    {
+        "id": "earthen-barrier",
+        "name": "Earthen Barrier",
+        "level": 3,
+        "school": "Conjuration",
+        "subschool": "Creation",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "Wall of earth up to 5 ft./level long, 5 ft. high, 1 ft. thick",
+        "duration": "1 min./level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You raise a wall of compacted earth from the ground. The wall has hardness 5 and 10 hit points per inch of thickness. It provides total cover against ranged attacks. If toppled, it deals 2d6 bludgeoning damage to creatures beneath it (Reflex half).",
+        "defilingRadius": null,
+        "domains": [
+            "Earth"
+        ],
+        "darkSunNotes": "Earth clerics serving in the armies of the city-states are valued for this spell alone. In the flat, open terrain of the Tablelands, instant fortifications can decide a battle."
+    },
+    {
+        "id": "stone-shape",
+        "name": "Stone Shape",
+        "level": 3,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "Stone or stone object touched, up to 10 cu. ft. + 1 cu. ft./level",
+        "duration": "Instantaneous",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You form an existing piece of stone into any shape that suits your purpose. You can form a stone weapon, create a passage through a wall, or seal a door shut. Fine detail is not possible—the result resembles rough sculpting. The stone is not weakened by the reshaping.",
+        "defilingRadius": null,
+        "domains": [
+            "Earth"
+        ],
+        "darkSunNotes": "In the stone-built city-states of Athas, this spell has obvious utility. Earth clerics often earn their living by shaping stone for construction, creating in minutes what would take masons days."
+    },
+    {
+        "id": "meld-with-stone",
+        "name": "Meld with Stone",
+        "level": 4,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "You",
+        "duration": "10 min./level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You merge your body and possessions into a single block of stone large enough to contain you. While merged, you can sense what occurs outside (trembling, voices, etc.) but cannot see. You can step out of the stone as a standard action. If the stone is destroyed while you are inside, you are ejected and take 5d6 damage.",
+        "defilingRadius": null,
+        "domains": [
+            "Earth"
+        ],
+        "darkSunNotes": "Earth clerics who serve as scouts or spies find this spell invaluable. Hiding within a boulder or cliff face renders them virtually undetectable to non-magical search methods."
+    },
+    {
+        "id": "spike-stones",
+        "name": "Spike Stones",
+        "level": 4,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "20-ft. square/level",
+        "duration": "1 hour/level",
+        "savingThrow": "Reflex partial",
+        "spellResistance": "No",
+        "description": "Rocky ground, stone floors, and similar surfaces sprout sharp stone spikes that blend into the natural terrain. Creatures moving through the area take 1d8 piercing damage per 5 feet of movement and must make a Reflex save or have their speed reduced by half for 24 hours due to wounded feet.",
+        "defilingRadius": null,
+        "domains": [
+            "Earth"
+        ],
+        "darkSunNotes": "In the rocky barrens and stony passes of the Ringing Mountains, this spell turns natural terrain into a killing field. The spikes are virtually indistinguishable from natural stone formations."
+    },
+    {
+        "id": "earthen-maw",
+        "name": "Earthen Maw",
+        "level": 5,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "30-ft.-radius area of earth or stone",
+        "duration": "1 round/level",
+        "savingThrow": "Reflex negates",
+        "spellResistance": "No",
+        "description": "The earth opens a massive, gnashing maw of stone teeth. Creatures in the area when it opens must make a Reflex save or fall 20 feet into the maw, taking 2d6 falling damage and becoming grappled by stone jaws that deal 3d6 crushing damage per round. Escaping requires a DC 25 Strength or Escape Artist check.",
+        "defilingRadius": null,
+        "domains": [
+            "Earth"
+        ],
+        "darkSunNotes": "A terrifying manifestation of elemental Earth's primal hunger. The maw is a real geological formation that closes permanently when the spell ends, entombing anything still within."
+    },
+    {
+        "id": "wall-of-stone",
+        "name": "Wall of Stone",
+        "level": 5,
+        "school": "Conjuration",
+        "subschool": "Creation",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "Stone wall up to 5 ft./level long, 5 ft. high/level, 1 inch thick/4 levels",
+        "duration": "Instantaneous",
+        "savingThrow": "None; see text",
+        "spellResistance": "No",
+        "description": "You conjure a wall of solid stone. The wall is permanent once created and can be shaped to fit available space. It has hardness 8 and 15 hit points per inch of thickness. Creatures can be trapped by the wall if they fail a Reflex save.",
+        "defilingRadius": null,
+        "domains": [
+            "Earth"
+        ],
+        "darkSunNotes": "Permanent stone construction is the foundation of Athasian civilization. Earth clerics who can create lasting walls of stone are among the most valued members of any community."
+    },
+    {
+        "id": "create-water",
+        "name": "Create Water",
+        "level": 1,
+        "school": "Conjuration",
+        "subschool": "Creation",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "Up to 2 gallons per level of water",
+        "duration": "Instantaneous",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You create pure, drinkable water that flows from your hands or appears in a container of your choice. The water is clean, fresh, and suitable for drinking, cooking, or cleaning.",
+        "defilingRadius": null,
+        "domains": [
+            "Water"
+        ],
+        "darkSunNotes": "The single most important spell on Athas. Water clerics who can create water are treated with near-reverence in most communities. Some water clerics become wealthy selling their services; others see it as a sacred duty to provide water freely."
+    },
+    {
+        "id": "water-sense",
+        "name": "Water Sense",
+        "level": 1,
+        "school": "Divination",
+        "subschool": null,
+        "classes": [
+            "Cleric",
+            "Druid",
+            "Ranger"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "You",
+        "duration": "10 min./level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You can sense the presence and approximate location of water within 1 mile. You can determine the quantity (a puddle, a stream, an underground aquifer), its depth below the surface, and whether it is drinkable. The sense is blocked by 5 feet of stone or 1 foot of metal.",
+        "defilingRadius": null,
+        "domains": [
+            "Water"
+        ],
+        "darkSunNotes": "Survival on Athas often depends on finding water. Water clerics who master this spell become invaluable guides for caravan routes. Some water clerics spend their entire lives mapping underground water sources."
+    },
+    {
+        "id": "water-breathing",
+        "name": "Water Breathing",
+        "level": 2,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "Living creature touched",
+        "duration": "2 hours/level",
+        "savingThrow": "Will negates (harmless)",
+        "spellResistance": "Yes (harmless)",
+        "description": "The target can breathe water freely for the duration. The spell does not prevent the target from breathing air, nor does it protect against water pressure or temperature. It also grants the ability to speak normally while underwater.",
+        "defilingRadius": null,
+        "domains": [
+            "Water"
+        ],
+        "darkSunNotes": "While surface water is scarce on Athas, underground lakes and the remnants of ancient seas exist beneath the desert. Water clerics exploring these hidden reservoirs rely on this spell to navigate flooded tunnels and subterranean rivers."
+    },
+    {
+        "id": "water-whip",
+        "name": "Water Whip",
+        "level": 2,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "One creature",
+        "duration": "1 round/level",
+        "savingThrow": "None",
+        "spellResistance": "Yes",
+        "description": "You conjure a whip of pressurized water that lashes out at your command. You can make one ranged touch attack per round, dealing 1d8 damage plus your Wisdom modifier. The whip can also be used to disarm (with a +4 bonus) or trip opponents without provoking attacks of opportunity.",
+        "defilingRadius": null,
+        "domains": [
+            "Water"
+        ],
+        "darkSunNotes": "The sight of conjured water being used as a weapon is deeply unsettling to Athasians. Some opponents have been known to surrender simply to drink the residual water left by the spell's attacks."
+    },
+    {
+        "id": "quench",
+        "name": "Quench",
+        "level": 3,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "20-ft.-radius burst or one fire-based creature",
+        "duration": "Instantaneous",
+        "savingThrow": "None or Will negates (see text)",
+        "spellResistance": "Yes",
+        "description": "You extinguish all non-magical fires in the area. Magical fires of your caster level or lower are automatically dispelled. Against fire-based creatures, the spell deals 1d6 damage per caster level (maximum 10d6) with a Will save for half.",
+        "defilingRadius": null,
+        "domains": [
+            "Water"
+        ],
+        "darkSunNotes": "Water and Fire clerics are natural antagonists. A water cleric's quench spell is particularly effective against fire elementals and creatures of the Plane of Fire, which sometimes cross into Athas through volcanic rifts."
+    },
+    {
+        "id": "water-ward",
+        "name": "Water Ward",
+        "level": 3,
+        "school": "Abjuration",
+        "subschool": null,
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "One container of water up to 100 gallons",
+        "duration": "1 day/level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You bless a water supply, protecting it from evaporation, contamination, and theft. The warded water cannot evaporate naturally, is immune to non-magical poisons, and any creature that attempts to take water without speaking the command word is repelled (as a shield of faith effect). The container glows faintly blue to those with water sense.",
+        "defilingRadius": null,
+        "domains": [
+            "Water"
+        ],
+        "darkSunNotes": "Water clerics are expected to protect their communities' water supplies. This spell is often cast on communal wells and cisterns. The glow visible to other water clerics serves as a territorial marker."
+    },
+    {
+        "id": "control-water",
+        "name": "Control Water",
+        "level": 4,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Long (400 ft. + 40 ft./level)",
+        "target": "Water in a 10-ft./level square area, 2 ft./level deep",
+        "duration": "10 min./level",
+        "savingThrow": "None; see text",
+        "spellResistance": "No",
+        "description": "You raise or lower the level of water in the affected area. You can raise water up to 2 feet per level or lower it by a similar amount. You can also part water, creating a trough or channel. Creatures in the area of a flash flood must make a Strength check (DC 20) or be swept away.",
+        "defilingRadius": null,
+        "domains": [
+            "Water"
+        ],
+        "darkSunNotes": "Controlling water on Athas is controlling life itself. Water clerics with access to this spell can redirect irrigation channels, reveal submerged ruins, or create flash floods in dry wadis to ambush enemies."
+    },
+    {
+        "id": "ice-storm",
+        "name": "Ice Storm",
+        "level": 4,
+        "school": "Evocation",
+        "subschool": "Cold",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Long (400 ft. + 40 ft./level)",
+        "target": "Cylinder (20-ft. radius, 40 ft. high)",
+        "duration": "1 round",
+        "savingThrow": "None",
+        "spellResistance": "Yes",
+        "description": "A storm of hail and sleet rains down, dealing 3d6 bludgeoning damage and 2d6 cold damage to all creatures in the area. The hail leaves the ground covered in ice, making the area difficult terrain for the remainder of the encounter.",
+        "defilingRadius": null,
+        "domains": [
+            "Water"
+        ],
+        "darkSunNotes": "Ice is virtually unknown on the surface of Athas. Creatures encountering hail for the first time are often terrified, mistaking it for falling stones. The difficult terrain left behind melts within minutes under the dark sun."
+    },
+    {
+        "id": "flash-flood",
+        "name": "Flash Flood",
+        "level": 5,
+        "school": "Conjuration",
+        "subschool": "Creation",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Long (400 ft. + 40 ft./level)",
+        "target": "60-ft.-wide, 300-ft.-long rush of water",
+        "duration": "1 round/level",
+        "savingThrow": "Reflex partial",
+        "spellResistance": "No",
+        "description": "You conjure a massive rush of water that surges forward in a chosen direction. Creatures in the path take 6d6 bludgeoning damage and must make a Reflex save or be swept 60 feet in the direction of the flood and knocked prone. The water persists for the duration, creating difficult terrain. Medium or smaller creatures must make a Swim check (DC 20) or begin drowning.",
+        "defilingRadius": null,
+        "domains": [
+            "Water"
+        ],
+        "darkSunNotes": "Flash floods in the desert are among Athas's most dangerous natural phenomena. This spell conjures one at will—an awesome display of Water's power. The conjured water soaks into the parched earth rapidly after the spell ends, but can temporarily revitalize dormant seeds."
+    },
+    {
+        "id": "surface-walk",
+        "name": "Surface Walk",
+        "level": 1,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Cleric",
+            "Druid",
+            "Ranger"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "Creature touched",
+        "duration": "10 min./level",
+        "savingThrow": "Will negates (harmless)",
+        "spellResistance": "Yes (harmless)",
+        "description": "The target can walk on the surface of silt, sand, or mud as if it were solid ground. The creature leaves no tracks and does not sink. This does not protect against hazards within the substance (such as silt horrors or buried creatures).",
+        "defilingRadius": null,
+        "domains": [
+            "Earth",
+            "Silt"
+        ],
+        "darkSunNotes": "Essential for crossing the Sea of Silt, this spell is constantly in demand. Merchant houses crossing the Estuary of the Forked Tongue pay dearly for clerics who can sustain this spell across an entire caravan."
+    },
+    {
+        "id": "dust-cloud",
+        "name": "Dust Cloud",
+        "level": 1,
+        "school": "Conjuration",
+        "subschool": "Creation",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "20-ft.-radius cloud",
+        "duration": "1 round/level",
+        "savingThrow": "Fortitude negates",
+        "spellResistance": "No",
+        "description": "You conjure a choking cloud of fine dust and silt particles. Creatures in the cloud must make a Fortitude save or be blinded for 1 round and take a -2 penalty on attack rolls for the duration. The cloud provides concealment (20% miss chance). Wind of moderate or stronger speed disperses the cloud in 1 round.",
+        "defilingRadius": null,
+        "domains": [
+            "Silt"
+        ],
+        "darkSunNotes": "The Sea of Silt's fine particles are uniquely choking. Silt clerics channel this hazard as a weapon, conjuring clouds of the same dust that has buried entire cities along the silt shore."
+    },
+    {
+        "id": "silt-walk",
+        "name": "Silt Walk",
+        "level": 2,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "Creature touched",
+        "duration": "1 hour/level",
+        "savingThrow": "Will negates (harmless)",
+        "spellResistance": "Yes (harmless)",
+        "description": "The target can move through silt as easily as walking on solid ground. Movement through silt does not reduce the creature's speed, and the creature can see through silt up to 30 feet. The creature is also protected from the choking effects of silt inhalation.",
+        "defilingRadius": null,
+        "domains": [
+            "Silt"
+        ],
+        "darkSunNotes": "While Surface Walk lets one walk atop silt, Silt Walk allows submersion and movement within it. Silt clerics who can navigate the depths of the Sea of Silt discover lost cities and artifacts from the Green Age."
+    },
+    {
+        "id": "silt-spray-divine",
+        "name": "Silt Spray",
+        "level": 3,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "30 ft.",
+        "target": "Cone-shaped burst",
+        "duration": "Instantaneous",
+        "savingThrow": "Reflex half; Fortitude negates blindness",
+        "spellResistance": "No",
+        "description": "You blast a cone of corrosive silt particles. Creatures in the area take 1d6 damage per caster level (maximum 10d6) and must make a Fortitude save or be blinded for 1d6 rounds. The silt is abrasive, dealing an additional 1d4 damage per round for 1d4 rounds as it irritates wounds.",
+        "defilingRadius": null,
+        "domains": [
+            "Silt"
+        ],
+        "darkSunNotes": "The silt conjured by this spell is drawn directly from the paraelemental plane of Silt. It is far more corrosive and fine than mundane silt, making wounds from this spell slow to heal."
+    },
+    {
+        "id": "silt-tomb",
+        "name": "Silt Tomb",
+        "level": 4,
+        "school": "Conjuration",
+        "subschool": "Creation",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "One creature",
+        "duration": "1 round/level",
+        "savingThrow": "Reflex negates",
+        "spellResistance": "Yes",
+        "description": "You encase a creature in a column of densely packed silt. On a failed save, the target is immobilized and begins suffocating. Each round, the target can attempt a Strength check (DC 20) to break free. Allies can dig the target out with a DC 15 Strength check as a full-round action.",
+        "defilingRadius": null,
+        "domains": [
+            "Silt"
+        ],
+        "darkSunNotes": "Silt burials are a common fate for those lost in the Sea of Silt. This spell recreates that horror intentionally. Silt clerics from the coastal communities use this spell both as a weapon and as a grim form of execution."
+    },
+    {
+        "id": "silt-wave",
+        "name": "Silt Wave",
+        "level": 5,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Long (400 ft. + 40 ft./level)",
+        "target": "40-ft.-wide, 200-ft.-long wave",
+        "duration": "Instantaneous",
+        "savingThrow": "Reflex partial",
+        "spellResistance": "No",
+        "description": "You conjure a massive wave of choking silt that crashes forward. Creatures in the path take 8d6 bludgeoning damage, are knocked prone, and are buried under 1 foot of silt (Reflex save to avoid being buried). Buried creatures begin suffocating and must be dug out or dig themselves out (Strength DC 15, full-round action).",
+        "defilingRadius": null,
+        "domains": [
+            "Silt"
+        ],
+        "darkSunNotes": "Legends speak of silt tidal waves that buried coastal communities overnight. A powerful silt cleric can replicate that devastation on a smaller scale. The aftermath resembles natural silt drift, making the cause difficult to identify."
+    },
+    {
+        "id": "magma-burst",
+        "name": "Magma Burst",
+        "level": 1,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "5-ft.-radius burst",
+        "duration": "Instantaneous",
+        "savingThrow": "Reflex half",
+        "spellResistance": "Yes",
+        "description": "A gout of molten rock erupts from the ground, dealing 1d6 fire damage per two caster levels (max 5d6). The magma cools rapidly but leaves the ground hot—creatures that enter or start their turn in the area take 1d4 fire damage for 1 round after the initial burst.",
+        "defilingRadius": null,
+        "domains": [
+            "Magma"
+        ],
+        "darkSunNotes": "Where the paraelemental planes of Earth and Fire meet, magma flows eternally. Clerics who serve the paraelemental lord of Magma channel this meeting point, drawing forth molten stone from deep beneath the surface."
+    },
+    {
+        "id": "magma-armor",
+        "name": "Magma Armor",
+        "level": 2,
+        "school": "Conjuration",
+        "subschool": "Creation",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "You",
+        "duration": "1 min./level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You coat yourself in a layer of semi-molten rock. You gain a +4 armor bonus to AC, fire resistance 10, and any creature that strikes you with a natural weapon or unarmed attack takes 1d6 fire damage. However, you take a -2 penalty on Dexterity checks and Reflex saves.",
+        "defilingRadius": null,
+        "domains": [
+            "Magma"
+        ],
+        "darkSunNotes": "Magma clerics are walking furnaces in combat, dangerous to approach and difficult to harm. The armor's heat is visible as a shimmering distortion, warning enemies before they close to melee range."
+    },
+    {
+        "id": "magma-flow",
+        "name": "Magma Flow",
+        "level": 3,
+        "school": "Conjuration",
+        "subschool": "Creation",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "20-ft.-radius pool",
+        "duration": "1 round/level",
+        "savingThrow": "Reflex partial",
+        "spellResistance": "No",
+        "description": "You cause molten rock to well up from beneath the surface, creating a pool of lava. Creatures in the area when the pool forms take 6d6 fire damage (Reflex half). The pool remains for the duration as difficult terrain. Creatures that enter or start their turn in the pool take 6d6 fire damage per round. After the spell ends, the magma hardens into rough obsidian.",
+        "defilingRadius": null,
+        "domains": [
+            "Magma"
+        ],
+        "darkSunNotes": "The hardened obsidian left behind is sometimes collected for crafting. Some magma clerics create obsidian tools and weapons as a religious practice, seeing the forge of the earth as a sacred duty."
+    },
+    {
+        "id": "rain-of-embers",
+        "name": "Rain of Embers",
+        "level": 1,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "10-ft.-radius burst",
+        "duration": "1 round/level",
+        "savingThrow": "Reflex half",
+        "spellResistance": "No",
+        "description": "You cause a shower of burning embers and cinders to rain down on an area. Creatures in the area take 1d4 fire damage per round and must make a Reflex save each round or catch fire. Flammable objects in the area are automatically ignited.",
+        "defilingRadius": null,
+        "domains": [
+            "Sun"
+        ],
+        "darkSunNotes": "The dark sun of Athas has always been a source of both life and death. Sun clerics channel the star's most destructive aspect—its capacity to burn and scorch the earth below."
+    },
+    {
+        "id": "sun-flare",
+        "name": "Sun Flare",
+        "level": 2,
+        "school": "Evocation",
+        "subschool": "Light",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "30-ft.-radius burst",
+        "duration": "Instantaneous; blindness 1d4+1 rounds",
+        "savingThrow": "Reflex partial",
+        "spellResistance": "Yes",
+        "description": "You channel a blinding burst of concentrated sunlight. Creatures in the area take 1d6 damage per caster level (maximum 5d6) and are blinded for 1d4+1 rounds. A successful Reflex save halves the damage and reduces blindness to 1 round. Undead and creatures vulnerable to sunlight take double damage.",
+        "defilingRadius": null,
+        "domains": [
+            "Sun"
+        ],
+        "darkSunNotes": "Under the dark sun's swollen disc, the light of Athas is brutal and unforgiving. Sun clerics focus that brutality into a weapon. This spell is particularly feared by the undead minions that some Sorcerer-Kings keep in their service."
+    },
+    {
+        "id": "sunstroke",
+        "name": "Sunstroke",
+        "level": 3,
+        "school": "Necromancy",
+        "subschool": null,
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "One creature",
+        "duration": "Instantaneous",
+        "savingThrow": "Fortitude negates",
+        "spellResistance": "Yes",
+        "description": "You inflict the target with severe heatstroke. On a failed save, the creature takes 1d4 Constitution damage, is fatigued, and is sickened for 1d6 hours. The creature's water consumption doubles for 24 hours. If the target is already fatigued, it becomes exhausted instead.",
+        "defilingRadius": null,
+        "domains": [
+            "Sun"
+        ],
+        "darkSunNotes": "Heatstroke kills more travelers on Athas than any monster. This spell inflicts its effects instantly. The doubled water consumption is particularly devastating in a world where water is scarcer than gold."
+    },
+    {
+        "id": "sun-hammer",
+        "name": "Sun Hammer",
+        "level": 4,
+        "school": "Evocation",
+        "subschool": "Light",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "One creature or object",
+        "duration": "Instantaneous",
+        "savingThrow": "Reflex half",
+        "spellResistance": "Yes",
+        "description": "You focus the dark sun's energy into a devastating beam of concentrated light and heat. The target takes 1d8 damage per caster level (maximum 10d8), half fire and half radiant. Objects struck must make a save or be melted/scorched. The beam is visible for miles and creates a loud crack of superheated air.",
+        "defilingRadius": null,
+        "domains": [
+            "Sun"
+        ],
+        "darkSunNotes": "The crack of a Sun Hammer can be heard across the flat Tablelands. Sun clerics use it as both weapon and signal. Some military commanders have developed battle plans around the distinctive sound of this spell."
+    },
+    {
+        "id": "corona",
+        "name": "Corona",
+        "level": 5,
+        "school": "Evocation",
+        "subschool": "Light",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "40-ft.-radius emanation centered on you",
+        "duration": "1 round/level",
+        "savingThrow": "Fortitude partial",
+        "spellResistance": "Yes",
+        "description": "You radiate the dark sun's merciless heat. Creatures within the area take 4d6 fire damage per round (Fortitude half). Undead take 6d6 damage instead. You are immune to fire damage while the spell is active. The area is brightly lit and creatures with darkvision or light sensitivity are dazzled.",
+        "defilingRadius": null,
+        "domains": [
+            "Sun"
+        ],
+        "darkSunNotes": "A sun cleric wreathed in a corona becomes a living avatar of the dark sun itself. The heat is so intense that metal objects within range begin to glow. In a world where the sun is already deadly, becoming its embodiment is a terrifying spectacle."
+    },
+    {
+        "id": "flame-blade",
+        "name": "Flame Blade",
+        "level": 1,
+        "school": "Evocation",
+        "subschool": "Fire",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "You",
+        "duration": "1 min./level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "A blade of flickering fire springs from your hand. You can wield it as a scimitar, making melee touch attacks that deal 1d8+1 fire damage per two caster levels (maximum +10). The blade sheds light as a torch. It can ignite combustible materials.",
+        "defilingRadius": null,
+        "domains": [
+            "Fire"
+        ],
+        "darkSunNotes": "Fire clerics are among the most martially inclined of Athasian priests. A flame blade blazing in the dark desert night is a beacon of power—and a warning to any who would approach uninvited."
+    },
+    {
+        "id": "endure-heat",
+        "name": "Endure Heat",
+        "level": 1,
+        "school": "Abjuration",
+        "subschool": null,
+        "classes": [
+            "Cleric",
+            "Druid",
+            "Ranger"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "Creature touched",
+        "duration": "24 hours",
+        "savingThrow": "Will negates (harmless)",
+        "spellResistance": "Yes (harmless)",
+        "description": "The target is protected from the effects of natural heat up to 140°F. The creature needs only half the normal water to avoid dehydration and gains a +4 bonus on Fortitude saves against heat dangers. This spell does not protect against fire damage from spells or attacks.",
+        "defilingRadius": null,
+        "domains": [
+            "Fire",
+            "Sun"
+        ],
+        "darkSunNotes": "Perhaps the most commonly cast divine spell on Athas. Fire clerics see the spell not as protection from their element, but as a gift from Fire to those worthy of surviving its domain."
+    },
+    {
+        "id": "produce-flame",
+        "name": "Produce Flame",
+        "level": 1,
+        "school": "Evocation",
+        "subschool": "Fire",
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
+        "components": "V, S",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "Flame in your hand",
+        "duration": "1 min./level (D)",
+        "savingThrow": "None",
+        "spellResistance": "Yes",
+        "description": "A bright flame appears in your open hand, shedding light as a torch. You can hurl the flame as a ranged touch attack (120 ft. range) dealing 1d6 fire damage +1 per caster level. You can throw one flame per round, and each throw reduces the duration by 1 minute. The flame does not harm you.",
+        "defilingRadius": null,
+        "domains": [
+            "Fire"
+        ],
+        "darkSunNotes": "Fire is both friend and foe in the Athasian night. Fire clerics use this spell for illumination, cooking, and combat with equal facility. In a world where fuel is scarce, magical fire is a precious commodity."
+    },
+    {
+        "id": "fire-trap",
+        "name": "Fire Trap",
+        "level": 2,
+        "school": "Abjuration",
+        "subschool": null,
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "10 minutes",
+        "range": "Touch",
+        "target": "Object touched",
+        "duration": "Permanent until discharged",
+        "savingThrow": "Reflex half",
+        "spellResistance": "Yes",
+        "description": "You place a trap on a closeable object (chest, box, door). When opened by anyone other than you without speaking the command word, the trap explodes dealing 1d4+1 fire damage per caster level (maximum 7d4+7) to the opener and all creatures within 5 feet.",
+        "defilingRadius": null,
+        "domains": [
+            "Fire"
+        ],
+        "darkSunNotes": "Fire clerics guard their possessions jealously. In a world of scarcity, theft is common and punishment is harsh. Fire traps serve as both deterrent and sentence."
+    },
+    {
+        "id": "heat-metal",
+        "name": "Heat Metal",
+        "level": 2,
+        "school": "Transmutation",
+        "subschool": "Fire",
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "Metal equipment of one creature, or 25 lbs. of metal/level",
+        "duration": "7 rounds",
+        "savingThrow": "Will negates (object)",
+        "spellResistance": "Yes (object)",
+        "description": "You cause metal to become red-hot. Damage escalates over 7 rounds: rounds 1-2 deal 1d4 fire damage, rounds 3-5 deal 2d4, rounds 6-7 deal 1d4 again. Creatures holding or wearing heated metal take the full damage and must drop the items or suffer accordingly.",
+        "defilingRadius": null,
+        "domains": [
+            "Fire"
+        ],
+        "darkSunNotes": "Metal is incredibly rare and valuable on Athas. This spell is particularly feared by the few warriors who possess metal weapons or armor, as dropping a red-hot metal sword means losing a treasure worth a king's ransom."
+    },
+    {
+        "id": "fireball-divine",
+        "name": "Fireball",
+        "level": 3,
+        "school": "Evocation",
+        "subschool": "Fire",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Long (400 ft. + 40 ft./level)",
+        "target": "20-ft.-radius spread",
+        "duration": "Instantaneous",
+        "savingThrow": "Reflex half",
+        "spellResistance": "Yes",
+        "description": "A bright streak flashes from your pointing finger and detonates in an explosion of flame. Creatures in the area take 1d6 fire damage per caster level (maximum 10d6). Unattended objects catch fire. The explosion spreads around corners.",
+        "defilingRadius": null,
+        "domains": [
+            "Fire"
+        ],
+        "darkSunNotes": "In the dry, desiccated terrain of Athas, fireballs are particularly devastating—everything burns easily. Fire clerics who can command this level of destruction are both respected and feared in equal measure."
+    },
+    {
+        "id": "wall-of-fire",
+        "name": "Wall of Fire",
+        "level": 4,
+        "school": "Evocation",
+        "subschool": "Fire",
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "Opaque sheet of flame up to 20 ft./level long, 20 ft. high",
+        "duration": "Concentration + 1 round/level",
+        "savingThrow": "None",
+        "spellResistance": "Yes",
+        "description": "An immobile curtain of fire appears. One side radiates intense heat, dealing 2d4 fire damage to creatures within 10 feet and 1d4 to those within 20 feet. Passing through the wall deals 2d6+1 fire damage per caster level (maximum 2d6+20). Undead take double damage.",
+        "defilingRadius": null,
+        "domains": [
+            "Fire"
+        ],
+        "darkSunNotes": "In a world without metal walls and stone fortresses, a wall of fire serves as an impenetrable barrier. Nomadic fire clerics use it to protect their camps from nighttime predators."
+    },
+    {
+        "id": "fire-storm",
+        "name": "Fire Storm",
+        "level": 5,
+        "school": "Evocation",
+        "subschool": "Fire",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "Two 10-ft. cubes per level",
+        "duration": "Instantaneous",
+        "savingThrow": "Reflex half",
+        "spellResistance": "Yes",
+        "description": "The area erupts in a conflagration of divine fire. Creatures in the area take 1d6 fire damage per caster level (maximum 15d6). You can shape the fire storm to exclude certain squares if you choose. The flames can be set to burn only creatures and leave plant life unharmed, or vice versa.",
+        "defilingRadius": null,
+        "domains": [
+            "Fire"
+        ],
+        "darkSunNotes": "A fire cleric's ultimate expression of elemental fury. The ability to spare plant life while incinerating enemies speaks to Fire's complex nature on Athas—it both destroys and renews."
+    },
+    {
+        "id": "gust-of-wind",
+        "name": "Gust of Wind",
+        "level": 1,
+        "school": "Evocation",
+        "subschool": "Air",
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "60 ft.",
+        "target": "Line-shaped gust",
+        "duration": "1 round",
+        "savingThrow": "Fortitude negates",
+        "spellResistance": "Yes",
+        "description": "A severe blast of air (approximately 50 mph) originates from you. Small or smaller creatures are knocked prone and pushed 1d4×10 feet. Medium creatures are unable to move forward against the wind. The gust disperses gases, fog, and extinguishes small fires. It fans large fires in the direction of the gust.",
+        "defilingRadius": null,
+        "domains": [
+            "Air"
+        ],
+        "darkSunNotes": "Wind is the voice of Air on Athas. Air clerics command the winds as a conductor commands an orchestra. In the stifling heat of the Tablelands, even a magical breeze can save lives."
+    },
+    {
+        "id": "wind-wall",
+        "name": "Wind Wall",
+        "level": 2,
+        "school": "Evocation",
+        "subschool": "Air",
+        "classes": [
+            "Cleric",
+            "Druid",
+            "Ranger"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "Wall of wind up to 10 ft./level long and 5 ft./level high",
+        "duration": "1 round/level",
+        "savingThrow": "None; see text",
+        "spellResistance": "Yes",
+        "description": "An invisible vertical curtain of wind strong enough to deflect arrows, bolts, and other normal projectiles (including sling stones). Larger projectiles pass through but with a -4 penalty on attack rolls. Gases and most flying creatures cannot pass through. Tiny or smaller creatures that attempt to pass must make a Fortitude save or be blown away.",
+        "defilingRadius": null,
+        "domains": [
+            "Air"
+        ],
+        "darkSunNotes": "In the open terrain of Athas, ranged combat is king. Air clerics who can negate missile fire are invaluable in battle. The wall is also effective at keeping out the swarms of stinging insects common in the scrublands."
+    },
+    {
+        "id": "wind-breath",
+        "name": "Wind Breath",
+        "level": 1,
+        "school": "Abjuration",
+        "subschool": null,
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "Creature touched",
+        "duration": "1 hour/level",
+        "savingThrow": "Will negates (harmless)",
+        "spellResistance": "Yes (harmless)",
+        "description": "The target can breathe comfortably in any atmospheric conditions, including sandstorms, silt storms, and areas of thin air. The spell does not allow breathing underwater but protects against airborne toxins, spores, and inhaled poisons (granting a +4 bonus on saves against such effects).",
+        "defilingRadius": null,
+        "domains": [
+            "Air"
+        ],
+        "darkSunNotes": "Sandstorms on Athas can suffocate the unprepared in minutes. Air clerics consider it their sacred duty to protect travelers from the suffocating desert winds. This spell has saved countless lives during the violent tyr-storms."
+    },
+    {
+        "id": "air-walk",
+        "name": "Air Walk",
+        "level": 3,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "Creature touched",
+        "duration": "10 min./level",
+        "savingThrow": "None",
+        "spellResistance": "Yes (harmless)",
+        "description": "The target can walk on air as if it were solid ground. The creature can ascend or descend at a 45-degree angle at up to half its base land speed. Wind effects apply as normal. The creature cannot run or charge while air walking.",
+        "defilingRadius": null,
+        "domains": [
+            "Air"
+        ],
+        "darkSunNotes": "In a world without easy access to flight magic, air walking is a remarkable advantage. Air clerics who can grant this ability to scouts and warriors are prized by military commanders across the Tablelands."
+    },
+    {
+        "id": "wind-funnel",
+        "name": "Wind Funnel",
+        "level": 3,
+        "school": "Evocation",
+        "subschool": "Air",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "10-ft.-radius, 40-ft.-high cylinder",
+        "duration": "1 round/level",
+        "savingThrow": "Reflex negates",
+        "spellResistance": "No",
+        "description": "You create a concentrated column of spinning wind. Creatures caught in the funnel are lifted 10 feet off the ground and take 3d6 bludgeoning damage per round. Small or smaller creatures are flung 1d6×10 feet in a random direction when the spell ends. The funnel can be moved up to 30 feet per round as a move action.",
+        "defilingRadius": null,
+        "domains": [
+            "Air"
+        ],
+        "darkSunNotes": "Dust devils and whirlwinds are common on the flat Tablelands. This spell creates a controlled version, allowing the air cleric to direct its fury. The funnel picks up loose sand and silt, making it visible as a miniature sandstorm."
+    },
+    {
+        "id": "control-winds",
+        "name": "Control Winds",
+        "level": 4,
+        "school": "Transmutation",
+        "subschool": "Air",
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "40 ft./level",
+        "target": "40-ft./level radius centered on you",
+        "duration": "10 min./level",
+        "savingThrow": "Fortitude negates",
+        "spellResistance": "No",
+        "description": "You alter wind force in the area. You can increase or decrease wind force by up to 3 categories (calm, light, moderate, strong, severe, windstorm, hurricane). Modifying wind force to windstorm or hurricane level is dangerous—creatures must make Fortitude saves or be knocked down, blown away, or battered.",
+        "defilingRadius": null,
+        "domains": [
+            "Air"
+        ],
+        "darkSunNotes": "Controlling the winds on Athas means controlling sand movement, temperature, and even the visibility across the open desert. Air clerics can calm approaching sandstorms or create them from nothing—making them either saviors or destroyers."
+    },
+    {
+        "id": "whirlwind",
+        "name": "Whirlwind",
+        "level": 5,
+        "school": "Evocation",
+        "subschool": "Air",
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Long (400 ft. + 40 ft./level)",
+        "target": "10-ft.-radius, 30-ft.-high cyclone",
+        "duration": "1 round/level",
+        "savingThrow": "Reflex negates; see text",
+        "spellResistance": "Yes",
+        "description": "You create a powerful cyclone that can be directed. Large or smaller creatures that fail their save are picked up and suspended in the whirlwind, taking 3d6 damage per round. The whirlwind can be moved up to 60 feet per round. When released or when the spell ends, creatures take falling damage for their height above ground.",
+        "defilingRadius": null,
+        "domains": [
+            "Air"
+        ],
+        "darkSunNotes": "The ultimate expression of Air's power on Athas. A directed whirlwind can scatter an entire raiding party or caravan. Air clerics who achieve this level of power are treated with awe and reverence by desert nomads."
+    },
+    {
+        "id": "rain-call",
+        "name": "Rain Call",
+        "level": 1,
+        "school": "Conjuration",
+        "subschool": "Creation",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 minute",
+        "range": "Personal",
+        "target": "30-ft.-radius centered on you",
+        "duration": "1 min./level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You call down a light rain over the area. The rain provides drinking water (approximately 1 gallon per minute per 10-ft. area), extinguishes small fires, and reduces the effectiveness of fire-based attacks by 1 point per die. The rain also provides a +2 bonus on saves against heat dangers for all creatures in the area.",
+        "defilingRadius": null,
+        "domains": [
+            "Rain"
+        ],
+        "darkSunNotes": "Rain on Athas is almost unheard of. When a rain cleric calls down water from the sky, it is considered a miracle. Communities that witness this spell often erect shrines to the event. Rain clerics are among the most revered—and most pressured—of all elemental priests."
+    },
+    {
+        "id": "fog-cloud",
+        "name": "Fog Cloud",
+        "level": 2,
+        "school": "Conjuration",
+        "subschool": "Creation",
+        "classes": [
+            "Cleric",
+            "Druid"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "Fog spreads in 20-ft. radius, 20 ft. high",
+        "duration": "10 min./level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "A bank of fog billows out from the point you designate. The fog obscures all sight beyond 5 feet. Creatures 5 feet away have concealment. Creatures farther away have total concealment. A moderate wind disperses the fog in 4 rounds; a strong wind in 1 round.",
+        "defilingRadius": null,
+        "domains": [
+            "Rain",
+            "Water"
+        ],
+        "darkSunNotes": "Fog is nearly unknown on the parched surface of Athas. Its appearance causes confusion and even panic among those who have never experienced reduced visibility from moisture rather than dust."
+    },
+    {
+        "id": "rainstorm",
+        "name": "Rainstorm",
+        "level": 3,
+        "school": "Conjuration",
+        "subschool": "Creation",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Long (400 ft. + 40 ft./level)",
+        "target": "Cylinder (100-ft. radius, 40 ft. high)",
+        "duration": "1 round/level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You call down a heavy rainstorm. The rain reduces visibility (20% miss chance for ranged attacks), extinguishes non-magical fires, and makes surfaces slippery (Balance DC 15 to move at full speed). Fire creatures in the area take 1d6 cold damage per round. The rain provides abundant fresh water.",
+        "defilingRadius": null,
+        "domains": [
+            "Rain"
+        ],
+        "darkSunNotes": "A true rainstorm on Athas is an event of almost religious significance. Plant life responds immediately, dormant seeds sprout within hours, and creatures emerge from burrows to drink. Rain clerics who call storms are said to hear the land itself singing."
+    },
+    {
+        "id": "cloudburst",
+        "name": "Cloudburst",
+        "level": 4,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Long (400 ft. + 40 ft./level)",
+        "target": "Cylinder (40-ft. radius, 80 ft. high)",
+        "duration": "1 round/level",
+        "savingThrow": "Reflex half (see text)",
+        "spellResistance": "No",
+        "description": "You call down a torrential downpour combined with hail and driving wind. Creatures in the area take 2d6 bludgeoning damage per round from hail and must make a Reflex save each round or be knocked prone by the force of the deluge. Fires are extinguished, visibility is reduced to 5 feet, and the ground becomes mud within 2 rounds.",
+        "defilingRadius": null,
+        "domains": [
+            "Rain"
+        ],
+        "darkSunNotes": "The parched soil of Athas cannot absorb so much water so quickly. Flash floods are the inevitable result of this spell, making it devastating in narrow canyons or wadi systems. The mud created can trap vehicles and beasts of burden."
+    },
+    {
+        "id": "monsoon",
+        "name": "Monsoon",
+        "level": 5,
+        "school": "Conjuration",
+        "subschool": "Creation",
+        "classes": [
+            "Cleric"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 round",
+        "range": "Long (400 ft. + 40 ft./level)",
+        "target": "Cylinder (200-ft. radius, 100 ft. high)",
+        "duration": "1 min./level",
+        "savingThrow": "Reflex partial",
+        "spellResistance": "No",
+        "description": "You call down an overwhelming deluge—a monsoon of staggering proportions. Creatures in the area take 4d6 bludgeoning damage per round from torrential rain and hail, visibility is reduced to zero, and the ground floods rapidly. After 3 rounds, the area is covered in 2 feet of standing water that increases by 1 foot per round. Fire-based creatures take double damage.",
+        "defilingRadius": null,
+        "domains": [
+            "Rain"
+        ],
+        "darkSunNotes": "The most dramatic manifestation of Rain's power. A monsoon on Athas transforms the landscape in minutes—dry wadis become raging rivers, flat ground becomes impassable marshland. The ecological impact lasts for weeks, with dormant life bursting forth across the affected area."
+    },
+    {
+        "id": "land-bond",
+        "name": "Land Bond",
+        "level": 1,
+        "school": "Divination",
+        "subschool": null,
+        "classes": [
+            "Druid"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 minute",
+        "range": "Personal",
+        "target": "You",
+        "duration": "1 hour/level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You attune yourself to the health and condition of the land within a 1-mile radius. You can sense the presence of defiled terrain, unnatural creatures (undead, aberrations), and disruptions to the natural order. You also gain a +4 bonus on Survival checks within the area.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "Athasian druids are guardians of specific regions. Land Bond is their most fundamental spell—the connection to their guarded lands that tells them when something is wrong. A druid whose land bond detects defiling magic will hunt the responsible wizard relentlessly."
+    },
+    {
+        "id": "natures-ally",
+        "name": "Nature's Ally",
+        "level": 1,
+        "school": "Conjuration",
+        "subschool": "Summoning",
+        "classes": [
+            "Druid",
+            "Ranger"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 round",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "One summoned creature",
+        "duration": "1 round/level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You summon a natural creature native to Athas to fight alongside you. The creature appears where you designate and acts on your turn. It attacks your opponents to the best of its ability. Summoned creatures are drawn from the local ecosystem—desert lizards, insects, or small predators.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "The creatures of Athas are hardier and more dangerous than their counterparts on other worlds. Even a summoned erdlu or jankx is a formidable combatant. Druids prefer to summon creatures native to their guarded lands."
+    },
+    {
+        "id": "warp-wood",
+        "name": "Warp Wood",
+        "level": 2,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Druid"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "1 Small wooden object per level, all within 20 ft. of each other",
+        "duration": "Instantaneous",
+        "savingThrow": "Will negates (object)",
+        "spellResistance": "Yes (object)",
+        "description": "You warp, bend, and twist wooden objects, rendering them useless. Warped weapons are useless. Warped shields provide no AC bonus. Warped doors spring open or shut tight. You can unwarp wood previously warped by this spell or similar effects.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "Wood is scarce and precious on Athas. Warping a warrior's wooden weapon or shield is devastating—replacements may take weeks to procure. Druids who protect forested areas use this spell to disarm would-be loggers."
+    },
+    {
+        "id": "plant-growth",
+        "name": "Plant Growth",
+        "level": 3,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Druid",
+            "Ranger"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "See text",
+        "target": "See text",
+        "duration": "Instantaneous",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "This spell has two versions. Overgrowth: Plants in a 100-ft.-radius circle become overgrown, creating difficult terrain. Enrichment: All plants in a half-mile radius become extraordinarily healthy and productive for the next year, yielding double the normal harvest.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "On Athas, this spell is nothing short of miraculous. The enrichment version can save a community from starvation. Druids who cast this spell on farmland are celebrated as heroes. Some druids have been assassinated by those who feared their power to withhold this blessing."
+    },
+    {
+        "id": "call-lightning",
+        "name": "Call Lightning",
+        "level": 3,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Druid"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 round",
+        "range": "Medium (100 ft. + 10 ft./level)",
+        "target": "One or more 30-ft.-long vertical bolts of lightning",
+        "duration": "1 min./level",
+        "savingThrow": "Reflex half",
+        "spellResistance": "Yes",
+        "description": "You call down bolts of lightning. Once the spell is cast, you can call one bolt per round as a standard action, each dealing 3d6 electricity damage (or 3d10 if outdoors in a storm). Bolts strike the ground at a point you designate.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "Lightning storms on Athas are rare but incredibly violent when they occur. The Tyr-storms occasionally produce lightning of unusual colors—blue, green, or even black. Druids tapping into these storms find their call lightning spells significantly enhanced."
+    },
+    {
+        "id": "commune-with-nature",
+        "name": "Commune with Nature",
+        "level": 4,
+        "school": "Divination",
+        "subschool": null,
+        "classes": [
+            "Druid",
+            "Ranger"
+        ],
+        "components": "V, S",
+        "castingTime": "10 minutes",
+        "range": "Personal",
+        "target": "You",
+        "duration": "Instantaneous",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You become one with nature and gain knowledge of the surrounding territory. You learn up to three facts about the following: terrain, plants, minerals, bodies of water, people, general animal population, presence of woodland creatures, presence of powerful unnatural creatures, and general state of the natural setting.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "The 'nature' of Athas is wounded and diminished, and communing with it reveals scars that would horrify druids of other worlds. Ancient defiling sites pulse with remembered pain. But it also reveals hidden springs, buried seeds, and potential for renewal."
+    },
+    {
+        "id": "reincarnate",
+        "name": "Reincarnate",
+        "level": 4,
+        "school": "Transmutation",
+        "subschool": null,
+        "classes": [
+            "Druid"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "10 minutes",
+        "range": "Touch",
+        "target": "Dead creature touched",
+        "duration": "Instantaneous",
+        "savingThrow": "None; see text",
+        "spellResistance": "Yes (harmless)",
+        "description": "You bring back a dead creature in a new body. The subject's soul must be free and willing to return. The new body is randomly determined from races native to the caster's environment. The creature retains mental ability scores but gains the physical scores of the new race.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "Resurrection magic is exceptionally difficult on Athas due to the Gray's pull on departing spirits. Druids use reincarnation as a more reliable alternative—the spirit is given a new body rather than trying to reanimate the old one. The result might be any Athasian race: human, elf, half-giant, thri-kreen, mul, or even halfling."
+    },
+    {
+        "id": "insect-plague",
+        "name": "Insect Plague",
+        "level": 5,
+        "school": "Conjuration",
+        "subschool": "Summoning",
+        "classes": [
+            "Druid"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 round",
+        "range": "Long (400 ft. + 40 ft./level)",
+        "target": "One swarm per three levels, each of which must be adjacent to at least one other swarm",
+        "duration": "1 min./level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You summon a number of swarms of locusts or other flying insects. Each swarm attacks any creatures occupying its area. Each swarm deals 2d6 damage per round to creatures within it and causes spellcasters to make concentration checks (DC 20 + spell level) to cast spells.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "The insects of Athas are larger and more aggressive than those of other worlds. Swarms of Athasian locusts can strip a field bare in minutes. Druids view these creatures as agents of natural balance—consuming what has grown too abundant."
+    },
+    {
+        "id": "secular-authority",
+        "name": "Secular Authority",
+        "level": 1,
+        "school": "Enchantment",
+        "subschool": "Compulsion",
+        "classes": [
+            "Templar"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "One creature",
+        "duration": "1 min./level",
+        "savingThrow": "Will negates",
+        "spellResistance": "Yes",
+        "description": "You invoke the authority of your Sorcerer-King to compel obedience. The target must be a citizen or resident of your Sorcerer-King's domain. On a failed save, the target regards you as a legitimate authority figure and complies with reasonable requests that do not endanger their life. The target will not fight for you or give away possessions, but will answer questions, provide directions, and step aside.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "The foundation of templar power. This spell draws its power directly from the templar's pact with their Sorcerer-King. It functions only within the city-state's borders or against citizens of that state, and only while the pact remains in force. If the Sorcerer-King withdraws favor, the spell fails."
+    },
+    {
+        "id": "kings-eye",
+        "name": "King's Eye",
+        "level": 1,
+        "school": "Divination",
+        "subschool": "Scrying",
+        "classes": [
+            "Templar"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "You",
+        "duration": "1 min./level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You open a magical connection to your Sorcerer-King, allowing them to see and hear through your senses. While the spell is active, you can also receive telepathic instructions from your patron. The Sorcerer-King may choose to boost your abilities, granting a +2 insight bonus on one ability check, attack roll, or saving throw per round at their discretion.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "Templars often activate this spell during important raids or investigations, knowing their patron may provide guidance—or take control. The spell is a double-edged sword: it demonstrates loyalty but also allows the Sorcerer-King to witness any incompetence or treachery."
+    },
+    {
+        "id": "templar-wrath",
+        "name": "Templar's Wrath",
+        "level": 2,
+        "school": "Evocation",
+        "subschool": null,
+        "classes": [
+            "Templar"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "One creature",
+        "duration": "Instantaneous",
+        "savingThrow": "Will half",
+        "spellResistance": "Yes",
+        "description": "You channel the wrath of your Sorcerer-King, striking a target with a bolt of dark energy. The target takes 1d6 damage per two caster levels (maximum 5d6). This damage is untyped—it represents the raw magical force of the Sorcerer-King's displeasure channeled through the pact. Creatures who have specifically offended the Sorcerer-King take an additional 2d6 damage.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "The damage from this spell varies in appearance based on the Sorcerer-King. Hamanu's templars produce golden lightning. Nibenay's templars create tendrils of shadow. Lalali-Puy's templars conjure thorny vines. The extra damage against specific offenders requires the templar to know the target has offended their patron."
+    },
+    {
+        "id": "mark-of-the-king",
+        "name": "Mark of the King",
+        "level": 2,
+        "school": "Necromancy",
+        "subschool": null,
+        "classes": [
+            "Templar"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Touch",
+        "target": "One creature",
+        "duration": "Permanent until removed",
+        "savingThrow": "None",
+        "spellResistance": "Yes",
+        "description": "You brand a creature with your Sorcerer-King's mark, visible only to other templars of the same city-state and under detect magic. The mark allows any templar to locate the marked creature within 1 mile and identifies the creature's status (criminal, slave, informant, etc.). The mark can only be removed by a templar of equal or higher rank or by break enchantment.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "The Mark of the King is used to track criminals, escaped slaves, and persons of interest. It is the bureaucratic backbone of templar law enforcement. Some templars mark individuals preemptively—political rivals, suspicious merchants, or anyone who draws their ire."
+    },
+    {
+        "id": "dictate",
+        "name": "Dictate",
+        "level": 3,
+        "school": "Enchantment",
+        "subschool": "Compulsion",
+        "classes": [
+            "Templar"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "One creature per 3 levels, no two of which may be more than 30 ft. apart",
+        "duration": "1 round/level",
+        "savingThrow": "Will negates",
+        "spellResistance": "Yes",
+        "description": "You issue a single command backed by the full authority of your Sorcerer-King. Targets who fail their save must obey the command for the spell's duration. The command must be stated in 25 words or fewer. Targets will not obey suicidal commands, but will comply with dangerous ones. The compulsion feels natural—targets believe they are choosing to comply.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "More powerful than Secular Authority, Dictate compels even those outside the Sorcerer-King's domain. Templars use it to command foreign diplomats, visiting merchants, and even captured enemies. The spell's ability to make compliance feel voluntary makes it a favorite interrogation tool."
+    },
+    {
+        "id": "templar-shield",
+        "name": "Templar's Shield",
+        "level": 3,
+        "school": "Abjuration",
+        "subschool": null,
+        "classes": [
+            "Templar"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "You",
+        "duration": "1 round/level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "Your Sorcerer-King's power wraps around you as a protective ward. You gain a +4 deflection bonus to AC, spell resistance equal to 12 + your caster level, and immunity to fear effects. If an attacker strikes you in melee, they must make a Will save or be shaken for 1d4 rounds as they feel the Sorcerer-King's attention turn toward them.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "The protective power of a Sorcerer-King is not to be taken lightly. Attacking a shielded templar means drawing the attention of one of the most powerful beings on Athas. Even hardened warriors hesitate when they feel an ancient, malevolent intelligence notice them."
+    },
+    {
+        "id": "word-of-the-king",
+        "name": "Word of the King",
+        "level": 4,
+        "school": "Enchantment",
+        "subschool": "Compulsion",
+        "classes": [
+            "Templar"
+        ],
+        "components": "V",
+        "castingTime": "1 standard action",
+        "range": "40 ft.",
+        "target": "All non-allied creatures in a 40-ft.-radius burst centered on you",
+        "duration": "1 round/level",
+        "savingThrow": "Will negates",
+        "spellResistance": "Yes",
+        "description": "You speak with the voice of your Sorcerer-King. All non-allied creatures in the area that fail their save must choose one: flee in terror for the spell's duration, fall prone and grovel, or stand frozen in awe. Creatures with fewer HD than your caster level receive a -4 penalty on their save.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "When a templar speaks with the Word of the King, their voice resonates with the power of a being who has ruled for thousands of years. The psychological impact is devastating—even those who save often feel shaken. Templars use this spell to disperse riots, cow prisoners, and demonstrate their patron's might."
+    },
+    {
+        "id": "conscription",
+        "name": "Conscription",
+        "level": 4,
+        "school": "Enchantment",
+        "subschool": "Compulsion",
+        "classes": [
+            "Templar"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "One creature",
+        "duration": "1 day/level",
+        "savingThrow": "Will negates",
+        "spellResistance": "Yes",
+        "description": "You conscript a creature into the service of your Sorcerer-King. On a failed save, the target serves you loyally for the spell's duration, fighting on your behalf, performing labor, and following orders. The target retains its personality and abilities but genuinely believes it has a duty to serve. Suicidal orders break the spell.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "The ultimate expression of templar authority over individuals. Conscription has been used to press-gang soldiers, seize skilled artisans, and even turn enemy agents into double agents. The spell's long duration makes it useful for extended campaigns."
+    },
+    {
+        "id": "sorcerer-kings-judgment",
+        "name": "Sorcerer-King's Judgment",
+        "level": 5,
+        "school": "Necromancy",
+        "subschool": null,
+        "classes": [
+            "Templar"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Close (25 ft. + 5 ft./2 levels)",
+        "target": "One creature",
+        "duration": "Instantaneous",
+        "savingThrow": "Fortitude partial",
+        "spellResistance": "Yes",
+        "description": "You channel your Sorcerer-King's power to pass judgment on a creature. On a failed save, the target takes 10d6 damage as their body is wracked with the patron's wrath. On a successful save, the target takes 5d6 damage. If this damage kills the target, their body is marked with the Sorcerer-King's sigil—a warning to others. The templar is healed for half the damage dealt.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "The ultimate sanction of templar authority. Public executions via Sorcerer-King's Judgment are spectacles designed to remind the populace of who truly holds power. The healing effect ensures the templar emerges from the judgment stronger—a potent symbol of the Sorcerer-King's favor."
+    },
+    {
+        "id": "royal-defiance",
+        "name": "Royal Defiance",
+        "level": 5,
+        "school": "Abjuration",
+        "subschool": null,
+        "classes": [
+            "Templar"
+        ],
+        "components": "V, S, DF",
+        "castingTime": "1 standard action",
+        "range": "Personal",
+        "target": "40-ft.-radius emanation centered on you",
+        "duration": "1 round/level",
+        "savingThrow": "None",
+        "spellResistance": "No",
+        "description": "You invoke your Sorcerer-King's sovereign authority to create a zone that disrupts all other magical and psionic authority. Within the area, enchantment spells and telepathy powers from non-allied sources automatically fail. Summoned creatures must make a Will save each round or be banished. Ongoing magical effects from non-allied sources are suppressed.",
+        "defilingRadius": null,
+        "domains": null,
+        "darkSunNotes": "This spell represents the Sorcerer-King's claim of absolute sovereignty. Within the area of Royal Defiance, only the Sorcerer-King's own magic and that of their templars functions normally. It is particularly effective against rival city-state's templars and against the psionics-heavy threats common on Athas."
+    }
+]

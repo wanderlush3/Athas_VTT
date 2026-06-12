@@ -1,0 +1,22 @@
+{
+  "name": "athas-vtt",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Dark Sun Virtual Tabletop — D&D 3.5e Athasian Campaign",
+  "workspaces": [
+    "server",
+    "client",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,client -c cyan,magenta \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm -w server run dev",
+    "dev:client": "npm -w client run dev",
+    "db:migrate": "npm -w server run db:migrate",
+    "db:seed": "npm -w server run db:seed",
+    "build": "npm -w shared run build && npm -w server run build && npm -w client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

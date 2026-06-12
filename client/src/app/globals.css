@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-obsidian-950 text-sand-100 font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-2 bg-sand-500 hover:bg-sand-600 text-obsidian-950 font-display font-semibold rounded-sm tracking-wide transition-all duration-200 hover:shadow-lg hover:shadow-sand-500/20;
+  }
+
+  .btn-danger {
+    @apply px-6 py-2 bg-crimson hover:bg-crimson-light text-sand-100 font-display font-semibold rounded-sm tracking-wide transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-obsidian-900 border border-obsidian-700 rounded-sm p-4 shadow-lg shadow-black/20;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 bg-obsidian-800 border border-obsidian-600 text-sand-100 placeholder-obsidian-400 rounded-sm focus:outline-none focus:border-sand-500 focus:ring-1 focus:ring-sand-500/50 transition-colors duration-200;
+  }
+
+  .label {
+    @apply block text-sm font-medium text-sand-300 mb-1 uppercase tracking-wider;
+  }
+}

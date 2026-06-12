@@ -1,0 +1,237 @@
+[
+  {
+    "id": "human",
+    "name": "Human",
+    "abilityAdjustments": {},
+    "speed": 30,
+    "size": "Medium",
+    "traits": [
+      "Bonus Feat: Humans gain one extra feat at 1st level.",
+      "Bonus Skill Points: 4 extra skill points at 1st level, plus 1 additional skill point at each subsequent level.",
+      "Automatic Language: Common.",
+      "Favored Class: Any — when determining XP penalties for multiclassing, a human's highest-level class does not count."
+    ],
+    "languages": ["Common"],
+    "bonusLanguages": ["Dwarven", "Elven", "Halfling", "Kreen", "Pterran"],
+    "favoredClass": "Any",
+    "darkSunNotes": "Humans are the most populous race on Athas, dominating the city-states and the wastes alike. Adaptable and ambitious, they thrive under the scorching sun where other races falter.",
+    "waterRequirement": { "active": 1, "rest": 0.5 }
+  },
+  {
+    "id": "elf",
+    "name": "Elf",
+    "abilityAdjustments": {
+      "dexterity": 2,
+      "constitution": -2
+    },
+    "speed": 40,
+    "size": "Medium",
+    "traits": [
+      "Elf Run: Athasian elves can maintain a running pace across vast stretches of desert without rest, covering great distances each day.",
+      "Weapon Proficiency: Proficient with longbow, shortbow, and elven longblade.",
+      "Temperature Resilience: +2 racial bonus on saving throws against heat dangers and effects.",
+      "Low-Light Vision: Elves can see twice as far as humans in starlight, moonlight, and similar conditions of poor illumination."
+    ],
+    "languages": ["Common", "Elven"],
+    "bonusLanguages": ["Dwarven", "Halfling", "Kreen", "Pterran"],
+    "favoredClass": "Rogue",
+    "darkSunNotes": "Athasian elves are tall, long-limbed desert runners who form tribal trading bands. They are renowned as merchants, herders, raiders, and thieves — trust must always be earned among elves.",
+    "waterRequirement": { "active": 0.5, "rest": 0.25 }
+  },
+  {
+    "id": "half-elf",
+    "name": "Half-Elf",
+    "abilityAdjustments": {},
+    "speed": 30,
+    "size": "Medium",
+    "traits": [
+      "Diplomacy Bonus: +2 racial bonus on Diplomacy and Gather Information checks.",
+      "Elven Blood: Half-elves count as elves for effects related to race.",
+      "Low-Light Vision: Half-elves can see twice as far as humans in conditions of poor illumination.",
+      "Keen Senses: +1 racial bonus on Listen, Search, and Spot checks."
+    ],
+    "languages": ["Common", "Elven"],
+    "bonusLanguages": ["Dwarven", "Halfling", "Kreen", "Pterran"],
+    "favoredClass": "Any",
+    "darkSunNotes": "Half-elves belong fully to neither human nor elven society and often struggle to find acceptance in either. Many become wanderers, diplomats, or go-betweens who bridge the gap between cultures.",
+    "waterRequirement": { "active": 0.75, "rest": 0.375 }
+  },
+  {
+    "id": "dwarf",
+    "name": "Dwarf",
+    "abilityAdjustments": {
+      "constitution": 2,
+      "charisma": -2
+    },
+    "speed": 20,
+    "size": "Medium",
+    "traits": [
+      "Dwarven Focus: A dwarf selects a single task as their focus; they gain a +2 morale bonus on all checks directly related to that focus.",
+      "Darkvision: Dwarves can see in the dark up to 60 feet.",
+      "Stability: +4 bonus on ability checks to resist being bull rushed or tripped.",
+      "Hardy: +2 racial bonus on saving throws against poison."
+    ],
+    "languages": ["Common", "Dwarven"],
+    "bonusLanguages": ["Elven", "Halfling", "Kreen", "Pterran"],
+    "favoredClass": "Fighter",
+    "darkSunNotes": "Athasian dwarves are hairless, deeply driven beings who dedicate their lives to a single focus — an all-consuming task they pursue with relentless determination. A dwarf who dies without completing their focus may rise as an undead banshee.",
+    "waterRequirement": { "active": 1, "rest": 0.5 }
+  },
+  {
+    "id": "mul",
+    "name": "Mul",
+    "abilityAdjustments": {
+      "strength": 2,
+      "constitution": 2,
+      "charisma": -2
+    },
+    "speed": 30,
+    "size": "Medium",
+    "traits": [
+      "Tireless: Muls can hustle or force march without suffering nonlethal damage or fatigue.",
+      "Extended Activity: Muls need only 6 hours of sleep to gain the benefit of 8 hours rest.",
+      "Dwarven Blood: Muls count as dwarves for effects related to race.",
+      "Incredible Toughness: +1 racial bonus on Fortitude saving throws.",
+      "Nonlethal Damage Resistance: Muls have a natural resistance to nonlethal damage, reducing any nonlethal damage taken by 1."
+    ],
+    "languages": ["Common"],
+    "bonusLanguages": ["Dwarven", "Elven", "Halfling"],
+    "favoredClass": "Gladiator",
+    "darkSunNotes": "Muls are the sterile offspring of humans and dwarves, bred in captivity as slave laborers and gladiators. Prized for their incredible endurance, they are among the most sought-after slaves in every city-state's arena.",
+    "waterRequirement": { "active": 1, "rest": 0.5 }
+  },
+  {
+    "id": "half-giant",
+    "name": "Half-Giant",
+    "abilityAdjustments": {
+      "strength": 4,
+      "constitution": 2,
+      "dexterity": -2,
+      "intelligence": -2,
+      "wisdom": -2,
+      "charisma": -2
+    },
+    "speed": 40,
+    "size": "Large",
+    "traits": [
+      "Powerful Build: Half-giants function as Large creatures when it is advantageous, such as grapple checks, but can use equipment sized for Medium creatures.",
+      "Axis Alignment Shift: A half-giant's non-fixed alignment axis may shift after each long rest, reflecting their suggestible nature.",
+      "Natural Reach: Half-giants have a natural reach of 10 feet.",
+      "Fire Acclimated: +2 racial bonus on saving throws against fire effects."
+    ],
+    "languages": ["Common"],
+    "bonusLanguages": ["Dwarven", "Elven"],
+    "favoredClass": "Fighter",
+    "darkSunNotes": "Half-giants are towering beings whose alignment subtly shifts day by day, easily influenced by those around them. They were originally bred by the sorcerer-kings as laborers and soldiers, and many still serve in that capacity.",
+    "waterRequirement": { "active": 2, "rest": 1 }
+  },
+  {
+    "id": "thri-kreen",
+    "name": "Thri-Kreen",
+    "abilityAdjustments": {
+      "strength": 2,
+      "dexterity": 4,
+      "charisma": -2
+    },
+    "speed": 40,
+    "size": "Medium",
+    "traits": [
+      "Four Arms: Thri-kreen have four arms, allowing them to wield multiple weapons or hold additional items.",
+      "Natural Armor: +2 natural armor bonus to AC.",
+      "Bite Attack: Thri-kreen possess a natural bite attack dealing 1d4 damage plus poison (DC 11 Fort, paralysis 1d6 minutes).",
+      "Leap: Thri-kreen can make extraordinary leaps, gaining a +30 racial bonus on Jump checks.",
+      "Sleep Immunity: Thri-kreen do not sleep and are immune to sleep effects."
+    ],
+    "languages": ["Kreen"],
+    "bonusLanguages": ["Common", "Elven", "Halfling"],
+    "favoredClass": "Ranger",
+    "darkSunNotes": "Thri-kreen are insectoid mantis-warriors of the Athasian wastes who never sleep and view other races as potential food or allies with equal dispassion. Their alien mindset makes them formidable hunters and unsettling companions.",
+    "waterRequirement": { "active": 0.25, "rest": 0.125 }
+  },
+  {
+    "id": "halfling",
+    "name": "Halfling",
+    "abilityAdjustments": {
+      "dexterity": 2,
+      "strength": -2
+    },
+    "speed": 20,
+    "size": "Small",
+    "traits": [
+      "Small Size: +1 size bonus to AC, +1 size bonus on attack rolls, +4 size bonus on Hide checks, but must use smaller weapons.",
+      "Thrown Weapon Mastery: +1 racial bonus on attack rolls with thrown weapons and slings.",
+      "Athletic: +2 racial bonus on Climb checks.",
+      "Fearless: +2 morale bonus on saving throws against fear.",
+      "Keen Ears: +2 racial bonus on Listen checks."
+    ],
+    "languages": ["Halfling"],
+    "bonusLanguages": ["Common", "Elven", "Kreen", "Pterran"],
+    "favoredClass": "Ranger",
+    "darkSunNotes": "Athasian halflings are feral jungle-dwellers of the Forest Ridge, fiercely territorial and known for their cannibalistic rituals. They view outsiders with deep suspicion and consider all creatures potential meals.",
+    "waterRequirement": { "active": 0.5, "rest": 0.25 }
+  },
+  {
+    "id": "pterran",
+    "name": "Pterran",
+    "abilityAdjustments": {
+      "wisdom": 2,
+      "charisma": -2
+    },
+    "speed": 30,
+    "size": "Medium",
+    "traits": [
+      "Life Path: At character creation, a pterran chooses a life path — Path of the Body, Mind, or Spirit — each granting a psi-like ability usable 3 times per day.",
+      "Psi-Like Abilities: Body: metaphysical claw; Mind: missive; Spirit: know direction.",
+      "Bite Attack: Pterrans have a natural bite attack dealing 1d4 damage.",
+      "Weapon Familiarity: Pterrans treat the thanak and slodak as martial weapons."
+    ],
+    "languages": ["Pterran"],
+    "bonusLanguages": ["Common", "Elven", "Halfling", "Kreen"],
+    "favoredClass": "Druid",
+    "darkSunNotes": "Pterrans are reptilian humanoids from the Hinterlands who worship the Earth Mother and organize their society around three life paths. They are only recently venturing beyond their ancestral lands into the wider world of Athas.",
+    "waterRequirement": { "active": 0.5, "rest": 0.25 }
+  },
+  {
+    "id": "aarakocra",
+    "name": "Aarakocra",
+    "abilityAdjustments": {
+      "dexterity": 2,
+      "strength": -2
+    },
+    "speed": 20,
+    "flySpeed": 90,
+    "size": "Medium",
+    "traits": [
+      "Flight: Aarakocra can fly at a speed of 90 feet with average maneuverability. They cannot fly while wearing heavy armor.",
+      "Dive Attack: When flying and charging, an aarakocra can make a dive attack dealing double damage with a javelin or similar piercing weapon.",
+      "Claustrophobia: Aarakocra suffer a -2 morale penalty on all rolls when in enclosed spaces.",
+      "Natural Weapons: Aarakocra have two claw attacks dealing 1d3 damage each."
+    ],
+    "languages": ["Auran"],
+    "bonusLanguages": ["Common", "Elven", "Pterran"],
+    "favoredClass": "Cleric",
+    "darkSunNotes": "Aarakocra are bird-like humanoids who dwell in cliff-side aeries of the Ringing Mountains, soaring on thermal currents above the desert. They worship the sun and wind, and become deeply unsettled when unable to see the open sky.",
+    "waterRequirement": { "active": 0.5, "rest": 0.25 }
+  },
+  {
+    "id": "dray",
+    "name": "Dray",
+    "abilityAdjustments": {
+      "strength": 2,
+      "dexterity": -2
+    },
+    "speed": 30,
+    "size": "Medium",
+    "traits": [
+      "Natural Armor: Dray have a +1 natural armor bonus to AC from their thick, scaly hide.",
+      "Darkvision: Dray can see in the dark up to 60 feet.",
+      "Breath Weapon: Once per day, a dray can unleash a 15-foot cone of fire dealing 1d8 damage (Reflex save DC 10 + 1/2 HD + CON modifier for half).",
+      "Draconic Heritage: Dray count as dragonblooded for effects related to draconic ancestry."
+    ],
+    "languages": ["Common", "Draconic"],
+    "bonusLanguages": ["Dwarven", "Elven", "Halfling"],
+    "favoredClass": "Fighter",
+    "darkSunNotes": "Dray are the draconic creations of the Sorcerer-King Dregoth, engineered to be a perfect servitor race. Those who have escaped their master's undead city of Giustenal struggle to find their place in a world that regards them with fear and suspicion.",
+    "waterRequirement": { "active": 0.75, "rest": 0.375 }
+  }
+]
