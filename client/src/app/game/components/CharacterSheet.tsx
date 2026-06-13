@@ -563,7 +563,7 @@ export function CharacterSheet({ onFieldChange, onUsePower, onCreateCharacter, o
                         <button
                             key={tab}
                             onClick={() => setActiveTab(tab as any)}
-                            className={`flex-1 py-1.5 text-xs font-display uppercase tracking-wider transition-colors
+                            className={`flex-1 px-1 py-1.5 text-[10px] font-display uppercase tracking-wide transition-colors
               ${activeTab === tab
                                     ? 'text-sand-300 border-b-2 border-sand-500 bg-obsidian-800/50'
                                     : 'text-obsidian-500 hover:text-obsidian-300'
