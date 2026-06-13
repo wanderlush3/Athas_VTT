@@ -5,17 +5,28 @@ import { SocketEvents } from 'athas-shared';
 const isDev = process.env.NODE_ENV !== 'production';
 
 let socket: Socket | null = null;
+let socketUrl: string | null = null;
 let storedSessionToken: string | null = null;
 let storedCampaignId: string | null = null;
 const connectionChangeCallbacks = new Set<(connected: boolean) => void>();
 
 /**
  * Get or create a Socket.io client singleton.
- * Connects lazily on first call.
+ * Recreates the socket if the server URL has changed.
  */
 export function getSocket(): Socket {
+    const currentUrl = getServerUrl();
+
+    // If the server URL changed, tear down the old socket
+    if (socket && socketUrl !== currentUrl) {
+        socket.disconnect();
+        socket = null;
+        socketUrl = null;
+    }
+
     if (!socket) {
-        socket = io(getServerUrl(), {
+        socketUrl = currentUrl;
+        socket = io(currentUrl, {
             autoConnect: false,
             transports: ['websocket', 'polling'],
             reconnection: true,

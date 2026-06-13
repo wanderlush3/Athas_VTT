@@ -1,12 +1,64 @@
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000/api';
-const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3000';
+const ENV_API_BASE = process.env.NEXT_PUBLIC_API_URL || '';
+const ENV_SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL || '';
+const DEFAULT_SERVER = 'http://localhost:3000';
+const LS_KEY = 'athas_server_url';
+
+/**
+ * Get the effective server URL, checking (in order):
+ * 1. localStorage `athas_server_url` (set via lobby UI)
+ * 2. NEXT_PUBLIC_SERVER_URL env var (build-time override)
+ * 3. Default: http://localhost:3000
+ */
+function getEffectiveServerUrl(): string {
+    if (typeof window !== 'undefined') {
+        const stored = localStorage.getItem(LS_KEY);
+        if (stored) return stored;
+    }
+    return ENV_SERVER_URL || DEFAULT_SERVER;
+}
 
 /**
  * Get the base server URL (no /api suffix).
  * Used by socket.ts, image paths, and anywhere a raw server URL is needed.
  */
 export function getServerUrl(): string {
-    return SERVER_URL;
+    return getEffectiveServerUrl();
+}
+
+/**
+ * Get the API base URL (server URL + /api).
+ */
+function getApiBase(): string {
+    if (ENV_API_BASE) return ENV_API_BASE;
+    return `${getEffectiveServerUrl()}/api`;
+}
+
+/**
+ * Set the server URL for this client (persists in localStorage).
+ * Called from the lobby when the user enters a server address.
+ */
+export function setServerUrl(url: string): void {
+    if (typeof window !== 'undefined') {
+        localStorage.setItem(LS_KEY, url);
+    }
+}
+
+/**
+ * Clear the stored server URL (reverts to env var / default).
+ */
+export function clearServerUrl(): void {
+    if (typeof window !== 'undefined') {
+        localStorage.removeItem(LS_KEY);
+    }
+}
+
+/**
+ * Get the stored server URL from localStorage (raw value, may be empty).
+ * Used by the lobby to pre-populate the server address field.
+ */
+export function getStoredServerUrl(): string {
+    if (typeof window === 'undefined') return '';
+    return localStorage.getItem(LS_KEY) || '';
 }
 
 /**
@@ -15,7 +67,7 @@ export function getServerUrl(): string {
  */
 export function getAssetUrl(path: string): string {
     if (path.startsWith('http')) return path;
-    return `${SERVER_URL}${path}`;
+    return `${getEffectiveServerUrl()}${path}`;
 }
 
 /**
@@ -49,7 +101,7 @@ async function request<T>(
         headers['x-session-token'] = token;
     }
 
-    const res = await fetch(`${API_BASE}${endpoint}`, {
+    const res = await fetch(`${getApiBase()}${endpoint}`, {
         ...options,
         headers,
     });
@@ -83,7 +135,7 @@ export const api = {
         if (token) {
             headers['x-session-token'] = token;
         }
-        return fetch(`${API_BASE}${endpoint}`, {
+        return fetch(`${getApiBase()}${endpoint}`, {
             method: 'POST',
             headers,
             body: formData,

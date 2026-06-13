@@ -1,21 +1,12 @@
 /** @type {import('next').NextConfig} */
 
-// Parse server URL for image remote patterns
-const serverUrl = process.env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3000';
-const parsed = new URL(serverUrl);
-
 const nextConfig = {
     reactStrictMode: true,
-    // Allow images from the server
+    // Server URL is dynamic (set at runtime via lobby), so we can't
+    // predict remote image hosts at build time. Disable Next.js image
+    // optimization — appropriate for a VTT with user-uploaded maps.
     images: {
-        remotePatterns: [
-            {
-                protocol: parsed.protocol.replace(':', ''),
-                hostname: parsed.hostname,
-                port: parsed.port || '',
-                pathname: '/uploads/**',
-            },
-        ],
+        unoptimized: true,
     },
     // Fix React-Konva SSR: externalize 'canvas' module for server-side
     webpack: (config, { isServer }) => {
@@ -27,4 +18,3 @@ const nextConfig = {
 };
 
 export default nextConfig;
-

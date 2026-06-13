@@ -4,6 +4,7 @@ import { Server as SocketIOServer } from 'socket.io';
 import cors from 'cors';
 import path from 'path';
 import fs from 'fs';
+import os from 'os';
 import rateLimit from 'express-rate-limit';
 import helmet from 'helmet';
 import pinoHttp from 'pino-http';
@@ -23,7 +24,11 @@ const server = http.createServer(app);
 
 // ── Middleware ────────────────────────────────────────────────────
 app.use(helmet());
-app.use(cors({ origin: config.clientOrigin }));
+app.use(cors({
+    origin: config.clientOrigin === '*'
+        ? true  // Allow all origins
+        : config.clientOrigin,
+}));
 app.use(express.json({ limit: '1mb' }));
 app.use(pinoHttp({ logger }));
 
@@ -66,7 +71,9 @@ app.get('/api/health', (_req, res) => {
 // ── Socket.io ────────────────────────────────────────────────────
 const io = new SocketIOServer(server, {
     cors: {
-        origin: config.clientOrigin,
+        origin: config.clientOrigin === '*'
+            ? true
+            : config.clientOrigin,
         methods: ['GET', 'POST'],
     },
 });
@@ -74,17 +81,45 @@ const io = new SocketIOServer(server, {
 initializeSocket(io);
 
 // ── Start Server ─────────────────────────────────────────────────
-server.listen(config.port, () => {
+server.listen(config.port, config.host, () => {
+    // Detect LAN IP for easy sharing
+    const lanIp = getLanIp();
+    const corsDisplay = config.clientOrigin === '*'
+        ? '* (all origins)'
+        : Array.isArray(config.clientOrigin)
+            ? config.clientOrigin.join(', ')
+            : config.clientOrigin;
+
     logger.info('');
-    logger.info('  ╔══════════════════════════════════════════╗');
-    logger.info('  ║         ⚔️  ATHAS VTT SERVER ⚔️          ║');
-    logger.info('  ║     The Scorched World Awaits...         ║');
-    logger.info('  ╠══════════════════════════════════════════╣');
-    logger.info(`  ║  HTTP:   http://localhost:${config.port}           ║`);
-    logger.info(`  ║  Socket: ws://localhost:${config.port}             ║`);
-    logger.info('  ╚══════════════════════════════════════════╝');
+    logger.info('  ╔══════════════════════════════════════════════════╗');
+    logger.info('  ║            ⚔️  ATHAS VTT SERVER ⚔️               ║');
+    logger.info('  ║        The Scorched World Awaits...              ║');
+    logger.info('  ╠══════════════════════════════════════════════════╣');
+    logger.info(`  ║  Local:   http://localhost:${config.port}`);
+    if (lanIp) {
+        logger.info(`  ║  Network: http://${lanIp}:${config.port}`);
+    }
+    logger.info(`  ║  CORS:    ${corsDisplay}`);
+    logger.info('  ╚══════════════════════════════════════════════════╝');
     logger.info('');
+    if (lanIp) {
+        logger.info(`  → Share this with players: http://${lanIp}:${config.port}`);
+        logger.info('');
+    }
 });
+
+/** Get the first non-internal IPv4 address for LAN sharing. */
+function getLanIp(): string | null {
+    const interfaces = os.networkInterfaces();
+    for (const name of Object.keys(interfaces)) {
+        for (const iface of interfaces[name] || []) {
+            if (iface.family === 'IPv4' && !iface.internal) {
+                return iface.address;
+            }
+        }
+    }
+    return null;
+}
 
 // ── Graceful Shutdown ────────────────────────────────────────────
 function shutdown(signal: string) {

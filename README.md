@@ -94,17 +94,63 @@ npm run db:seed
 npm run dev
 ```
 
+The server startup banner shows your network address:
+
+```
+⚔️  ATHAS VTT SERVER ⚔️
+  Local:   http://localhost:3000
+  Network: http://192.168.1.42:3000
+→ Share this with players: http://192.168.1.42:3000
+```
+
 - **Server:** http://localhost:3000
 - **Client:** http://localhost:3001
 
 ### Joining a Game
 
 1. Open http://localhost:3001
-2. Enter a **Campaign Name** and **Password** — if the campaign doesn't exist, it's created automatically
-3. Enter your **Player Name** and choose your **Role** (Player or Game Master)
-4. Click **Enter the Wastes**
+2. *(Remote play only)* Click **⚙ Server Connection** and enter the server address (e.g., `192.168.1.42:3000`)
+3. Wait for the 🟢 **Connected** indicator
+4. Enter a **Campaign Name** and **Password** — if the campaign doesn't exist, it's created automatically
+5. Enter your **Player Name** and choose your **Role** (Player or Game Master)
+6. Click **Enter Campaign**
 
-No account registration required — campaigns are created and joined implicitly.
+No account registration required — campaigns are created and joined implicitly. The server address persists in your browser, so returning players reconnect automatically.
+
+---
+
+## 🌐 Remote Play
+
+Athas VTT supports remote multiplayer — the GM hosts the server, and players connect from anywhere on the local network or internet.
+
+### Setup (GM / Host)
+
+1. Start the server with `npm run dev` — the startup banner displays your shareable network address
+2. Ensure port `3000` is accessible (open firewall / port-forward if needed for internet play)
+3. Share the **Network** address with your players
+
+### Connecting (Players)
+
+1. Clone the repo and run the client with `npm run dev` (or use `start_client.bat`)
+2. In the lobby, expand **⚙ Server Connection**
+3. Paste the GM's server address → wait for 🟢 **Connected**
+4. Join the campaign as usual
+
+### Configuration
+
+The server defaults to allowing all client origins (`CORS: *`) in development mode. For production / internet-facing servers:
+
+```bash
+# server/.env — restrict CORS to specific origins
+CLIENT_ORIGIN=http://192.168.1.50:3001,http://player2.example.com:3001
+```
+
+Players can also pre-configure the server URL via environment variable instead of the lobby UI:
+
+```bash
+# client/.env — build-time default (lobby UI overrides this at runtime)
+NEXT_PUBLIC_SERVER_URL=http://192.168.1.42:3000
+```
 
 ---
 
@@ -116,10 +162,18 @@ Copy `server/.env.example` to `server/.env` and customize:
 |---|---|---|
 | `DATABASE_URL` | `file:../../prisma/athas.db` | SQLite database path |
 | `PORT` | `3000` | HTTP server port |
-| `CLIENT_ORIGIN` | `http://localhost:3001` | CORS allowed origin |
+| `HOST` | `0.0.0.0` | Bind address (`0.0.0.0` = all interfaces) |
+| `CLIENT_ORIGIN` | `*` (dev) / `http://localhost:3001` (prod) | CORS origin(s) — single, comma-separated, or `*` |
 | `NODE_ENV` | `development` | Environment mode |
 | `UPLOAD_DIR` | `./uploads` | Map/token upload directory |
 | `LOG_LEVEL` | `debug` | Pino log level (trace/debug/info/warn/error/fatal) |
+
+Client environment variables (optional — lobby UI is preferred for runtime config):
+
+| Variable | Default | Description |
+|---|---|---|
+| `NEXT_PUBLIC_SERVER_URL` | `http://localhost:3000` | Server URL (build-time default) |
+| `NEXT_PUBLIC_API_URL` | *(derived from server URL)* | API endpoint override |
 
 ---
 
