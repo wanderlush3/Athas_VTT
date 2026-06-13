@@ -556,8 +556,8 @@ export function CharacterSheet({ onFieldChange, onUsePower, onCreateCharacter, o
                         ? ['stats', 'skills', 'powers', 'spells', 'equipment', 'survival', 'notes'] as const
                         : ['stats', 'skills', 'powers', 'equipment', 'survival', 'notes'] as const;
                     const tabLabels: Record<string, string> = {
-                        spells: '✨ spells',
-                        survival: '🏜️ survival',
+                        spells: 'spells',
+                        survival: 'survival',
                     };
                     return baseTabs.map((tab) => (
                         <button

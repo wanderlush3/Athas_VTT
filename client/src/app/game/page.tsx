@@ -485,7 +485,7 @@ export default function GamePage() {
             </main>
 
             {/* Right sidebar */}
-            <aside className="w-80 bg-obsidian-900 border-l border-obsidian-700 flex flex-col">
+            <aside className="w-96 bg-obsidian-900 border-l border-obsidian-700 flex flex-col">
                 {/* Panel tabs */}
                 <div className="flex border-b border-obsidian-700">
                     <button

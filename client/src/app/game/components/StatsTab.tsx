@@ -3,8 +3,6 @@ import {
     abilityMod,
     ABILITY_DEFINITIONS,
     SAVE_DEFINITIONS,
-    ELEMENTAL_PATRONS,
-    SORCERER_KINGS,
     babForProgression,
     xpPenaltyPercent,
     formatClassLevels,
@@ -178,13 +176,7 @@ export function StatsTab({ char, conditions, handleNumericChange, handleChange, 
     // Initiative (with condition penalties)
     const effectiveInit = (char.initiative || 0) + penalties.initiative;
 
-    // Deity/patron context
-    const classLower = hasClassLevels
-        ? (char.classLevels || []).map((e: ClassEntry) => e.className.toLowerCase()).join(' ')
-        : (char.classLevel || '').toLowerCase();
-    const isCleric = classLower.includes('cleric');
-    const isTemplar = classLower.includes('templar');
-    const isDruid = classLower.includes('druid');
+
 
     // XP penalty
     const xpPenalty = isMulticlass && raceData ? xpPenaltyPercent(char.classLevels, raceData.favoredClass || 'Any') : 0;
@@ -232,7 +224,7 @@ export function StatsTab({ char, conditions, handleNumericChange, handleChange, 
                     Character Details
                 </button>
                 {showDetails && (
-                    <div className="grid grid-cols-3 gap-1.5 mb-2">
+                    <div className="grid grid-cols-2 gap-1.5 mb-2">
                         <div className="bg-obsidian-800 border border-obsidian-700 rounded-sm p-1.5">
                             <div className="text-xs text-obsidian-500 uppercase tracking-wider mb-0.5">Gender</div>
                             <input type="text" value={char.gender || ''} onChange={(e) => handleChange('gender', e.target.value)}
@@ -256,33 +248,6 @@ export function StatsTab({ char, conditions, handleNumericChange, handleChange, 
                             <input type="text" value={char.weight || ''} onChange={(e) => handleChange('weight', e.target.value)}
                                 readOnly={readOnly} placeholder="—"
                                 className="w-full text-xs text-sand-200 bg-transparent focus:outline-none placeholder-obsidian-600" />
-                        </div>
-                        <div className="col-span-2 bg-obsidian-800 border border-obsidian-700 rounded-sm p-1.5">
-                            <div className="text-xs text-obsidian-500 uppercase tracking-wider mb-0.5">
-                                {isCleric ? 'Element' : isTemplar ? 'Sorcerer-King' : isDruid ? 'Patron' : 'Deity/Patron'}
-                            </div>
-                            {isCleric ? (
-                                <select value={char.deity || ''} onChange={(e) => handleChange('deity', e.target.value)}
-                                    disabled={readOnly}
-                                    className="w-full text-xs text-sand-200 bg-obsidian-800 focus:outline-none">
-                                    <option value="">Select Element</option>
-                                    {ELEMENTAL_PATRONS.map((e: string) => <option key={e} value={e}>{e}</option>)}
-                                </select>
-                            ) : isTemplar ? (
-                                <select value={char.deity || ''} onChange={(e) => handleChange('deity', e.target.value)}
-                                    disabled={readOnly}
-                                    className="w-full text-xs text-sand-200 bg-obsidian-800 focus:outline-none">
-                                    <option value="">Select Sorcerer-King</option>
-                                    {SORCERER_KINGS.map((sk: any) => <option key={sk.name} value={sk.name}>{sk.name} — {sk.city}</option>)}
-                                </select>
-                            ) : isDruid ? (
-                                <div className="text-xs text-sand-400 italic">The Land</div>
-                            ) : (
-                                <input type="text" value={char.deity || ''} onChange={(e) => handleChange('deity', e.target.value)}
-                                    readOnly={readOnly} placeholder="—"
-                                    className="w-full text-xs text-sand-200 bg-transparent focus:outline-none placeholder-obsidian-600" />
-                            )}
-                        </div>
                     </div>
                 )}
             </div>
