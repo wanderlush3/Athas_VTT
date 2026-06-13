@@ -248,6 +248,7 @@ export function StatsTab({ char, conditions, handleNumericChange, handleChange, 
                             <input type="text" value={char.weight || ''} onChange={(e) => handleChange('weight', e.target.value)}
                                 readOnly={readOnly} placeholder="—"
                                 className="w-full text-xs text-sand-200 bg-transparent focus:outline-none placeholder-obsidian-600" />
+                        </div>
                     </div>
                 )}
             </div>
